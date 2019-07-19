@@ -15,7 +15,7 @@
         height: 100%;
         transition: all .2s;
         outline: none;
-        filter: drop-shadow(3px 3px 15px blue) saturate(.5);
+        filter: drop-shadow(3px 3px 20px blue) saturate(.3);
     }
     .social__link:hover,:focus{
         filter: drop-shadow(3px 3px 15px darkblue) saturate(2);
@@ -28,4 +28,12 @@
         }
         .social__telegram{
 
+        }
+
+
+        @media screen and (min-width: 1200px){
+            .social{
+                font-size: 20px;
+                min-width: 250px;
+            }
         }
