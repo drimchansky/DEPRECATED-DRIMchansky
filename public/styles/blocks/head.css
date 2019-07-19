@@ -1,0 +1,18 @@
+.head{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 233, 233);
+    font-size: 16px;
+}
+    .head__header{
+        font-size: 3em;
+        letter-spacing: 2px;
+        margin: 0;
+        font-family: 'Anton', sans-serif;
+    }
+    .head__caption{
+        font-size: 1.3em;
+    }

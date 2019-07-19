@@ -1,47 +1,31 @@
 .social{
-    font-size: 35px;
-    align-self: flex-start;
-    width: 100%;
-}
-.social__list{
     list-style: none;
-    margin: .8em 0 0 10%;
+    font-size: 27px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 0;
+    min-width: 320px;
 }
-.social__item{
-    height: 1em;
-    width: 1em;
-    cursor: pointer;
-    margin: 0;
-}
-.social__item:not(:first-child){
-    margin-left: .5em;
-}
-
-    .social__item_github{
-        background: center / cover no-repeat url(../../assets/github.svg) ;
-    }
-    .social__item_twitter{
-        background: center / cover no-repeat url(../../assets/twitter.svg) ;
-    }
-    .social__item_telegram{
-        background: center / cover no-repeat url(../../assets/telegram.svg) ;
+    .social__item{
+        height: 3em;
+        width: 3em; 
     }
     .social__link{
         display: block;
         height: 100%;
+        transition: all .2s;
+        outline: none;
+        filter: drop-shadow(3px 3px 15px blue) saturate(.5);
     }
+    .social__link:hover,:focus{
+        filter: drop-shadow(3px 3px 15px darkblue) saturate(2);
+    }
+        .social__github{
+            
+        }
+        .social__twitter{
 
+        }
+        .social__telegram{
 
-@media screen and (min-width: 768px){
-.social__list{
-    margin-left: calc(2rem + 15px);
-}
-}
-@media screen and (min-width: 992px){
-.social{
-    font-size: 45px;
-}
-}
+        }
