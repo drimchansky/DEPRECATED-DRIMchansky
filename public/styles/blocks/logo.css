@@ -10,8 +10,25 @@
     }
     .logo__description{
         color: rgb(247, 229, 229);
-        margin: 0 0 0 10px;
+        margin: 0 0 0 18px;
         font-size: .9em;
+    }
+
+@media screen and (min-width: 768px){
+.logo{
+    width: 70%;
+    margin-left: 2rem;
+}
+}
+@media screen and (min-width: 992px){
+    .logo{
+        width: 800px;
+        margin-top: -130px;
+    }
+    .logo__description{
+        margin-top: -10px;
+        font-size: 1.3em;
+    }
     }
 
 
