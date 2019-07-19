@@ -1,0 +1,24 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.footer__text{
+    color: rgb(247, 229, 229);
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 576px){
+    .footer{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 992px){
+    .footer{
+        font-size: 22px;
+    }
+}
+
+
