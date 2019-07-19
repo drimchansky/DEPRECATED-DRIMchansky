@@ -1,0 +1,17 @@
+.logo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+    .logo__image{
+        width: 100%;
+    }
+    .logo__description{
+        color: rgb(247, 229, 229);
+        margin: 0 0 0 10px;
+        font-size: .9em;
+    }
+
+

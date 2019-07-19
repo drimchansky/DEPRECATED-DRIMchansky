@@ -8,9 +8,13 @@ html{
 
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     position: relative;
+    overflow: hidden;
 }
     .container::before{
         content:"";
@@ -27,10 +31,59 @@ html{
         width: 100%;
         height: 100%;
         background: #000;
-        opacity: .5;
+        opacity: .6;
     }
 
 
+.logo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+    .logo__image{
+        width: 100%;
+    }
+    .logo__description{
+        color: rgb(247, 229, 229);
+        margin: 0 0 0 10px;
+        font-size: .9em;
+    }
+
+
+
+.social{
+    font-size: 35px;
+    align-self: flex-start;
+    width: 100%;
+}
+.social__list{
+    list-style: none;
+    margin: .8em 0 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+.social__item{
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    margin: 0;
+}
+.social__item:not(:first-child){
+    margin-left: .5em;
+}
+
+    .social__item_github{
+        background: center / cover no-repeat url(/github.1d8dc012.svg);
+    }
+    .social__item_twitter{
+        background: center / cover no-repeat url(/twitter.9c616447.svg);
+    }
+    .social__item_telegram{
+        background: center / cover no-repeat url(/telegram.1c2ff0b2.svg);
+    }
 .footer{
     position: absolute;
     bottom: 0;

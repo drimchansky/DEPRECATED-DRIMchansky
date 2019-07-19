@@ -1,0 +1,31 @@
+.social{
+    font-size: 35px;
+    align-self: flex-start;
+    width: 100%;
+}
+.social__list{
+    list-style: none;
+    margin: .8em 0 0 10%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+.social__item{
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    margin: 0;
+}
+.social__item:not(:first-child){
+    margin-left: .5em;
+}
+
+    .social__item_github{
+        background: center / cover no-repeat url(../../assets/github.svg) ;
+    }
+    .social__item_twitter{
+        background: center / cover no-repeat url(../../assets/twitter.svg) ;
+    }
+    .social__item_telegram{
+        background: center / cover no-repeat url(../../assets/telegram.svg) ;
+    }
