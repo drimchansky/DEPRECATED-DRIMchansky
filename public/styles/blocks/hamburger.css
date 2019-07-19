@@ -5,13 +5,12 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    filter: drop-shadow(3px 3px 20px blue) saturate(1);
 }
 .hamburger:hover{
     cursor: pointer;
 }
 .hamburger:focus{
-    filter: drop-shadow(3px 3px 25px blue) saturate(3);
+    filter: drop-shadow(3px 3px 25px blue) saturate(2);
 }
 .hamburger:hover::before{
     content: attr(data-title);
@@ -20,7 +19,7 @@
     top: 30px;
     width: 200px;
     color: white;
-    filter: drop-shadow(3px 3px 25px blue) saturate(3);
+    filter: drop-shadow(3px 3px 25px blue) saturate(2);
     font-size: 25px;
 }
 
