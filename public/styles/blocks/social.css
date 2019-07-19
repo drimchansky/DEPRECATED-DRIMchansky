@@ -29,6 +29,10 @@
     .social__item_telegram{
         background: center / cover no-repeat url(../../assets/telegram.svg) ;
     }
+    .social__link{
+        display: block;
+        height: 100%;
+    }
 
 
 @media screen and (min-width: 768px){
