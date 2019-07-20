@@ -9,9 +9,6 @@
 .hamburger:hover{
     cursor: pointer;
 }
-.hamburger:focus{
-    filter: drop-shadow(3px 3px 25px blue) saturate(2);
-}
 .hamburger:hover::before{
     content: attr(data-title);
     position: absolute;
@@ -19,7 +16,6 @@
     top: 30px;
     width: 200px;
     color: white;
-    filter: drop-shadow(3px 3px 25px blue) saturate(2);
     font-size: 25px;
 }
 

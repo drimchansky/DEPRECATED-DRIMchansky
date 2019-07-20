@@ -16,20 +16,6 @@
         transition: all .2s;
         outline: none;
     }
-    .social__link:hover,:focus{
-        filter: drop-shadow(3px 3px 15px darkblue) saturate(1);
-    }
-        .social__github{
-            
-        }
-        .social__twitter{
-
-        }
-        .social__telegram{
-
-        }
-
-
         @media screen and (min-width: 1200px){
             .social{
                 font-size: 20px;
