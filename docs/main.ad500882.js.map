@@ -1,1 +1,0 @@
-{"version":3,"sources":["scripts/main.js"],"names":["fn","console","log","map","n"],"mappings":";AACA,IAAMA,EAAK,WAAM,OAAA,GACjBC,QAAQC,IAAI,GACZ,CAAC,EAAG,EAAG,GAAGC,IAAI,SAACC,GAAMA,OAAAA,EAAI","file":"main.ad500882.js","sourceRoot":"..\\public","sourcesContent":["\r\nconst fn = () => 1;\r\nconsole.log(3);\r\n[1, 2, 3].map((n) => n + 1);"]}
