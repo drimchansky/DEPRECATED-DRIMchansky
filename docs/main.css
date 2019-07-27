@@ -452,7 +452,6 @@ html{
 @media screen and (min-width: 1200px){
     .head{
         align-items: flex-start;
-        margin-left: 30px;
     }
 }
 .social{
@@ -466,6 +465,7 @@ html{
     .social__item{
         height: 3em;
         width: 3em; 
+        position: relative;
     }
     .social__link{
         display: block;
@@ -572,22 +572,37 @@ html{
     z-index: 10;
     font-family: Nutino, sans-serif;
     font-size: 2rem;
+    opacity: .95;
 }
     .menu_social{
-        width: 200px;
-        margin-top: 50px;
+        width: 300px;
+        margin-top: auto;
     }
+
+
+    .social__item:nth-child(2):hover:after{
+        content: attr(data-title);
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        width: 270px;
+        color: white;
+        font-size: 25px;
+    }
+
+
+
     .menu__list{
+        margin-top: 60px;
         list-style: none;
         display: flex;
         flex-direction: column;
-        height: 100%;
-        justify-content: center;
+        height: 80%;
+        justify-content: flex-start;
         align-items: center;
+        padding: 0;
     }
-    .menu__item{
 
-    }
     .menu__link{
         color: #f7e5e5;
         font-weight: normal;
@@ -598,6 +613,40 @@ html{
 .visible{
     display: block;
 }
+.collapse{
+    color: inherit;
+    width: 300px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.collapse__caption{
+
+}
+.collapse__button svg{
+    height: 1em;
+    margin-left: 0.5em;
+}
+.collapse__button svg:focus{
+    outline: 2px solid;
+}
+    .collapse__button{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em 0;
+        background: inherit;
+        border: none;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        color: inherit;
+    }
+    .collapse__inner a{
+        color: inherit;
+    }
+
+    [aria-expanded="true"] .vert {
+        display: none;
+      }
 .footer{
     position: absolute;
     bottom: 5px;
