@@ -1,0 +1,18 @@
+
+.menu{
+    display: none;
+    background: #0e0e0e;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 10;
+}
+
+
+
+
+.visible{
+    display: block;
+}
