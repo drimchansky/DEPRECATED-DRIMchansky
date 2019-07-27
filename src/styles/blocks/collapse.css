@@ -24,6 +24,7 @@
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
         color: inherit;
+        outline: none;
     }
     .collapse__inner a{
         color: inherit;
