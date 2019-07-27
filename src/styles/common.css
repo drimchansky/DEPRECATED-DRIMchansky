@@ -1,6 +1,6 @@
 
 @font-face{
-    font-family: Nutino;
+    font-family: Nunito;
     src: url('../assets/Nunito-Regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -15,7 +15,6 @@
 
 
 html{
-    
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }

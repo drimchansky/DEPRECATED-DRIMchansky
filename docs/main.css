@@ -350,7 +350,7 @@ template {
 
 
 @font-face{
-    font-family: Nutino;
+    font-family: Nunito;
     src: url(fonts/Nunito-Regulardba92cb9dc60f9f35cbf62428afd3ac1.ttf);
     font-weight: normal;
     font-style: normal;
@@ -365,7 +365,6 @@ template {
 
 
 html{
-    
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
@@ -579,7 +578,6 @@ html{
     top: 0;
     right:0;
     z-index: 10;
-    font-family: Nutino, sans-serif;
     font-size: 2rem;
     opacity: .95;
 }
