@@ -1,0 +1,34 @@
+.collapse{
+    color: inherit;
+    width: 300px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.collapse__caption{
+
+}
+.collapse__button svg{
+    height: 1em;
+    margin-left: 0.5em;
+}
+.collapse__button svg:focus{
+    outline: 2px solid;
+}
+    .collapse__button{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em 0;
+        background: inherit;
+        border: none;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        color: inherit;
+    }
+    .collapse__inner a{
+        color: inherit;
+    }
+
+    [aria-expanded="true"] .vert {
+        display: none;
+      }

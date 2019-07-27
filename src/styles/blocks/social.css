@@ -9,6 +9,7 @@
     .social__item{
         height: 3em;
         width: 3em; 
+        position: relative;
     }
     .social__link{
         display: block;
