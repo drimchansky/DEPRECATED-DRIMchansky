@@ -8,8 +8,28 @@
     top: 0;
     right:0;
     z-index: 10;
+    font-family: Nutino, sans-serif;
+    font-size: 2rem;
 }
+    .menu_social{
+        width: 200px;
+        margin-top: 50px;
+    }
+    .menu__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu__item{
 
+    }
+    .menu__link{
+        color: #f7e5e5;
+        font-weight: normal;
+    }
 
 
 

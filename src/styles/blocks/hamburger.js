@@ -9,7 +9,7 @@ hamburger.addEventListener('click', function(){
         
     } else {
         this.classList.add('is-active');
-        this.style.outline = '2px solid white';
+        this.style.outline = 'none';
         menu.classList.toggle('visible');
     }
 })
