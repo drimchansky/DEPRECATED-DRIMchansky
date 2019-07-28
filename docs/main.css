@@ -348,19 +348,27 @@ template {
   display: none;
 }
 
-
-@font-face{
+@font-face {
     font-family: Nunito;
-    src: url(fonts/Nunito-Regulardba92cb9dc60f9f35cbf62428afd3ac1.ttf);
-    font-weight: normal;
     font-style: normal;
-}
-@font-face{
+    font-weight: normal;
+    src: local('Nunito'),
+         url(fonts/Nunito-Regulara187c7b90e667f4b823343aee4941f2a.woff2) format('woff2'),
+         url(fonts/Nunito-Regular96892ea10212dd749d834a543d156ed6.woff) format('woff'),
+         url(fonts/Nunito-Regulardba92cb9dc60f9f35cbf62428afd3ac1.ttf),
+         url(fonts/Nunito-Regularae19bf47903e049425796d9aca05dc4f.eot) format('eot');
+  }
+  @font-face {
     font-family: Anton;
-    src: url(fonts/Anton-Regular10c6818802ed96f9d6976633ae148c37.ttf);
-    font-weight: normal;
     font-style: normal;
-}
+    font-weight: normal;
+    src: local('Anton'),
+         url(fonts/Anton-Regulare7d7ef6c6011e45dbc590f5cde8bf53d.woff2) format('woff2'),
+         url(fonts/Anton-Regular2df302e54712512a71188522f4bc7826.woff) format('woff'), 
+         url(fonts/Anton-Regular10c6818802ed96f9d6976633ae148c37.ttf),
+         url(fonts/Anton-Regularc868d53540209edb4b122de8454deefd.eot) format('eot');
+  }
+  
 
 
 
