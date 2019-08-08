@@ -1,7 +1,7 @@
 
 .menu{
     display: none;
-    background: #0e0e0e;
+    background: #16141a;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -9,8 +9,9 @@
     right:0;
     z-index: 10;
     font-size: 2rem;
-    opacity: .95;
+    
 }
+
     .menu_social{
         width: 300px;
         margin-top: auto;
