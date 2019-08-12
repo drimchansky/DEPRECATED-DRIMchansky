@@ -1,0 +1,13 @@
+
+  /* PROJECT */
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+  .projects__list {
+    list-style-type: none;
+    width: 100%;
+  }

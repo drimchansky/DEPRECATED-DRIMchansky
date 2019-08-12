@@ -386,8 +386,13 @@ html{
     box-sizing: border-box;
 }
 *:focus{
-    border: 1px solid var(--theme-primary);
+    outline: 1px solid var(--theme-primary);
     box-sizing: border-box;
+}
+
+.link_disable {
+    color: gray !important;
+    cursor: default !important;
 }
 
 
@@ -632,12 +637,14 @@ html{
 
     /* COLLAPSE */
 .collapse{
+    font-size: 16px;
     color: inherit;
     width: 80%;
     box-sizing: border-box;
 }
 .collapse__caption {
     margin: 20px 0 10px 0;
+    font-size: 1.3em;
 }
 .collapse__button svg{
     height: 1em;
@@ -675,7 +682,21 @@ html{
     .collapse__inner-link {
         color: inherit;
         text-decoration: none;
+        font-size: 1.2em;
     }
+    .collapse__inner-link_active {
+        color: gray;
+        cursor: default;
+        position: absolute;
+    }
+        .collapse__inner-link_active:after {  
+            content: "\2939   you here";
+            font-size: .8em;
+            color: var(--theme-primary);
+            position: absolute;
+            left: 3em;
+            top: -.7em;
+        }
     [aria-expanded="true"] .vert {
         display: none;
       }
@@ -715,4 +736,88 @@ html{
 
 
 
+
+  /* PROJECT */
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+  .projects__list {
+    list-style-type: none;
+    width: 100%;
+  }
+  /* LOGO */
+.logo {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  color: var(--theme-primary);
+  text-decoration: none;
+  padding: .5em;
+}
+  .logo__header {
+    margin: 0;
+    padding: 0;
+    font-family: var(--logo-font);
+  }
+  .logo__caption {
+    margin: 0;
+    padding: 0;
+  }
+  
+.timeline {
+  border-left: 4px solid var(--theme-primary);
+  margin: 30px auto;
+  position: relative;
+  padding: 2em;
+  list-style: none;
+  text-align: left;
+  width: 90%;
+  outline: none;
+}
+  .timeline__header {
+    margin: 0;
+  }
+  .timeline__link {
+    color: var(--theme-primary);
+  }
+  .timeline__item {
+    border-bottom: 1px dashed var(--theme-primary);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline__item:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  .timeline__item:after {
+    content: "";
+    background: var(--theme-bg);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    top: 5px;
+    left: -41px;
+    border:2px solid var(--theme-primary);
+    color: #333;
+  }
+  .timeline__description {
+    padding: 0;
+    margin: 5px 0 0 0;
+    font-size: .8em;
+  }
+  .timeline__tag-item {
+    font-size: .5em;
+    background: var(--theme-primary);
+    color: var(--theme-bg);
+    padding: .1em .3em;
+    border-radius: 3px;
+  }
 

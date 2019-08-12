@@ -81,13 +81,13 @@ const config = {
       filename: "index.html",
       template: "src/index.html",
       chunks: ["main"]
-    })
-    /* new HtmlWebpackPlugin({
-    filename: 'second.html',
-    template: 'src/second.html',
+    }),
+     new HtmlWebpackPlugin({
+    filename: 'landing-pages.html',
+    template: 'src/landing-pages.html',
     chunks: ['main']
     })
-*/
+
   ],
   optimization: isProduction
     ? {
