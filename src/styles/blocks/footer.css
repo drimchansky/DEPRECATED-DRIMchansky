@@ -10,7 +10,7 @@
     z-index: 20;
 }
 .footer__text{
-    color: #bbb1b1;
+    color: var(--theme-primary);
     font-size: 1.3em;
     display: inline;
 }

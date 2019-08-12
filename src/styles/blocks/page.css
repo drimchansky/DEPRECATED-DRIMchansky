@@ -5,9 +5,9 @@
     width: 100vw;
     position: relative;
     overflow: hidden;
-    color:#ecdede;
-    background: #16141a;
-    font-family: 'Nunito', sans-serif;
+    color: var(--theme-primary);
+    background: var(--theme-bg);
+    font-family: var(--page-font);
 }
 
     /* PAGE MEDIA */

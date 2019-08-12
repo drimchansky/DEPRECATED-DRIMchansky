@@ -12,7 +12,8 @@
         font-size: 3em;
         letter-spacing: 2px;
         margin: 0;
-        font-family: 'Anton', sans-serif;
+        font-family: var(--logo-font);
+        letter-spacing: 1px;
     }
     .head__caption{
         font-size: 1.3em;

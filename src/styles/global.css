@@ -1,5 +1,13 @@
 
     /* GLOBAL */
+    /* properties */
+:root {
+    --theme-bg: #ecdede;
+    --theme-primary: #16141a;
+    --logo-font: 'Anton', sans-serif;
+    --page-font: 'Nunito', sans-serif;
+}
+    /* fonts */
 @font-face {
     font-family: Nunito;
     font-style: normal;
@@ -12,7 +20,7 @@
   }
   @font-face {
     font-family: Anton;
-    font-style: normal;
+    font-style:  normal;
     font-weight: normal;
     src: local('Anton'),
          url('../assets/Anton-Regular.woff2') format('woff2'),
@@ -28,7 +36,7 @@ html{
     box-sizing: border-box;
 }
 *:focus{
-    border: 1px solid white;
+    border: 1px solid var(--theme-primary);
     box-sizing: border-box;
 }
 

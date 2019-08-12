@@ -2,7 +2,7 @@
     /* MENU */
 .menu{
     display: none;
-    background: #16141a;
+    background: var(--theme-bg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -18,7 +18,7 @@
         right: -50px;
         top: -50px;
         width: 270px;
-        color: white;
+        color: var(--theme-primary);
         font-size: 25px;
     }
     .menu__list{
@@ -33,7 +33,7 @@
     }
 
     .menu__link{
-        color: #f7e5e5;
+        color: var(--theme-primary);
         font-weight: normal;
     }
     .visible{

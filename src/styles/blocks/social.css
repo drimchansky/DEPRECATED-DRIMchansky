@@ -13,6 +13,9 @@
         width: 3em; 
         position: relative;
     }
+    .social__item svg {
+        fill: var(--theme-primary);
+    }
     .social__link{
         display: block;
         height: 100%;
