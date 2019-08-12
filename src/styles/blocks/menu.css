@@ -15,7 +15,7 @@
     .social__item:nth-child(2):hover:after{
         content: attr(data-title);
         position: absolute;
-        right: -50px;
+        right: -60px;
         top: -50px;
         width: 270px;
         color: var(--theme-primary);
