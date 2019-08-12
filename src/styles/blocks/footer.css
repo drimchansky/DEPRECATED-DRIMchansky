@@ -7,7 +7,7 @@
     font-size: 16px;
     text-align: center;
     width: 100%;
-    z-index: 20;
+    z-index: 8;
 }
 .footer__text{
     color: var(--theme-primary);

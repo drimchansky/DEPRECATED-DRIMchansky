@@ -4,7 +4,6 @@
     color: inherit;
     width: 80%;
     box-sizing: border-box;
-    margin-top: 50px;
 }
 .collapse__caption {
     margin: 20px 0 10px 0;
@@ -21,7 +20,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 1em 0 1em 1em;
+        padding: .5em 0 .5em 1em;
         background: inherit;
         border: none;
         border-top: 2px solid var(--theme-primary);

@@ -33,11 +33,12 @@
 
     /* SOCIAL MIXES */
     .menu__social{
-        position: absolute;
+        /* position: absolute;
         bottom: 25px;
         width: 300px;
         z-index: 20;
         display: flex;
         left: calc(50% - 150px);
-        justify-content: space-around;
+        justify-content: space-around; */
+        margin: auto 0 20px 0;
     }
