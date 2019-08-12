@@ -33,6 +33,11 @@
 
     /* SOCIAL MIXES */
     .menu__social{
+        position: absolute;
+        bottom: 25px;
         width: 300px;
-        margin-top: auto;
+        z-index: 20;
+        display: flex;
+        left: calc(50% - 150px);
+        justify-content: space-around;
     }

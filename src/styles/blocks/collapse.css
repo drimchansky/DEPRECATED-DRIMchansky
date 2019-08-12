@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin-top: 50px;
 }
-.collapse__caption{
+.collapse__inner {
 
 }
 .collapse__button svg{
@@ -35,3 +35,5 @@
     [aria-expanded="true"] .vert {
         display: none;
       }
+    
+      /* COLLAPSE MEDIA */
