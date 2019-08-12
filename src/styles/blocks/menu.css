@@ -1,7 +1,8 @@
 
+    /* MENU */
 .menu{
     display: none;
-    background: #16141a;
+    background: var(--theme-bg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -11,43 +12,30 @@
     font-size: 2rem;
     
 }
-
-    .menu_social{
-        width: 300px;
-        margin-top: auto;
-    }
-
-
     .social__item:nth-child(2):hover:after{
         content: attr(data-title);
         position: absolute;
-        right: -50px;
+        right: -60px;
         top: -50px;
         width: 270px;
-        color: white;
+        color: var(--theme-primary);
         font-size: 25px;
     }
-
-
-
     .menu__list{
         margin-top: 60px;
         list-style: none;
         display: flex;
         flex-direction: column;
-        height: 80%;
-        justify-content: flex-start;
+        height: 90%;
         align-items: center;
         padding: 0;
+        overflow-y: auto;
     }
 
     .menu__link{
-        color: #f7e5e5;
+        color: var(--theme-primary);
         font-weight: normal;
     }
-
-
-
-.visible{
-    display: block;
-}
+    .visible{
+        display: block;
+    }

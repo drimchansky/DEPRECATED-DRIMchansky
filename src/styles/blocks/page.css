@@ -1,14 +1,16 @@
+
+    /* PAGE */
 .page{
     height: 100vh;
     width: 100vw;
     position: relative;
     overflow: hidden;
-    color:#ecdede;
-    background: #16141a;
+    color: var(--theme-primary);
+    background: var(--theme-bg);
+    font-family: var(--page-font);
 }
 
-
-
+    /* PAGE MEDIA */
 @media screen and (min-width: 1200px){
     .page::after{
         opacity: .4;

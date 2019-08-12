@@ -1,3 +1,5 @@
+
+    /* HEAD */
 .head{
     display: flex;
     height: 100vh;
@@ -10,13 +12,15 @@
         font-size: 3em;
         letter-spacing: 2px;
         margin: 0;
-        font-family: 'Anton', sans-serif;
+        font-family: var(--logo-font);
+        letter-spacing: 1px;
     }
     .head__caption{
         font-size: 1.3em;
         margin-top: 10px;
     }
 
+    /* HEAD MEDIA */
 @media screen and (min-width: 576px){
     .head{
         font-size: 20px;

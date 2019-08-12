@@ -1,9 +1,9 @@
+
+/* DEPENDENCIES */
 @import '../../node_modules/normalize.css/normalize.css';
 @import './global.css';
 
-
 /* BLOCKS */
-
 @import './blocks/page.css';
 @import './blocks/container.css'; 
 @import './blocks/head.css';
