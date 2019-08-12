@@ -1,12 +1,14 @@
 
     /* COLLAPSE */
 .collapse{
+    font-size: 16px;
     color: inherit;
     width: 80%;
     box-sizing: border-box;
 }
 .collapse__caption {
     margin: 20px 0 10px 0;
+    font-size: 1.3em;
 }
 .collapse__button svg{
     height: 1em;
@@ -44,7 +46,21 @@
     .collapse__inner-link {
         color: inherit;
         text-decoration: none;
+        font-size: 1.2em;
     }
+    .collapse__inner-link_active {
+        color: gray;
+        cursor: default;
+        position: absolute;
+    }
+        .collapse__inner-link_active:after {  
+            content: "\2939 you here";
+            font-size: .8em;
+            color: var(--theme-primary);
+            position: absolute;
+            left: 3em;
+            top: -.7em;
+        }
     [aria-expanded="true"] .vert {
         display: none;
       }
