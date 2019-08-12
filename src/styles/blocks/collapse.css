@@ -1,3 +1,5 @@
+
+    /* COLLAPSE */
 .collapse{
     color: inherit;
     width: 300px;
@@ -29,7 +31,6 @@
     .collapse__inner a{
         color: inherit;
     }
-
     [aria-expanded="true"] .vert {
         display: none;
       }

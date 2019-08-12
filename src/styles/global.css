@@ -1,3 +1,5 @@
+
+    /* GLOBAL */
 @font-face {
     font-family: Nunito;
     font-style: normal;
@@ -19,12 +21,8 @@
          url('../assets/Anton-Regular.eot') format('eot');
   }
   
-
-
-
 html{
     font-size: 16px;
-    font-family: 'Nunito', sans-serif;
 }
 *{
     box-sizing: border-box;

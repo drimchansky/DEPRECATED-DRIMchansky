@@ -1,4 +1,5 @@
 
+    /* MENU */
 .menu{
     display: none;
     background: #16141a;
@@ -11,13 +12,6 @@
     font-size: 2rem;
     
 }
-
-    .menu_social{
-        width: 300px;
-        margin-top: auto;
-    }
-
-
     .social__item:nth-child(2):hover:after{
         content: attr(data-title);
         position: absolute;
@@ -27,9 +21,6 @@
         color: white;
         font-size: 25px;
     }
-
-
-
     .menu__list{
         margin-top: 60px;
         list-style: none;
@@ -45,9 +36,6 @@
         color: #f7e5e5;
         font-weight: normal;
     }
-
-
-
-.visible{
-    display: block;
-}
+    .visible{
+        display: block;
+    }

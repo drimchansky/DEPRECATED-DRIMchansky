@@ -1,3 +1,5 @@
+
+    /* FOOTER */
 .footer{
     position: absolute;
     bottom: 5px;
@@ -12,7 +14,7 @@
     font-size: 1.3em;
     display: inline;
 }
-
+    /* FOOTER MEDIA */
 @media screen and (min-width: 576px){
     .footer{
         font-size: 1em;
