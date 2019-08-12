@@ -36,7 +36,12 @@ html{
     box-sizing: border-box;
 }
 *:focus{
-    border: 1px solid var(--theme-primary);
+    outline: 1px solid var(--theme-primary);
     box-sizing: border-box;
+}
+
+.link_disable {
+    color: gray !important;
+    cursor: default !important;
 }
 
