@@ -2,8 +2,8 @@
     /* GLOBAL */
     /* properties */
 :root {
-    --theme-bg: #ecdede;
-    --theme-primary: #16143a;
+    --theme-bg: #0e0d2b;
+    --theme-primary: #ecdede;
     --logo-font: 'Anton', sans-serif;
     --page-font: 'Nunito', sans-serif;
 }
