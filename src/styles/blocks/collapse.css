@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: .5em 0 .5em 1em;
+        padding: .9em 0 .9em 1em;
         background: inherit;
         border: none;
         border-top: 2px solid var(--theme-primary);
@@ -37,30 +37,19 @@
     .collapse__inner-item {
         padding: 5px 0;
         position: relative;
+        text-align: center;
     }
     .collapse__inner-item:before {
         content: "\21aa";
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .collapse__inner-link {
         color: inherit;
         text-decoration: none;
         font-size: 1.2em;
+        text-transform: uppercase;
     }
-    .collapse__inner-link_active {
-        color: gray;
-        cursor: default;
-        position: absolute;
-    }
-        .collapse__inner-link_active:after {  
-            content: "\2939 you here";
-            font-size: .8em;
-            color: var(--theme-primary);
-            position: absolute;
-            left: 3em;
-            top: -.7em;
-        }
     [aria-expanded="true"] .vert {
         display: none;
       }
