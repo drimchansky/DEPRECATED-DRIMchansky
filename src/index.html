@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#16141a" />
-    <link rel="stylesheet" href="styles/main.css?1.1">
+    <link rel="stylesheet" href="styles/main.css?1.2">
     <title>DRIMchansky</title>
+
+    <!-- Fix chrome mobile vh -->
+    <script>
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+    </script>
 </head>
 
 <body>
