@@ -7,6 +7,10 @@
     --logo-font: 'Anton', sans-serif;
     --page-font: 'Nunito', sans-serif;
 }
+[data-theme='day'] {
+    --theme-bg: #ecdede;
+    --theme-primary: #16141a;
+}
     /* fonts */
 @font-face {
     font-family: Nunito;
