@@ -2,7 +2,7 @@
 .hamburger {
     position: absolute;
     box-sizing: border-box;
-    right: 20px;
+    right: 5px;
     top: 20px;
     z-index: 11;
     padding: 15px 15px;

@@ -517,7 +517,7 @@ html{
 .hamburger {
     position: absolute;
     box-sizing: border-box;
-    right: 20px;
+    right: 5px;
     top: 20px;
     z-index: 11;
     padding: 15px 15px;
@@ -648,6 +648,7 @@ html{
     color: inherit;
     width: 80%;
     box-sizing: border-box;
+    transition: all .2s;
 }
 .collapse__caption {
     margin: 20px 0 10px 0;
