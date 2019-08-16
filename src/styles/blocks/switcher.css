@@ -24,7 +24,7 @@
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(284deg) brightness(107%) contrast(107%);
     background-image: url(../../assets/moon.png);
   }
-  .switcher_day {
+  .switcher_night {
     transform: rotate(0deg);
     background-image: url(../../assets/sun.png);
     filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(157deg) brightness(105%) contrast(101%);
