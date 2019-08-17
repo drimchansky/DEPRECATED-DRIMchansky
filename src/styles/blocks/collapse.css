@@ -22,9 +22,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: .9em 0 .9em 1em;
+        padding: 1.5em 0 1.5em 1em;
         background: inherit;
         border: none;
+        font-size: 1.3em;
         border-top: 2px solid var(--theme-primary);
         border-bottom: 2px solid var(--theme-primary);
         color: inherit;
@@ -35,14 +36,12 @@
         padding: 0;
     }
     .collapse__inner-item {
-        padding: 5px 0;
+        margin: 20px 0 0 20px;
+        padding: 5px;
         position: relative;
-        text-align: center;
+        text-align: left;
     }
-    .collapse__inner-item:before {
-        content: "\21aa";
-        font-size: 1.2em;
-    }
+
 
     .collapse__inner-link {
         color: inherit;

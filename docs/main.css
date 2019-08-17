@@ -624,13 +624,13 @@ html{
         font-size: 25px;
     }
     .menu__list{
-        margin-top: 60px;
+        margin: 0;
         list-style: none;
         display: flex;
         flex-direction: column;
-        height: 90%;
+        height: 100%;
         align-items: center;
-        padding: 0;
+        padding: 50px 0 0 0;
         overflow-y: auto;
     }
 
@@ -665,9 +665,10 @@ html{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: .9em 0 .9em 1em;
+        padding: 1.5em 0 1.5em 1em;
         background: inherit;
         border: none;
+        font-size: 1.3em;
         border-top: 2px solid var(--theme-primary);
         border-bottom: 2px solid var(--theme-primary);
         color: inherit;
@@ -678,14 +679,12 @@ html{
         padding: 0;
     }
     .collapse__inner-item {
-        padding: 5px 0;
+        margin: 20px 0 0 20px;
+        padding: 5px;
         position: relative;
-        text-align: center;
+        text-align: left;
     }
-    .collapse__inner-item:before {
-        content: "\21AA";
-        font-size: 1.2em;
-    }
+
 
     .collapse__inner-link {
         color: inherit;
