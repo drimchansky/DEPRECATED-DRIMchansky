@@ -1,0 +1,17 @@
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 1px solid var(--theme-primary);
+  box-sizing: border-box;
+}
+
+.link_disable {
+  color: gray !important;
+  cursor: default !important;
+}

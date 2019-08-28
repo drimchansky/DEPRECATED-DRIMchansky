@@ -1,20 +1,16 @@
-
-/* DEPENDENCIES */
 @import '../../node_modules/normalize.css/normalize.css';
-@import './global.css';
 
-/* BLOCKS */
-@import './blocks/page.css';
-@import './blocks/container.css'; 
-@import './blocks/head.css';
-@import './blocks/social.css';
-@import './blocks/hamburger.css'; 
-@import './blocks/menu.css';
-@import './blocks/collapse.css';
-@import './blocks/footer.css';
-@import './blocks/projects.css';
-@import './blocks/logo.css';
-@import './blocks/switcher.css';
-
-
-
+@import './properties.css';
+@import './fonts.css';
+@import './common.css';
+@import './hamburger.css';
+@import './collapse.css';
+@import './container.css';
+@import './footer.css';
+@import './head.css';
+@import './logo.css';
+@import './menu.css';
+@import './page.css';
+@import './projects.css';
+@import './social.css';
+@import './switcher.css';

@@ -1,124 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#16141a" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico?v=1" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/main.css?1.2">
+
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>DRIMchansky</title>
 
     <!-- Fix chrome mobile vh -->
     <script>
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      window.addEventListener('resize', () => {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
-        window.addEventListener('resize', () => {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
+      });
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main class="page">
+      <!-- HAMBURGER -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Menu"
+        aria-controls="navigation"
+        type="button"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-            <!-- HAMBURGER -->
-        <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="navigation" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+      <!-- MENU -->
+      <nav class="menu" id="menu">
+        <ul class="menu__list">
+          <!-- COLLAPSE -->
 
-            <!-- MENU -->
-        <nav class="menu" id="menu">
-            <ul class="menu__list">
-
-                     <!-- COLLAPSE -->
-    
-                         <!-- COLLAPSE projects -->
-                <li class="menu__item collapse">
-                    <h4 class="collapse__caption">
-                        <button class="collapse__button">
-                            <span>PROJECTS</span>
-                            <svg fill="#f7e5e5" aria-hidden="true" focusable="false" viewBox="0 0 10 10"><rect class="vert" height="8" width="2" y="1" x="4"/><rect height="2" width="8" y="4" x="1"/></svg> 
-                        </button>
-                    </h4>
-                    <div class="collapse__inner" hidden>
-                        <ul class="collapse__inner-list">
-                            <li class="collapse__inner-item">
-                                <a class="collapse__inner-link collapse__inner-link_active" href="./landing-pages.html">landing-pages</a>
-                            </li>
-                            <li class="collapse__inner-item">
-                                <a class="collapse__inner-link link_disable" href="#">applications</a>
-                            </li>
-                        </ul>                           
-                    </div>
+          <!-- COLLAPSE projects -->
+          <li class="menu__item collapse">
+            <h4 class="collapse__caption">
+              <button class="collapse__button">
+                <span>PROJECTS</span>
+                <svg
+                  fill="#f7e5e5"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 10 10"
+                >
+                  <rect class="vert" height="8" width="2" y="1" x="4" />
+                  <rect height="2" width="8" y="4" x="1" />
+                </svg>
+              </button>
+            </h4>
+            <div class="collapse__inner" hidden>
+              <ul class="collapse__inner-list">
+                <li class="collapse__inner-item">
+                  <a
+                    class="collapse__inner-link collapse__inner-link_active"
+                    href="#"
+                    >landing-pages</a
+                  >
                 </li>
-
-                <!-- COLLAPSE projects -->
-                <li class="menu__item collapse">
-                    <h4 class="collapse__caption">
-                        <button class="collapse__button">
-                            <span>OTHER</span>
-                            <svg fill="#f7e5e5" aria-hidden="true" focusable="false" viewBox="0 0 10 10"><rect class="vert" height="8" width="2" y="1" x="4"/><rect height="2" width="8" y="4" x="1"/></svg> 
-                        </button>
-                    </h4>
-                    <div class="collapse__inner" hidden>
-                        <ul class="collapse__inner-list">
-                            <li class="collapse__inner-item">
-                                <a class="collapse__inner-link link_disable" href="#" tabindex="-1">maybe later.</a>
-                            </li>
-                            <li class="collapse__inner-item">
-                                <a class="collapse__inner-link link_disable" href="#" tabindex="-1">maybe later to.</a>
-                            </li>
-                        </ul>                           
-                    </div>
+                <li class="collapse__inner-item">
+                  <a class="collapse__inner-link link_disable" href="#"
+                    >applications</a
+                  >
                 </li>
-                <ul class="social menu__social">
-                        <li class="social__item">
-                            <a href="https://vk.com/drimchansky" class="social__link">
-                                <svg viewBox="0 -121 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m457.74 95.48c52.98-71.727 41.23-73.07 54.258-95.48h-101.53s-7.2148 25.051-9.418 29.535c-19.5 39.66-63.238 99.168-89.691 105.25-26.047 5.9922-22.59-55.562-20.984-82.227 1.5117-24.715 1.2539-33.363 0.52734-37.633-1.0625-6.2383-6.2969-10.789-12.578-11.582-12.949-1.6406-36.445-3.9609-62.758-2.7422l-23.539 0.78125c9.2812 20.762 15.551 14.398 18.969 38.418 3.8594 28.121 2.3398 96.547-25.355 96.547-44.398 0-94.234-133.34-95.82-136.35h-89.824l8.2188 20.566c66.238 165.82 149.08 242.62 262.43 249.01l14.75 0.42578 1.0547-14.324c1.5938-22.121 12.691-53.965 32.375-53.965 29.082 0 37.484 8.4688 56.664 32.168 18.441 22.723 31.148 36.121 60.906 36.121h75.602l-10.781-21.68c-16.836-33.801-50.605-62.777-63.793-79.586-4.7773-6.3281-9.4805-16.332-4.6133-28.434 3.9805-10.539 15.832-32.52 24.93-44.82z"/></svg>            
-                            </a>
-                        </li>
-                        <li class="social__item" data-title="persoanl number? huh.">
-                            <svg enable-background="new 0 0 348.077 348.077" version="1.1" viewBox="0 0 348.077 348.077" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m340.27 275.08l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518 0.744l-27.082 27.076c-1.711-0.943-3.482-1.928-5.344-2.973-17.102-9.476-40.509-22.464-65.14-47.113-24.704-24.701-37.704-48.144-47.209-65.257-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149 8.936-8.947c11.097-11.1 11.403-28.826 0.721-39.521l-53.755-53.767c-10.682-10.68-28.421-10.356-39.518 0.744l-15.15 15.237 0.414 0.411c-5.08 6.482-9.325 13.958-12.484 22.02-2.912 7.674-4.725 14.997-5.554 22.335-7.098 58.844 19.792 112.62 92.768 185.6 100.88 100.87 182.17 93.248 185.67 92.876 7.638-0.913 14.958-2.738 22.397-5.627 7.992-3.122 15.463-7.361 21.941-12.43l0.331 0.294 15.348-15.029c11.074-11.098 11.393-28.83 0.716-39.542z"/></svg>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://www.instagram.com/drimchansky/" class="social__link">
-                                <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48    h192c61.76,0,112,50.24,112,112V352z"/><path d="m256 128c-70.688 0-128 57.312-128 128s57.312 128 128 128 128-57.312 128-128-57.312-128-128-128zm0 208c-44.096 0-80-35.904-80-80 0-44.128 35.904-80 80-80s80 35.872 80 80c0 44.096-35.904 80-80 80z"/><circle cx="393.6" cy="118.4" r="17.056"/></svg>   
-                            </a>
-                        </li>
-                    </ul>
-            </ul>
-        </nav>
+              </ul>
+            </div>
+          </li>
 
-        <section class="container projects">
-            <a href="./index.html" class="logo">
-              <h2 class="logo__header">DRIMchansky</h2>
-              <p class="logo__caption">empty place of digital space</p>
-            </a>
-            <ul class="projects__list">
-              <li class="projects__item">
-                  
-              </li>
-            </ul>
-        </section>  
+          <!-- COLLAPSE projects -->
+          <li class="menu__item collapse">
+            <h4 class="collapse__caption">
+              <button class="collapse__button">
+                <span>OTHER</span>
+                <svg
+                  fill="#f7e5e5"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 10 10"
+                >
+                  <rect class="vert" height="8" width="2" y="1" x="4" />
+                  <rect height="2" width="8" y="4" x="1" />
+                </svg>
+              </button>
+            </h4>
+            <div class="collapse__inner" hidden>
+              <ul class="collapse__inner-list">
+                <li class="collapse__inner-item">
+                  <a
+                    class="collapse__inner-link link_disable"
+                    href="#"
+                    tabindex="-1"
+                    >maybe later.</a
+                  >
+                </li>
+                <li class="collapse__inner-item">
+                  <a
+                    class="collapse__inner-link link_disable"
+                    href="#"
+                    tabindex="-1"
+                    >maybe later to.</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <ul class="social menu__social">
+            <li class="social__item">
+              <a href="https://vk.com/drimchansky" class="social__link">
+                <svg
+                  viewBox="0 -121 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m457.74 95.48c52.98-71.727 41.23-73.07 54.258-95.48h-101.53s-7.2148 25.051-9.418 29.535c-19.5 39.66-63.238 99.168-89.691 105.25-26.047 5.9922-22.59-55.562-20.984-82.227 1.5117-24.715 1.2539-33.363 0.52734-37.633-1.0625-6.2383-6.2969-10.789-12.578-11.582-12.949-1.6406-36.445-3.9609-62.758-2.7422l-23.539 0.78125c9.2812 20.762 15.551 14.398 18.969 38.418 3.8594 28.121 2.3398 96.547-25.355 96.547-44.398 0-94.234-133.34-95.82-136.35h-89.824l8.2188 20.566c66.238 165.82 149.08 242.62 262.43 249.01l14.75 0.42578 1.0547-14.324c1.5938-22.121 12.691-53.965 32.375-53.965 29.082 0 37.484 8.4688 56.664 32.168 18.441 22.723 31.148 36.121 60.906 36.121h75.602l-10.781-21.68c-16.836-33.801-50.605-62.777-63.793-79.586-4.7773-6.3281-9.4805-16.332-4.6133-28.434 3.9805-10.539 15.832-32.52 24.93-44.82z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item" data-title="persoanl number? huh.">
+              <svg
+                enable-background="new 0 0 348.077 348.077"
+                version="1.1"
+                viewBox="0 0 348.077 348.077"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m340.27 275.08l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518 0.744l-27.082 27.076c-1.711-0.943-3.482-1.928-5.344-2.973-17.102-9.476-40.509-22.464-65.14-47.113-24.704-24.701-37.704-48.144-47.209-65.257-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149 8.936-8.947c11.097-11.1 11.403-28.826 0.721-39.521l-53.755-53.767c-10.682-10.68-28.421-10.356-39.518 0.744l-15.15 15.237 0.414 0.411c-5.08 6.482-9.325 13.958-12.484 22.02-2.912 7.674-4.725 14.997-5.554 22.335-7.098 58.844 19.792 112.62 92.768 185.6 100.88 100.87 182.17 93.248 185.67 92.876 7.638-0.913 14.958-2.738 22.397-5.627 7.992-3.122 15.463-7.361 21.941-12.43l0.331 0.294 15.348-15.029c11.074-11.098 11.393-28.83 0.716-39.542z"
+                />
+              </svg>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/drimchansky/"
+                class="social__link"
+              >
+                <svg
+                  enable-background="new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48    h192c61.76,0,112,50.24,112,112V352z"
+                  />
+                  <path
+                    d="m256 128c-70.688 0-128 57.312-128 128s57.312 128 128 128 128-57.312 128-128-57.312-128-128-128zm0 208c-44.096 0-80-35.904-80-80 0-44.128 35.904-80 80-80s80 35.872 80 80c0 44.096-35.904 80-80 80z"
+                  />
+                  <circle cx="393.6" cy="118.4" r="17.056" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
 
+      <section class="container projects">
+        <a href="./index.html" class="logo">
+          <h2 class="logo__header">DRIMchansky</h2>
+          <p class="logo__caption">empty place of digital space</p>
+        </a>
+        <ul class="projects__list">
+          <li class="projects__item"></li>
+        </ul>
+      </section>
 
-
-            <!-- FOOTER -->
-        <footer class="footer">
-            <h3 class="footer__text">drimchansky@gmail.com</h3>
-        </footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <h3 class="footer__text">drimchansky@gmail.com</h3>
+      </footer>
     </main>
 
-
-    <script src="js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>

@@ -15,7 +15,7 @@
   "rules": {
     "linebreak-style": 0,
     "no-console": "off",
-    "indent": ["error", 4],
+    "indent": ["error", 2],
+    "wrap-iife": [2, "any"]
   }
 }
-
