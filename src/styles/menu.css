@@ -1,4 +1,5 @@
 /* MENU */
+
 .menu {
   display: none;
   background: var(--theme-bg);
@@ -10,6 +11,7 @@
   z-index: 10;
   font-size: 2rem;
 }
+
 .social__item:nth-child(2):hover:after {
   content: attr(data-title);
   position: absolute;
@@ -19,6 +21,7 @@
   color: var(--theme-primary);
   font-size: 25px;
 }
+
 .menu__list {
   margin: 0;
   list-style: none;
@@ -34,6 +37,7 @@
   color: var(--theme-primary);
   font-weight: normal;
 }
+
 .visible {
   display: block;
 }

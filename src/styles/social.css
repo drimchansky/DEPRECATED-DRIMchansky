@@ -1,4 +1,5 @@
 /* SOCIAL */
+
 .social {
   list-style: none;
   font-size: 27px;
@@ -7,24 +8,29 @@
   padding: 0;
   min-width: 320px;
 }
+
 .social__item {
   height: 3em;
   width: 3em;
   position: relative;
 }
+
 .social__item svg {
   fill: var(--theme-primary);
 }
+
 .social__link {
   display: block;
   height: 100%;
   transition: all 0.2s;
 }
+
 .social__link:focus {
   outline: 1px solid var(--theme-primary);
 }
 
 /* SOCIAL MEDIA */
+
 @media screen and (min-width: 1200px) {
   .social {
     font-size: 20px;
@@ -33,6 +39,7 @@
 }
 
 /* SOCIAL MIXES */
+
 .menu__social {
   /* position: absolute;
         bottom: 25px;

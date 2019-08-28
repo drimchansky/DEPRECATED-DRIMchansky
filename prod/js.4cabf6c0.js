@@ -7,4 +7,4 @@ var t=document.querySelector(".switcher"),e=document.querySelector(".switcher__i
 },{}],"QvaY":[function(require,module,exports) {
 "use strict";require("./hamburger"),require("./switcher"),require("./collapse");
 },{"./hamburger":"+NZt","./switcher":"/hql","./collapse":"RAiU"}]},{},["QvaY"], null)
-//# sourceMappingURL=js.90773d03.js.map
+//# sourceMappingURL=js.4cabf6c0.js.map

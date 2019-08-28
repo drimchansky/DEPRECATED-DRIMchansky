@@ -1,22 +1,27 @@
 /* COLLAPSE */
+
 .collapse {
   font-size: 16px;
   color: inherit;
   width: 80%;
   box-sizing: border-box;
 }
+
 .collapse__caption {
   margin: 20px 0 10px 0;
   font-size: 1.3em;
 }
+
 .collapse__button svg {
   height: 1em;
   margin-left: 0.5em;
   fill: var(--theme-primary);
 }
+
 .collapse__button svg:focus {
   outline: 2px solid;
 }
+
 .collapse__button {
   display: flex;
   justify-content: space-between;
@@ -30,10 +35,12 @@
   color: inherit;
   outline: none;
 }
+
 .collapse__inner-list {
   list-style-type: none;
   padding: 0;
 }
+
 .collapse__inner-item {
   margin: 20px 0 0 20px;
   padding: 5px;
@@ -47,11 +54,13 @@
   font-size: 1.2em;
   text-transform: uppercase;
 }
+
 [aria-expanded='true'] .vert {
   display: none;
 }
 
 /* COLLAPSE MEDIA */
+
 @media (min-width: 576px) {
   .collapse {
     width: 550px;
