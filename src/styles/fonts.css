@@ -2,7 +2,8 @@
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  src: local('Nunito'), url('../fonts/Nunito-Regular.woff2') format('woff2'),
+  src: local('Nunito'),
+    url('../fonts/Nunito-Regular.woff2') format('woff2'),
     url('../fonts/Nunito-Regular.woff') format('woff'),
     url('../fonts/Nunito-Regular.ttf'),
     url('../fonts/Nunito-Regular.eot') format('eot');
@@ -11,7 +12,7 @@
   font-family: Anton;
   font-style: normal;
   font-weight: normal;
-  src: local('Anton'), 
+  src: local('Anton'),
     url('../fonts/Anton-Regular.woff2') format('woff2'),
     url('../fonts/Anton-Regular.woff') format('woff'),
     url('../fonts/Anton-Regular.ttf'),
