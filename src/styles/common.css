@@ -16,3 +16,7 @@ html {
   color: gray !important;
   cursor: default !important;
 }
+.link_disable:hover,
+.link_disable:focus {
+  outline: none;
+}

@@ -3,19 +3,12 @@
     "browser": true,
     "es6": true
   },
-  "extends": "airbnb-base",
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": ["error"],
     "linebreak-style": 0,
     "no-console": "off",
-    "indent": ["error", 2],
-    "wrap-iife": [2, "any"]
+    "indent": ["error", 2]
   }
 }
