@@ -1,0 +1,35 @@
+.works {
+}
+.works_small {
+  font-size: 16px;
+}
+.works_medium {
+  font-size: 18px;
+}
+.works_big {
+  font-size: 20px;
+}
+.works__list {
+  list-style-type: none;
+}
+.works__item {
+  border-left: 2px solid var(--theme-primary);
+  padding: 10px;
+}
+.works__title {
+  font-size: 1.5em;
+  margin: 0;
+}
+.works__description {
+  font-size: 1em;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.works__link {
+  font-size: 1.2em;
+  color: var(--theme-primary);
+  display: inline-block;
+  padding: 15px;
+  margin-top: 5px;
+  text-decoration: none;
+}

@@ -2,9 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 var e=document.querySelector("#hamburger"),t=document.querySelector("#menu"),s=function(){e.classList.toggle("is-active"),t.classList.toggle("visible"),e.style.outline="none"};e.addEventListener("click",s),document.addEventListener("keydown",function(s){27===s.keyCode&&(e.classList.remove("is-active"),t.classList.remove("visible"))});
 },{}],"/hql":[function(require,module,exports) {
 var t=document.querySelector(".switcher"),e=document.querySelector(".switcher__item"),n=localStorage.getItem("theme");function i(){e.classList.contains("switcher_night")?(localStorage.setItem("theme","day"),document.documentElement.setAttribute("data-theme","day"),t.style.outline="none"):(localStorage.setItem("theme","dark"),document.documentElement.setAttribute("data-theme","dark"),t.style.outline="none")}n&&("day"===n?(document.documentElement.setAttribute("data-theme","day"),e.classList.remove("switcher_night")):(document.documentElement.setAttribute("data-theme","dark"),e.classList.add("switcher_night"))),t.addEventListener("click",function(){i(),e.classList.toggle("switcher_night")}),t.addEventListener("focus",function(){t.style.outline="1px solid var(--theme-primary)"}),t.addEventListener("blur",function(){t.style.outline="none"});
-},{}],"RAiU":[function(require,module,exports) {
-!function(){var e=document.querySelectorAll(".collapse__caption");Array.prototype.forEach.call(e,function(e){var t=e.querySelector(".collapse__button"),n=e.nextElementSibling;t.onclick=function(){var e="true"===t.getAttribute("aria-expanded");t.setAttribute("aria-expanded",!e),n.hidden=e}})}();
 },{}],"QvaY":[function(require,module,exports) {
-"use strict";require("./hamburger"),require("./switcher"),require("./collapse");
-},{"./hamburger":"+NZt","./switcher":"/hql","./collapse":"RAiU"}]},{},["QvaY"], null)
-//# sourceMappingURL=js.4cabf6c0.js.map
+"use strict";require("./hamburger"),require("./switcher");
+},{"./hamburger":"+NZt","./switcher":"/hql"}]},{},["QvaY"], null)
+//# sourceMappingURL=js.1c5c9954.js.map
