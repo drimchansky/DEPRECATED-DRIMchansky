@@ -4,9 +4,9 @@
   "description": "start your web project out of box",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel src/index.html --no-cache",
+    "watch": "parcel src/index.html ./ --no-cache",
     "build": "parcel build src/index.html --public-url ./ --out-dir ./prod --no-cache",
-    "clear-all": "rimraf dist/ prod/",
+    "clean-all": "rimraf dist/ prod/",
     "clear": "rimraf dist/"
   },
   "author": "DRIMchansky",
