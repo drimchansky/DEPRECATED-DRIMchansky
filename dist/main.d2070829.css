@@ -383,29 +383,6 @@ template {
     url('../fonts/MiriamLibre-Bold.eot') format('eot');
 } */
 
-html {
-  font-size: 16px;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: 1px solid var(--theme-primary);
-  box-sizing: border-box;
-}
-
-.link_disable {
-  color: gray !important;
-  cursor: default !important;
-}
-.link_disable:hover,
-.link_disable:focus {
-  outline: none;
-}
-
 /* HAMBURGER */
 
 .hamburger {
@@ -672,6 +649,26 @@ html {
   color: var(--theme-primary);
   background: var(--theme-bg);
   font-family: var(--page-font);
+  font-size: 16px;
+}
+/* ALL ELEMENTS */
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 1px solid var(--theme-primary);
+  box-sizing: border-box;
+}
+
+/* DISABLED LINK */
+.link_disable {
+  color: gray !important;
+  cursor: default !important;
+}
+.link_disable:hover,
+.link_disable:focus {
+  outline: none;
 }
 
 /* PAGE MEDIA */
