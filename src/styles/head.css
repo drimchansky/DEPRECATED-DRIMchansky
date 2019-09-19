@@ -14,12 +14,13 @@
   letter-spacing: 2px;
   margin: 0;
   font-family: var(--logo-font);
-  letter-spacing: 1px;
+  letter-spacing: -5px;
 }
 
 .head__caption {
   font-size: 1.3em;
   margin-top: 10px;
+  font-weight: normal;
 }
 
 /* HEAD MEDIA */

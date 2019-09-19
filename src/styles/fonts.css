@@ -1,20 +1,20 @@
-@font-face {
-  font-family: Nunito;
+/* @font-face {
+  font-family: 'Miriam Libre', serif;
   font-style: normal;
   font-weight: normal;
-  src: local('Nunito'),
-    url('../fonts/Nunito-Regular.woff2') format('woff2'),
-    url('../fonts/Nunito-Regular.woff') format('woff'),
-    url('../fonts/Nunito-Regular.ttf'),
-    url('../fonts/Nunito-Regular.eot') format('eot');
+  src: local('Miriam Libre'),
+    url('../fonts/MiriamLibre-Regular.woff2') format('woff2'),
+    url('../fonts/MiriamLibre-Regular.woff') format('woff'),
+    url('../fonts/MiriamLibre-Regular.ttf'),
+    url('../fonts/MiriamLibre-Regular.eot') format('eot');
 }
 @font-face {
-  font-family: Anton;
+  font-family: 'Miriam Libre', serif;
   font-style: normal;
-  font-weight: normal;
-  src: local('Anton'),
-    url('../fonts/Anton-Regular.woff2') format('woff2'),
-    url('../fonts/Anton-Regular.woff') format('woff'),
-    url('../fonts/Anton-Regular.ttf'),
-    url('../fonts/Anton-Regular.eot') format('eot');
-}
+  font-weight: bold;
+  src: local('Miriam Libre'),
+    url('../fonts/MiriamLibre-Bold.woff2') format('woff2'),
+    url('../fonts/MiriamLibre-Bold.woff') format('woff'),
+    url('../fonts/MiriamLibre-Bold.ttf'),
+    url('../fonts/MiriamLibre-Bold.eot') format('eot');
+} */
