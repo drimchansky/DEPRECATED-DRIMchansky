@@ -3,8 +3,8 @@
 :root {
   --theme-bg: #16141a;
   --theme-primary: #ecdede;
-  --logo-font: 'Anton', sans-serif;
-  --page-font: 'Nunito', sans-serif;
+  --logo-font: 'Miriam Libre', sans-serif;
+  --page-font: 'Miriam Libre', sans-serif;
 }
 
 [data-theme='day'] {
