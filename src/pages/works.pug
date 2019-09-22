@@ -8,11 +8,19 @@ html( lang="en" class="page")
     body.page__body
       include ./_hamburger.pug
       include ./_menu.pug
-      include ./_switcher.pug
       include ./_footer.pug
       .container
         include ./_logo.pug
-
+        main.works
+          ul.works__list
+            li.works__item
+              h3.works__title Repair-design
+              p.works__description vanilla HTML/CSS/JS with PostCSS, building using Parcel
+              ul.works__link-list
+                li.works__link-item
+                  a(href="https://drimchansky.github.io/Repair-design/prod/" class="works__link") Webpage
+                li.works__link-item
+                  a(href="https://github.com/DRIMchansky/repair-design" class="works__link")  Source
 
 
         script(src='../js/index.js')
