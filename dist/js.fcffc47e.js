@@ -186,7 +186,9 @@ require("./hamburger");
 require("./switcher");
 
 require("../pages/works.pug");
-},{"./hamburger":"../js/hamburger.js","./switcher":"../js/switcher.js","../pages/works.pug":"works.pug"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("../pages/skills.pug");
+},{"./hamburger":"../js/hamburger.js","./switcher":"../js/switcher.js","../pages/works.pug":"works.pug","../pages/skills.pug":"skills.pug"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -214,7 +216,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5567" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6056" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -511,6 +513,6 @@ module.exports = function loadHTMLBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require("../../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["works.html","works.pug"]]).then(function(){require("../js/index.js");});
+var b=require("../../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["works.html","works.pug"],["skills.html","skills.pug"]]).then(function(){require("../js/index.js");});
 },{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/js.fcffc47e.js.map

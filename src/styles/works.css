@@ -15,7 +15,7 @@
   border-top: 3px solid var(--theme-primary);
   width: 100%;
   max-width: 630px;
-  padding: 2em 0 3em;
+  padding: 2em 0.5em 3em;
   position: relative;
 }
 .works__item:before {

@@ -677,36 +677,6 @@ template {
   }
 }
 
-/* PROJECT */
-
-.empty {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  font-size: 16px;
-}
-
-.empty__list {
-  list-style-type: none;
-  width: 100%;
-  height: 100%;
-}
-
-.empty__item {
-  height: 50%;
-  margin-top: 30vh;
-  background-image: url(/fogg-page-not-found-1.448ed160.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  background-size: contain;
-  font-size: 1.7em;
-}
-
 /* SOCIAL */
 
 .social {
@@ -836,7 +806,7 @@ template {
   border-top: 3px solid var(--theme-primary);
   width: 100%;
   max-width: 630px;
-  padding: 2em 0 3em;
+  padding: 2em 0.5em 3em;
   position: relative;
 }
 .works__item:before {
@@ -904,6 +874,14 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
+}
+
+.skills {
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url(/fogg-page-not-found-1.448ed160.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 

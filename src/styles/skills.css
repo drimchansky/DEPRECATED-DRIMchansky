@@ -1,0 +1,7 @@
+.skills {
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url(../img/fogg-page-not-found-1.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
