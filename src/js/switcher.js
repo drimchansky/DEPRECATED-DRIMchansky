@@ -31,13 +31,13 @@ function switchTheme() {
   }
 }
 
+function switcherSetOutline() {
+  switcher.style.outline = 'outline: 4px solid #80b3ff';
+}
+
 switcher.addEventListener('click', () => {
   switchTheme();
   switcherItem.classList.toggle('switcher_night');
 });
-switcher.addEventListener('focus', () => {
-  switcher.style.outline = '1px solid var(--theme-primary)';
-});
-switcher.addEventListener('blur', () => {
-  switcher.style.outline = 'none';
-});
+switcher.addEventListener('focus', switcherSetOutline);
+switcher.addEventListener('blur', switcherSetOutline);

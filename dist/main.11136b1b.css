@@ -391,10 +391,10 @@ template {
   right: 5px;
   top: 20px;
   z-index: 11;
-  padding: 15px 15px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: transform ease 0.3s;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -410,10 +410,6 @@ template {
 
 .hamburger.is-active:hover {
   opacity: 0.7;
-}
-
-.hamburger:focus {
-  outline: 2px solid var(--theme-primary);
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -659,11 +655,10 @@ template {
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: 1px solid var(--theme-primary);
-  box-sizing: border-box;
+*:focus:not([tabindex='-1']) {
+  outline: 4px solid #80b3ff;
+  outline-offset: 2px;
 }
-
 /* DISABLED LINK */
 .link_disable {
   color: gray !important;
@@ -750,10 +745,6 @@ template {
   display: block;
   height: 100%;
   transition: all 0.2s;
-}
-
-.social__link:focus {
-  outline: 1px solid var(--theme-primary);
 }
 
 /* SOCIAL MEDIA */

@@ -6,10 +6,10 @@
   right: 5px;
   top: 20px;
   z-index: 11;
-  padding: 15px 15px;
+  padding: 15px;
   display: inline-block;
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: transform ease 0.3s;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -25,10 +25,6 @@
 
 .hamburger.is-active:hover {
   opacity: 0.7;
-}
-
-.hamburger:focus {
-  outline: 2px solid var(--theme-primary);
 }
 
 .hamburger.is-active .hamburger-inner,
