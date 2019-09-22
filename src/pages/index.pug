@@ -5,7 +5,27 @@ html( lang="en" class="page")
     include ./_meta.pug
     link( rel="icon" href="../img/favicon.ico")
     link(rel='stylesheet', href='../styles/main.css')
-
+    script
+      include ../js/chrome-vh-fix.js
+    body.page__body
+      include ./_hamburger.pug
+      include ./_menu.pug
+      main.container
+        .head
+          h1.head__header DRIMchansky
+          span.head__caption empty place of digital space
+          ul( class="social home_social")
+            li.social__item
+              a( href="https://github.com/DRIMchansky" class="social__link")
+                include ../img/github.svg
+            li.social__item
+              a( href="https://twitter.com/DRIMchansky" class="social__link")
+                include ../img/twitter.svg
+            li.social__item
+              a( href="https://t.me/DRIMchansky" class="social__link")
+                include ../img/telegram.svg
+        include ./_footer.pug
+        include ./_switcher.pug
 
 
 

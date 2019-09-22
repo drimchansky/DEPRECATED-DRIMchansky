@@ -502,7 +502,7 @@ template {
 /* FOOTER */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 5px;
   text-align: center;
   font-size: 16px;
@@ -546,7 +546,7 @@ template {
 
 .head__caption {
   font-size: 1.3em;
-  margin-top: 10px;
+  margin: 5px 0 20px 0;
   font-weight: normal;
 }
 
@@ -766,8 +766,11 @@ template {
 
 /* SOCIAL MIXES */
 
-.menu__social {
+.menu_social {
   margin-top: auto;
+}
+.home_social {
+  margin: 0;
 }
 
 /* switcher */

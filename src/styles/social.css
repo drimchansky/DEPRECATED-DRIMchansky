@@ -55,6 +55,9 @@
 
 /* SOCIAL MIXES */
 
-.menu__social {
+.menu_social {
   margin-top: auto;
+}
+.home_social {
+  margin: 0;
 }
