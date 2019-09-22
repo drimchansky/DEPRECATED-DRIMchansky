@@ -4,10 +4,9 @@
   "description": "start your web project out of box",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel src/index.html ./ --no-cache",
-    "build": "parcel build src/index.html --public-url ./ --out-dir ./prod --no-cache",
-    "clear-all": "rimraf dist/ prod/",
-    "clear": "rimraf dist/"
+    "watch": "parcel src/pages/index.pug ./ --no-cache",
+    "build": "parcel build src/pages/index.pug --public-url ./ --out-dir ./prod --no-cache",
+    "clear": "rimraf dist/ prod/"
   },
   "author": "DRIMchansky",
   "license": "ISC",
@@ -22,6 +21,7 @@
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.3",
     "postcss": "^7.0.17",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "pug": "^2.0.4"
   }
 }
