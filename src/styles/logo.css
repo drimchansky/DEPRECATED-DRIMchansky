@@ -1,9 +1,9 @@
 /* LOGO */
 
 .logo {
-  position: absolute;
-  left: 1em;
-  top: 1em;
+  position: fixed;
+  padding: 15px;
+  top: 15px;
   color: var(--theme-primary);
   text-decoration: none;
   padding: 0.5em;

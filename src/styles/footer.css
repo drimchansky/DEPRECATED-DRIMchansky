@@ -1,19 +1,20 @@
 /* FOOTER */
 
 .footer {
-  position: absolute;
-  bottom: 5px;
-  text-align: center;
-  font-size: 16px;
-  text-align: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background: var(--theme-bg);
+  text-align: center;
   z-index: 8;
 }
 
 .footer__text {
   color: var(--theme-primary);
-  font-size: 1.3em;
+  font-size: 20px;
   display: inline;
+  margin: 0;
 }
 
 /* FOOTER MEDIA */

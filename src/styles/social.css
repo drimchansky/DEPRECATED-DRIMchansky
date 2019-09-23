@@ -38,10 +38,6 @@
   transition: all 0.2s;
 }
 
-.social__link:focus {
-  outline: 1px solid var(--theme-primary);
-}
-
 /* SOCIAL MEDIA */
 
 @media screen and (min-width: 1200px) {
@@ -55,6 +51,9 @@
 
 /* SOCIAL MIXES */
 
-.menu__social {
+.menu_social {
   margin-top: auto;
+}
+.home_social {
+  margin: 0;
 }

@@ -1,60 +1,90 @@
+/* WORKS */
 .works {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .works__list {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   list-style-type: none;
-  margin: 80px 0 0 0;
   padding: 0;
+  flex: 1 0 auto;
 }
 .works__item {
-  border-left: 2px solid var(--theme-primary);
-  padding: 0 0 0 19px;
+  border-top: 3px solid var(--theme-primary);
+  width: 100%;
+  max-width: 630px;
+  padding: 2em 0.5em 3em;
+  position: relative;
 }
-.works__item_small {
-  font-size: 16px;
+.works__item:before {
+  position: absolute;
+  content: '';
+  top: -2.4px;
+  left: 0;
+  height: 1.2em;
+  width: 2.8em;
+  background: var(--theme-bg);
+  border-right: 3px solid;
 }
-.works__item_big {
-  font-size: 20px;
-}
-.works__item:not(:first-child) {
-  margin-top: 20px;
+.works__item:after {
+  position: absolute;
+  content: '';
+  top: 0.8em;
+  left: 2.55em;
+  background: var(--theme-bg);
+  height: 0.5em;
+  width: 0.5em;
+  border: 2px solid;
+  border-radius: 50%;
 }
 .works__title {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
 }
 .works__description {
-  font-size: 1em;
-  padding: 0;
+  margin: 5px 0 0 0;
+  font-size: 0.7em;
+  max-width: 70%;
+}
+.works__link-list {
+  list-style-type: none;
   margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+}
+.works__link-item:not(:first-child) {
+  margin-left: 20px;
 }
 .works__link {
-  font-size: 20px;
   color: var(--theme-primary);
-  display: inline-block;
-  padding: 15px 15px 15px 0;
-  margin-top: 5px;
+  padding: 3px 0;
   text-decoration: none;
+  border-bottom: 2px dashed var(--theme-primary);
 }
-
+.works__link {
+}
 /* WORKS MEDIA */
 
 @media screen and (min-width: 576px) {
-  .works__list {
-    padding-left: 25px;
+  .works {
+    font-size: 20px;
+  }
+  .works__description {
+    font-size: 0.6em;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .head {
-    font-size: 23px;
-  }
-  .head__caption {
-    font-size: 0.9em;
+  .works {
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .head {
-    align-items: flex-start;
-  }
 }

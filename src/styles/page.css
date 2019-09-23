@@ -4,7 +4,7 @@
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   color: var(--theme-primary);
   background: var(--theme-bg);
   font-family: var(--page-font);
@@ -15,11 +15,10 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: 1px solid var(--theme-primary);
-  box-sizing: border-box;
+*:focus:not([tabindex='-1']) {
+  outline: 4px solid #80b3ff;
+  outline-offset: 2px;
 }
-
 /* DISABLED LINK */
 .link_disable {
   color: gray !important;
