@@ -1,7 +1,7 @@
 /* HAMBURGER */
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   right: 5px;
   top: 20px;
@@ -100,4 +100,7 @@
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.075s ease, transform 0.075s 0.12s;
+}
+.scroll-disable {
+  overflow: hidden;
 }

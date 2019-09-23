@@ -4,7 +4,7 @@
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   color: var(--theme-primary);
   background: var(--theme-bg);
   font-family: var(--page-font);
