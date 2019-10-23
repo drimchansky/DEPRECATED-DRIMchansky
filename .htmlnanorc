@@ -1,15 +1,15 @@
 {
-    "collapseAttributeWhitespace": false,
-    "collapseBooleanAttributes": false,
-    "collapseWhitespace": false,
+    "collapseAttributeWhitespace": true,
+    "collapseBooleanAttributes": true,
+    "collapseWhitespace": true,
     "custom": [],
-    "deduplicateAttributeValues": false,
-    "mergeScripts": false,
-    "mergeStyles": false,
-    "removeUnusedCss": false,
-    "minifyJson": false,
-    "minifySvg": false,
-    "removeEmptyAttributes": false,
-    "removeRedundantAttributes": false,
-    "removeComments": false
+    "deduplicateAttributeValues": true,
+    "mergeScripts": true,
+    "mergeStyles": true,
+    "removeUnusedCss": true,
+    "minifyJson": true,
+    "minifySvg": true,
+    "removeEmptyAttributes": true,
+    "removeRedundantAttributes": true,
+    "removeComments": true
 }
