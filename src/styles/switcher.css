@@ -1,9 +1,28 @@
 /* SWITCHER */
 .switcher {
   position: absolute;
-  background: red;
+  background: none;
   height: 50px;
   width: 50px;
   left: 20px;
   top: 20px;
+  padding: 2px;
+  margin: 0;
+  border: none;
+}
+.switcher .light,
+.switcher .dark {
+  display: none;
+}
+.switcher.switcher--light .light {
+  display: block;
+}
+.switcher.switcher--light .light svg {
+  fill: var(--theme-primary);
+}
+.switcher.switcher--dark .dark {
+  display: block;
+}
+.switcher.switcher--dark .dark svg {
+  fill: var(--theme-primary);
 }

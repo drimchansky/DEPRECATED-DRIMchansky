@@ -7,7 +7,7 @@
   --page-font: 'Miriam Libre', sans-serif;
 }
 
-[data-theme='day'] {
+.light-mode {
   --theme-bg: #ecdede;
   --theme-primary: #16141a;
 }
