@@ -10,6 +10,9 @@
   margin: 0;
   border: none;
 }
+.page_secondary .switcher {
+  display: none;
+}
 .switcher .light,
 .switcher .dark {
   display: none;
@@ -25,4 +28,17 @@
 }
 .switcher.switcher--dark .dark svg {
   fill: var(--theme-primary);
+}
+
+/* SWITCHER MEDIA */
+@media screen and (min-width: 576px) {
+  .switcher {
+    left: auto;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+  }
+  .page_secondary .switcher {
+    display: block;
+  }
 }

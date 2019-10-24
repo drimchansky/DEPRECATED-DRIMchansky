@@ -1,7 +1,6 @@
 /* PAGE */
 
 .page {
-  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: relative;
   overflow-x: hidden;
@@ -9,6 +8,9 @@
   background: var(--theme-bg);
   font-family: var(--page-font);
   font-size: 16px;
+}
+.page__body {
+  height: calc(var(--vh, 1vh) * 100);
 }
 /* ALL ELEMENTS */
 * {

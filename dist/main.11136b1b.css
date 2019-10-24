@@ -645,7 +645,6 @@ template {
 /* PAGE */
 
 .page {
-  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: relative;
   overflow-x: hidden;
@@ -653,6 +652,9 @@ template {
   background: var(--theme-bg);
   font-family: var(--page-font);
   font-size: 16px;
+}
+.page__body {
+  height: calc(var(--vh, 1vh) * 100);
 }
 /* ALL ELEMENTS */
 * {
@@ -753,6 +755,9 @@ template {
   margin: 0;
   border: none;
 }
+.page_secondary .switcher {
+  display: none;
+}
 .switcher .light,
 .switcher .dark {
   display: none;
@@ -768,6 +773,19 @@ template {
 }
 .switcher.switcher--dark .dark svg {
   fill: var(--theme-primary);
+}
+
+/* SWITCHER MEDIA */
+@media screen and (min-width: 576px) {
+  .switcher {
+    left: auto;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+  }
+  .page_secondary .switcher {
+    display: block;
+  }
 }
 
 /* WORKS */
