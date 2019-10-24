@@ -26,7 +26,6 @@
     top: -50px;
     width: 290px;
     filter: contrast(300%);
-    color: #ecdede;
     color: var(--theme-primary);
     font-size: 25px;
   }
@@ -36,7 +35,6 @@
   }
 
   &__item svg {
-    fill: #ecdede;
     fill: var(--theme-primary);
   }
 

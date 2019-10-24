@@ -4,11 +4,8 @@
   width: 100vw;
   position: relative;
   overflow-x: hidden;
-  color: #ecdede;
   color: var(--theme-primary);
-  background: #16141a;
   background: var(--theme-bg);
-  font-family: 'Miriam Libre', sans-serif;
   font-family: var(--page-font);
   font-size: 16px;
 

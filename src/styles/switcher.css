@@ -31,7 +31,6 @@
 }
 
 .switcher.switcher--light .light svg {
-  fill: #ecdede;
   fill: var(--theme-primary);
 }
 
@@ -40,7 +39,6 @@
 }
 
 .switcher.switcher--dark .dark svg {
-  fill: #ecdede;
   fill: var(--theme-primary);
 }
 

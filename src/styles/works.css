@@ -18,7 +18,6 @@
   }
 
   &__item {
-    border-top: 3px solid #ecdede;
     border-top: 3px solid var(--theme-primary);
     width: 100%;
     max-width: 630px;
@@ -33,7 +32,6 @@
     left: -1px;
     height: 1.5em;
     width: 7em;
-    background: #16141a;
     background: var(--theme-bg);
   }
 
@@ -60,11 +58,9 @@
   }
 
   &__link {
-    color: #ecdede;
     color: var(--theme-primary);
     padding: 3px 0;
     text-decoration: none;
-    border-bottom: 2px dashed #ecdede;
     border-bottom: 2px dashed var(--theme-primary);
   }
 }

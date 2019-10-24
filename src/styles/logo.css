@@ -3,7 +3,6 @@
 .logo {
   position: fixed;
   top: 15px;
-  color: #ecdede;
   color: var(--theme-primary);
   text-decoration: none;
   padding: 0.5em;
@@ -11,7 +10,6 @@
   &__header {
     margin: 0;
     padding: 0;
-    font-family: 'Miriam Libre', sans-serif;
     font-family: var(--logo-font);
   }
 

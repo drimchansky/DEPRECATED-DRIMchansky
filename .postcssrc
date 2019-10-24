@@ -4,7 +4,10 @@
     "autoprefixer": {
       "grid": true
     },
-    "postcss-custom-properties": {},
+    "postcss-custom-properties": {
+       "preserve": true,
+       "importFrom": "./src/styles/properties.css"
+    },
     "postcss-nested": {},
     "postcss-import": {}
   }
