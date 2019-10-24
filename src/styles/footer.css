@@ -1,10 +1,10 @@
 /* FOOTER */
 
 .footer {
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   position: fixed;
   bottom: 0;
-  text-align: center;
   background: var(--theme-bg);
   text-align: center;
   z-index: 8;

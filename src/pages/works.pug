@@ -1,8 +1,9 @@
 doctype html
-html( lang="en" class="page")
+html( lang="en" class="page page_secondary")
   head
     title DRIMchansky - Works
     include ./_meta.pug
+    script( defer src='../js/lightMode.js')
     script
       include ../js/chrome-vh-fix.js
     body.page__body
@@ -31,5 +32,6 @@ html( lang="en" class="page")
                   a(href="https://github.com/DRIMchansky/Bakery" class="works__link")  Source
 
 
-
+        
         script(src='../js/index.js')
+      include ./_switcher.pug

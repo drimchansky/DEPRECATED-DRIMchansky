@@ -15,7 +15,7 @@
   padding: 1px;
 }
 
-.social__item:nth-child(2):hover:after {
+.social__item:nth-child(2):hover::after {
   content: attr(data-title);
   position: absolute;
   right: -60px;
@@ -24,6 +24,7 @@
   color: var(--theme-primary);
   font-size: 25px;
 }
+
 .social__item:nth-child(2) {
   margin: 0 15px;
 }
@@ -35,13 +36,10 @@
 .social__link {
   display: block;
   height: 100%;
-  transition: all 0.2s;
 }
 
 /* SOCIAL MEDIA */
 
-@media screen and (min-width: 1200px) {
-}
 @media screen and (min-width: 1200px) {
   .social {
     font-size: 20px;
@@ -54,6 +52,7 @@
 .menu_social {
   margin-top: auto;
 }
+
 .home_social {
   margin: 0;
 }

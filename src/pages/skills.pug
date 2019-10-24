@@ -1,13 +1,15 @@
 doctype html
-html( lang="en" class="page")
+html( lang="en" class="page page page_secondary")
   head
     title DRIMchansky - Skills
     include ./_meta.pug
+    script( defer src='../js/lightMode.js')
     script
       include ../js/chrome-vh-fix.js
     body.page__body
       include ./_hamburger.pug
       include ./_footer.pug
+      include ./_switcher.pug
       include ./_menu.pug
       .container
         include ./_logo.pug
