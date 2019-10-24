@@ -55,3 +55,12 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .switcher {
+    transition: transform 0.3s;
+  }
+  .menu-on .switcher {
+    transform: translateX(-417px);
+  }
+}

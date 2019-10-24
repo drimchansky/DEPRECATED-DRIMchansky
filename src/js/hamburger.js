@@ -12,7 +12,7 @@ const disableOutline = () => {
 const hamburgerToggle = () => {
   hamburger.classList.toggle('is-active');
   menu.classList.toggle('visible');
-  html.classList.toggle('scroll-disable');
+  html.classList.toggle('menu-on');
   disableOutline();
 };
 

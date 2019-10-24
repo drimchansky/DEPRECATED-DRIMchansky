@@ -12,7 +12,7 @@
     font-size: 3em;
     margin: 0;
     font-family: var(--logo-font);
-    letter-spacing: -5px;
+    letter-spacing: -3px;
   }
 
   &__caption {

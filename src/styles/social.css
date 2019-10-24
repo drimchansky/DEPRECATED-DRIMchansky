@@ -22,7 +22,7 @@
   &__item:nth-child(2):hover::after {
     content: attr(data-title);
     position: absolute;
-    right: -60px;
+    right: -80px;
     top: -50px;
     width: 290px;
     filter: contrast(300%);
@@ -64,13 +64,6 @@
 }
 
 @media screen and (min-width: 576px) {
-  .switcher {
-    left: auto;
-    top: auto;
-    right: 20px;
-    bottom: 20px;
-  }
-
   .page_secondary .switcher {
     display: block;
   }
