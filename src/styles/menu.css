@@ -43,7 +43,30 @@
     padding: 10px 10px 0 10px;
     text-decoration: none;
     font-size: 3em;
-    border-bottom: 2px dashed var(--theme-primary);
+    border-bottom: 3px dashed var(--theme-primary);
+    position: relative;
+
+    &:focus {
+      outline: none !important;
+    }
+
+    &::before {
+      content: attr(data-name);
+      position: absolute;
+      transition: opacity 0.2s;
+      opacity: 0;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      position: absolute;
+      top: 13px;
+      left: 14px;
+      opacity: 0.7;
+      color: var(--theme-accent);
+      /* border-bottom: 3px dashed var(--theme-accent); */
+      z-index: -1;
+    }
   }
 }
 

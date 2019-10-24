@@ -15,6 +15,7 @@
 }
 
 /* ALL ELEMENTS */
+
 * {
   box-sizing: border-box;
 }
@@ -23,9 +24,13 @@
   outline: none;
 }
 
+.disable-outline {
+  outline: none !important;
+}
+
 @media screen and (min-width: 576px) {
   *:focus:not([tabindex='-1']) {
-    outline: 4px solid #02b9d5;
+    outline: 4px solid var(--theme-accent);
     outline-offset: 2px;
   }
 }

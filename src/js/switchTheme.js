@@ -15,17 +15,31 @@
     modeSwither.classList.remove('switcher--light');
     modeSwither.classList.add('switcher--dark');
   };
+
+  const enableOutline = () => {
+    modeSwither.classList.remove('disable-outline');
+  };
+  const disableOutline = () => {
+    modeSwither.classList.add('disable-outline');
+  };
+
   if (lightMode === 'enabled') {
     enableLightMode();
   } else {
     disableLightMode();
   }
+
   modeSwither.addEventListener('click', () => {
     lightMode = localStorage.getItem('lightMode');
+    disableOutline();
     if (lightMode !== 'enabled') {
       enableLightMode();
     } else {
       disableLightMode();
     }
+  });
+
+  modeSwither.addEventListener('blur', () => {
+    enableOutline();
   });
 })();
