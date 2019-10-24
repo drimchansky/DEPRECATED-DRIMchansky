@@ -1,13 +1,13 @@
 /* PAGE */
 
 .page {
-  width: 100vw;
   position: relative;
+  width: 100vw;
   overflow-x: hidden;
-  color: var(--theme-primary);
-  background: var(--theme-bg);
   font-family: var(--page-font);
   font-size: 16px;
+  color: var(--theme-primary);
+  background: var(--theme-bg);
 
   &__body {
     height: calc(var(--vh, 1vh) * 100);

@@ -1,19 +1,19 @@
 /* FOOTER */
 
 .footer {
-  left: 50%;
-  transform: translateX(-50%);
   position: fixed;
   bottom: 0;
-  background: var(--theme-bg);
-  text-align: center;
+  left: 50%;
   z-index: 8;
+  text-align: center;
+  background: var(--theme-bg);
+  transform: translateX(-50%);
 
   &__text {
-    color: var(--theme-primary);
-    font-size: 20px;
     display: inline;
     margin: 0;
+    font-size: 20px;
+    color: var(--theme-primary);
   }
 }
 

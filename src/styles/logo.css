@@ -3,18 +3,18 @@
 .logo {
   position: fixed;
   top: 15px;
+  padding: 0.5em;
   color: var(--theme-primary);
   text-decoration: none;
-  padding: 0.5em;
 
   &__header {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: var(--logo-font);
   }
 
   &__caption {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 }

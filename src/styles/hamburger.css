@@ -2,21 +2,21 @@
 
 .hamburger {
   position: fixed;
-  box-sizing: border-box;
-  right: 15px;
   top: 20px;
+  right: 15px;
   z-index: 11;
-  padding: 10px;
+  box-sizing: border-box;
   display: inline-block;
-  cursor: pointer;
-  transition: transform ease 0.3s opacity 0.2s;
+  padding: 10px;
+  margin: 0;
+  overflow: visible;
   font: inherit;
   color: inherit;
   text-transform: none;
+  cursor: pointer;
   background-color: transparent;
   border: 0;
-  margin: 0;
-  overflow: visible;
+  transition: transform ease 0.3s opacity 0.2s;
 }
 
 .hamburger:hover {
@@ -24,35 +24,35 @@
 }
 
 .hamburger-box {
+  position: relative;
+  display: inline-block;
   width: 40px;
   height: 24px;
-  display: inline-block;
-  position: relative;
 }
 
 .hamburger-inner {
-  display: block;
   top: 50%;
+  display: block;
   margin-top: -2px;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
+  position: absolute;
   width: 40px;
   height: 4px;
   background-color: var(--theme-primary);
   border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
   transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform;
 }
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: '';
   display: block;
+  content: '';
 }
 
 .hamburger-inner::before {
@@ -68,28 +68,36 @@
 }
 
 .hamburger .hamburger-inner::before {
-  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  transition:
+    top 0.075s 0.12s ease,
+    opacity 0.075s ease;
 }
 
 .hamburger--squeeze .hamburger-inner::after {
-  transition: bottom 0.075s 0.12s ease, transform 0.075s;
+  transition:
+    bottom 0.075s 0.12s ease,
+    transform 0.075s;
 }
 
 .hamburger.is-active .hamburger-inner {
-  transform: rotate(45deg);
   transition-delay: 0.12s;
+  transform: rotate(45deg);
 }
 
 .hamburger.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  transition:
+    top 0.075s ease,
+    opacity 0.075s 0.12s ease;
 }
 
 .hamburger.is-active .hamburger-inner::after {
   bottom: 0;
+  transition:
+    bottom 0.075s ease,
+    transform 0.075s 0.12s;
   transform: rotate(-90deg);
-  transition: bottom 0.075s ease, transform 0.075s 0.12s;
 }
 
 .hamburger.is-active:hover {
