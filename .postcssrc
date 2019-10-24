@@ -3,6 +3,9 @@
   "plugins": {
     "autoprefixer": {
       "grid": true
-    }
+    },
+    "postcss-custom-properties": {},
+    "postcss-nested": {},
+    "postcss-import": {}
   }
 }

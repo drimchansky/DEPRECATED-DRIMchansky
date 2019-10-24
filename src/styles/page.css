@@ -4,14 +4,17 @@
   width: 100vw;
   position: relative;
   overflow-x: hidden;
+  color: #ecdede;
   color: var(--theme-primary);
+  background: #16141a;
   background: var(--theme-bg);
+  font-family: 'Miriam Libre', sans-serif;
   font-family: var(--page-font);
   font-size: 16px;
-}
 
-.page__body {
-  height: calc(var(--vh, 1vh) * 100);
+  &__body {
+    height: calc(var(--vh, 1vh) * 100);
+  }
 }
 
 /* ALL ELEMENTS */
@@ -22,24 +25,4 @@
 *:focus:not([tabindex='-1']) {
   outline: 4px solid #02b9d5;
   outline-offset: 2px;
-}
-
-/* DISABLED LINK */
-
-.link_disable {
-  color: gray !important;
-  cursor: default !important;
-}
-
-.link_disable:hover,
-.link_disable:focus {
-  outline: none;
-}
-
-/* PAGE MEDIA */
-
-@media screen and (min-width: 1200px) {
-  .page::after {
-    opacity: 0.4;
-  }
 }

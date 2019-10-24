@@ -5,16 +5,18 @@
   transform: translateX(-50%);
   position: fixed;
   bottom: 0;
+  background: #16141a;
   background: var(--theme-bg);
   text-align: center;
   z-index: 8;
-}
 
-.footer__text {
-  color: var(--theme-primary);
-  font-size: 20px;
-  display: inline;
-  margin: 0;
+  &__text {
+    color: #ecdede;
+    color: var(--theme-primary);
+    font-size: 20px;
+    display: inline;
+    margin: 0;
+  }
 }
 
 /* FOOTER MEDIA */

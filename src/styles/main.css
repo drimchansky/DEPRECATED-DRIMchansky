@@ -12,3 +12,12 @@
 @import './switcher.css';
 @import './works.css';
 @import './skills.css';
+
+.test {
+  display: grid;
+  color: var(--theme-primary);
+
+  &__content {
+    border: 1px solid red;
+  }
+}

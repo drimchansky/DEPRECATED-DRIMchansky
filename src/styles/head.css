@@ -7,19 +7,20 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
-}
 
-.head__header {
-  font-size: 3em;
-  margin: 0;
-  font-family: var(--logo-font);
-  letter-spacing: -5px;
-}
+  &__header {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Miriam Libre', sans-serif;
+    font-family: var(--logo-font);
+    letter-spacing: -5px;
+  }
 
-.head__caption {
-  font-size: 1.3em;
-  margin: 5px 0 20px 0;
-  font-weight: normal;
+  &__caption {
+    font-size: 1.3em;
+    margin: 5px 0 20px 0;
+    font-weight: normal;
+  }
 }
 
 /* HEAD MEDIA */
@@ -33,10 +34,10 @@
 @media screen and (min-width: 992px) {
   .head {
     font-size: 23px;
-  }
 
-  .head__caption {
-    font-size: 0.9em;
+    &__caption {
+      font-size: 0.9em;
+    }
   }
 }
 
