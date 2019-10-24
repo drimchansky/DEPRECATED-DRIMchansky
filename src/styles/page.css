@@ -23,6 +23,12 @@
 }
 
 *:focus:not([tabindex='-1']) {
-  outline: 4px solid #02b9d5;
-  outline-offset: 2px;
+  outline: none;
+}
+
+@media screen and (min-width: 576px) {
+  *:focus:not([tabindex='-1']) {
+    outline: 4px solid #02b9d5;
+    outline-offset: 2px;
+  }
 }

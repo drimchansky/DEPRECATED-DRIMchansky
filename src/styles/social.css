@@ -12,6 +12,11 @@
     width: 3em;
     position: relative;
     padding: 1px;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__item:nth-child(2):hover::after {
@@ -19,7 +24,8 @@
     position: absolute;
     right: -60px;
     top: -50px;
-    width: 270px;
+    width: 290px;
+    filter: contrast(300%);
     color: #ecdede;
     color: var(--theme-primary);
     font-size: 25px;
@@ -56,5 +62,18 @@
   .social {
     font-size: 20px;
     min-width: 250px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .switcher {
+    left: auto;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .page_secondary .switcher {
+    display: block;
   }
 }
