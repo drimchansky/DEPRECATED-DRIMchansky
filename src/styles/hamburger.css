@@ -3,10 +3,10 @@
 .hamburger {
   position: fixed;
   box-sizing: border-box;
-  right: 5px;
+  right: 15px;
   top: 20px;
   z-index: 11;
-  padding: 15px;
+  padding: 10px;
   display: inline-block;
   cursor: pointer;
   transition: transform ease 0.3s;
@@ -21,16 +21,6 @@
 
 .hamburger:hover {
   opacity: 0.7;
-}
-
-.hamburger.is-active:hover {
-  opacity: 0.7;
-}
-
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: var(--theme-primary);
 }
 
 .hamburger-box {
@@ -101,6 +91,17 @@
   transform: rotate(-90deg);
   transition: bottom 0.075s ease, transform 0.075s 0.12s;
 }
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: var(--theme-primary);
+}
+
 .scroll-disable {
   overflow: hidden;
 }

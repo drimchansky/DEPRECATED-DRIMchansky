@@ -11,7 +11,6 @@
 
 .head__header {
   font-size: 3em;
-  letter-spacing: 2px;
   margin: 0;
   font-family: var(--logo-font);
   letter-spacing: -5px;
@@ -35,6 +34,7 @@
   .head {
     font-size: 23px;
   }
+
   .head__caption {
     font-size: 0.9em;
   }

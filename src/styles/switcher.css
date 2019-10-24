@@ -9,23 +9,30 @@
   padding: 2px;
   margin: 0;
   border: none;
+  cursor: pointer;
 }
+
 .page_secondary .switcher {
   display: none;
 }
+
 .switcher .light,
 .switcher .dark {
   display: none;
 }
+
 .switcher.switcher--light .light {
   display: block;
 }
+
 .switcher.switcher--light .light svg {
   fill: var(--theme-primary);
 }
+
 .switcher.switcher--dark .dark {
   display: block;
 }
+
 .switcher.switcher--dark .dark svg {
   fill: var(--theme-primary);
 }
@@ -38,6 +45,7 @@
     right: 20px;
     bottom: 20px;
   }
+
   .page_secondary .switcher {
     display: block;
   }

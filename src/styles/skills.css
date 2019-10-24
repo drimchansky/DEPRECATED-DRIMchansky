@@ -1,9 +1,12 @@
+/* SKILLS */
+
 .skills {
   height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .skills img {
   width: 80%;
   max-width: 600px;

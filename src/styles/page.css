@@ -9,23 +9,28 @@
   font-family: var(--page-font);
   font-size: 16px;
 }
+
 .page__body {
   height: calc(var(--vh, 1vh) * 100);
 }
+
 /* ALL ELEMENTS */
 * {
   box-sizing: border-box;
 }
 
 *:focus:not([tabindex='-1']) {
-  outline: 4px solid #80b3ff;
+  outline: 4px solid #02b9d5;
   outline-offset: 2px;
 }
+
 /* DISABLED LINK */
+
 .link_disable {
   color: gray !important;
   cursor: default !important;
 }
+
 .link_disable:hover,
 .link_disable:focus {
   outline: none;

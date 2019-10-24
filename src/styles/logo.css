@@ -2,7 +2,6 @@
 
 .logo {
   position: fixed;
-  padding: 15px;
   top: 15px;
   color: var(--theme-primary);
   text-decoration: none;
