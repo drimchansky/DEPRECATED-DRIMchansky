@@ -78,14 +78,14 @@
 @media screen and (min-width: 1200px) {
   .menu {
     position: absolute;
-    right: -100%;
+    transform: translateX(120%);
     display: block;
     width: 417px;
     border-left: 2px solid var(--theme-primary);
-    transition: right 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .visible {
-    right: 0;
+    transform: translate(0);
   }
 }

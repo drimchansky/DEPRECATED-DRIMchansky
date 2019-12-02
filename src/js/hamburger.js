@@ -13,6 +13,7 @@ const hamburgerToggle = () => {
   hamburger.classList.toggle('is-active');
   menu.classList.toggle('visible');
   html.classList.toggle('menu-on');
+
   disableOutline();
 };
 
@@ -23,5 +24,6 @@ document.addEventListener('keydown', press => {
   if (press.keyCode === 27) {
     hamburger.classList.remove('is-active');
     menu.classList.remove('visible');
+    html.classList.remove('menu-on');
   }
 });

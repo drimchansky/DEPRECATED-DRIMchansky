@@ -61,6 +61,10 @@
     transition: transform 0.3s;
   }
 
+  .switcher {
+    transform: translateX(0);
+  }
+
   .menu-on .switcher {
     transform: translateX(-417px);
   }
