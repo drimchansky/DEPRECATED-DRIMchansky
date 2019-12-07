@@ -65,16 +65,18 @@
   }
 
   &__tags {
-    margin-top: 2px;
     display: flex;
     padding: 0;
     list-style-type: none;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
 
   &__tag {
     background: var(--theme-primary);
     color: var(--theme-bg);
     text-transform: lowercase;
+    margin-top: 2px;
     padding: 1px;
     border-radius: 5px;
   }

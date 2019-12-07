@@ -26,14 +26,23 @@
   &__body {
     display: flex;
     flex-direction: column;
+    overflow: auto;
     height: calc(var(--vh, 1vh) * 100);
   }
+}
+
+.page_index .page__body {
+  overflow: hidden;
 }
 
 /* ALL ELEMENTS */
 
 * {
   box-sizing: border-box;
+}
+*::selection {
+  color: var(--theme-primary);
+  background: var(--theme-accent);
 }
 
 *:focus:not([tabindex='-1']) {
