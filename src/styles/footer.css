@@ -5,6 +5,7 @@
   z-index: 8;
   text-align: center;
   flex-shrink: 0;
+  overflow: hidden;
 
   &__text {
     display: inline;
