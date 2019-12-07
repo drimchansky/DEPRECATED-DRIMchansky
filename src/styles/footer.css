@@ -1,13 +1,10 @@
 /* FOOTER */
 
 .footer {
-  position: fixed;
   bottom: 0;
-  left: 50%;
   z-index: 8;
   text-align: center;
-  background: var(--theme-bg);
-  transform: translateX(-50%);
+  flex-shrink: 0;
 
   &__text {
     display: inline;

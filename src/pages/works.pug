@@ -7,9 +7,8 @@ html( lang="en" class="page page_secondary")
       include ../js/chrome-vh-fix.js
     body.page__body
       include ./_hamburger.pug
-      include ./_footer.pug
       include ./_menu.pug
-      .container
+      div(class="page__content")
         include ./_logo.pug
         main.works
           ul.works__list
@@ -29,8 +28,7 @@ html( lang="en" class="page page_secondary")
                   a(href="https://drimchansky.github.io/Bakery/prod/" class="works__link") Webpage
                 li.works__link-item
                   a(href="https://github.com/DRIMchansky/Bakery" class="works__link")  Source
+      include ./_footer.pug
 
-
-        
         script(src='../js/index.js')
       include ./_switcher.pug
