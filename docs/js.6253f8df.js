@@ -13,4 +13,4 @@ module.exports=function(t){return fetch(t).then(function(t){return t.text()})};
 },{}],0:[function(require,module,exports) {
 var b=require("yU0Q");b.register("html",require("OkSu"));b.load([["works.html","Sicr"],["skills.html","mZUp"]]).then(function(){require("Y5Mt");});
 },{}]},{},[0], null)
-//# sourceMappingURL=js.1956acd2.js.map
+//# sourceMappingURL=js.6253f8df.js.map
