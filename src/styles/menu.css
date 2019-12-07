@@ -71,6 +71,33 @@
   }
 }
 
+.no-js.page_index .menu {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  transform: translateX(50%);
+  transition: none;
+  right: 50%;
+  border: none;
+
+  &__container {
+  }
+  &__list {
+    margin: 0;
+    display: flex;
+  }
+  &__item {
+    margin: 0;
+
+    &:hover:after {
+      display: none;
+    }
+  }
+  &__link {
+    border: none;
+  }
+}
+
 .visible {
   display: block;
 }

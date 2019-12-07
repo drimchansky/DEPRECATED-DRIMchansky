@@ -1,5 +1,9 @@
 /* HAMBURGER */
 
+.no-js .hamburger {
+  display: none;
+}
+
 .hamburger {
   position: fixed;
   top: 20px;
@@ -68,15 +72,11 @@
 }
 
 .hamburger .hamburger-inner::before {
-  transition:
-    top 0.075s 0.12s ease,
-    opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 
 .hamburger--squeeze .hamburger-inner::after {
-  transition:
-    bottom 0.075s 0.12s ease,
-    transform 0.075s;
+  transition: bottom 0.075s 0.12s ease, transform 0.075s;
 }
 
 .hamburger.is-active .hamburger-inner {
@@ -87,16 +87,12 @@
 .hamburger.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  transition:
-    top 0.075s ease,
-    opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
 
 .hamburger.is-active .hamburger-inner::after {
   bottom: 0;
-  transition:
-    bottom 0.075s ease,
-    transform 0.075s 0.12s;
+  transition: bottom 0.075s ease, transform 0.075s 0.12s;
   transform: rotate(-90deg);
 }
 

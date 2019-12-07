@@ -390,6 +390,10 @@ template {
 
 /* HAMBURGER */
 
+.no-js .hamburger {
+  display: none;
+}
+
 .hamburger {
   position: fixed;
   top: 20px;
@@ -468,28 +472,15 @@ template {
 }
 
 .hamburger .hamburger-inner::before {
-  -webkit-transition:
-    top 0.075s 0.12s ease,
-    opacity 0.075s ease;
-  transition:
-    top 0.075s 0.12s ease,
-    opacity 0.075s ease;
+  -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 
 .hamburger--squeeze .hamburger-inner::after {
-  -webkit-transition:
-    bottom 0.075s 0.12s ease,
-    -webkit-transform 0.075s;
-  transition:
-    bottom 0.075s 0.12s ease,
-    -webkit-transform 0.075s;
-  transition:
-    bottom 0.075s 0.12s ease,
-    transform 0.075s;
-  transition:
-    bottom 0.075s 0.12s ease,
-    transform 0.075s,
-    -webkit-transform 0.075s;
+  -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s;
+  transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s;
+  transition: bottom 0.075s 0.12s ease, transform 0.075s;
+  transition: bottom 0.075s 0.12s ease, transform 0.075s, -webkit-transform 0.075s;
 }
 
 .hamburger.is-active .hamburger-inner {
@@ -502,29 +493,16 @@ template {
 .hamburger.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition:
-    top 0.075s ease,
-    opacity 0.075s 0.12s ease;
-  transition:
-    top 0.075s ease,
-    opacity 0.075s 0.12s ease;
+  -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
 
 .hamburger.is-active .hamburger-inner::after {
   bottom: 0;
-  -webkit-transition:
-    bottom 0.075s ease,
-    -webkit-transform 0.075s 0.12s;
-  transition:
-    bottom 0.075s ease,
-    -webkit-transform 0.075s 0.12s;
-  transition:
-    bottom 0.075s ease,
-    transform 0.075s 0.12s;
-  transition:
-    bottom 0.075s ease,
-    transform 0.075s 0.12s,
-    -webkit-transform 0.075s 0.12s;
+  -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s;
+  transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s;
+  transition: bottom 0.075s ease, transform 0.075s 0.12s;
+  transition: bottom 0.075s ease, transform 0.075s 0.12s, -webkit-transform 0.075s 0.12s;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -642,6 +620,7 @@ sans-serif;
 .logo {
   position: fixed;
   top: 15px;
+  left: 10px;
   padding: 0.5em;
   color: #ecdede;
   color: var(--theme-primary);
@@ -745,6 +724,39 @@ sans-serif;
       opacity: 0.7;
     }
 
+.no-js.page_index .menu {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: none;
+  transition: none;
+  right: 50%;
+  border: none;
+}
+
+.no-js.page_index .menu__container {
+  }
+
+.no-js.page_index .menu__list {
+    margin: 0;
+    display: -webkit-box;
+    display: flex;
+  }
+
+.no-js.page_index .menu__item {
+    margin: 0;
+  }
+
+.no-js.page_index .menu__item:hover:after {
+      display: none;
+    }
+
+.no-js.page_index .menu__link {
+    border: none;
+  }
+
 .visible {
   display: block;
 }
@@ -774,7 +786,6 @@ sans-serif;
 
 .page {
   position: relative;
-
   overflow-x: hidden;
   font-family: 'Miriam Libre'
 ,
@@ -799,6 +810,7 @@ sans-serif;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+    position: relative;
   }
 
 @media (min-width: 992px) {

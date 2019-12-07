@@ -2,7 +2,6 @@
 
 .page {
   position: relative;
-
   overflow-x: hidden;
   font-family: var(--page-font);
   font-size: 16px;
@@ -17,6 +16,7 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+    position: relative;
 
     @media (min-width: 992px) {
       justify-content: flex-start;
