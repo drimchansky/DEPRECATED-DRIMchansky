@@ -1,16 +1,16 @@
-nav( class="menu" id="menu")
+nav( class="menu" id="menu" aria-hidden="true")
   .menu__container
     ul.menu__list
       li.menu__item
-        a( data-name="Works" href="./works.pug" class="menu__link") Works
+        a( data-name="Works" href="./works.pug" class="menu__link" tabindex="-1") Works
       li.menu__item
-        a( data-name="Skills" href="./skills.pug" class="menu__link") Skills
+        a( data-name="Skills" href="./skills.pug" class="menu__link" tabindex="-1") Skills
     ul( class="social menu_social")
       li.social__item
-        a( href="https://vk.com/drimchansky" class="social__link")
+        a( href="https://vk.com/drimchansky" class="social__link" tabindex="-1")
           include ../img/vk.svg
-      li(class="social__item" data-title="persoanl number? huh.")
+      li(class="social__item" data-title="persoanl number? huh." tabindex="-1")
         include ../img/phone.svg
       li.social__item
-        a( href="https://www.instagram.com/drimchansky/" class="social__link")
+        a( href="https://www.instagram.com/drimchansky/" class="social__link" tabindex="-1")
           include ../img/instagram.svg
