@@ -3,9 +3,8 @@
 .works {
   display: flex;
   flex-direction: column;
-
-  font-size: 16px;
   margin: 0 auto;
+  font-size: 16px;
 
   &__list {
     display: flex;
@@ -66,18 +65,18 @@
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding: 0;
     list-style-type: none;
-    max-width: 100%;
-    flex-wrap: wrap;
   }
 
   &__tag {
-    background: var(--theme-primary);
+    padding: 1px;
+    margin-top: 2px;
     color: var(--theme-bg);
     text-transform: lowercase;
-    margin-top: 2px;
-    padding: 1px;
+    background: var(--theme-primary);
     border-radius: 5px;
   }
 
@@ -96,8 +95,8 @@
 
 @media screen and (min-width: 992px) {
   .works {
-    font-size: 22px;
     min-width: 700px;
+    font-size: 22px;
 
     &__item::after {
       position: absolute;

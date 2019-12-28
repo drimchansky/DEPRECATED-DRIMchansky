@@ -72,27 +72,27 @@
 }
 
 .no-js.page_index .menu {
-  display: block;
-  margin: 0 auto;
-  height: auto;
-  transform: translateX(50%);
-  transition: none;
   right: 50%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
   border: none;
+  transition: none;
+  transform: translateX(50%);
 
-  &__container {
-  }
   &__list {
-    margin: 0;
     display: flex;
+    margin: 0;
   }
+
   &__item {
     margin: 0;
 
-    &:hover:after {
+    &:hover::after {
       display: none;
     }
   }
+
   &__link {
     border: none;
   }
@@ -105,11 +105,11 @@
 @media screen and (min-width: 1200px) {
   .menu {
     position: absolute;
-    transform: translateX(120%);
     display: block;
     width: 417px;
     border-left: 2px solid var(--theme-primary);
     transition: transform 0.3s ease;
+    transform: translateX(120%);
   }
 
   .visible {

@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 992px) {
   .head {
-    padding-left: 10px;
     align-items: flex-start;
+    padding-left: 10px;
   }
 }

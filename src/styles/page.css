@@ -9,14 +9,14 @@
   background: var(--theme-bg);
 
   &__content {
-    flex: 1 0 auto;
+    position: relative;
     display: flex;
+    flex: 1 0 auto;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    position: relative;
 
     @media (min-width: 992px) {
       justify-content: flex-start;
@@ -26,8 +26,8 @@
   &__body {
     display: flex;
     flex-direction: column;
-    overflow: auto;
     height: calc(var(--vh, 1vh) * 100);
+    overflow: auto;
   }
 }
 
@@ -36,6 +36,7 @@
 * {
   box-sizing: border-box;
 }
+
 *::selection {
   color: var(--theme-primary);
   background: var(--theme-accent);
