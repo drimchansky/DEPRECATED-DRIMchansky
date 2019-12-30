@@ -3,13 +3,9 @@
 :root {
   --theme-bg: #16141a;
   --theme-primary: #ecdede;
-  --theme-accent: #02b9d5;
-  --logo-font:
-    'Miriam Libre',
-    sans-serif;
-  --page-font:
-    'Miriam Libre',
-    sans-serif;
+  --theme-accent: #05b9d4;
+  --logo-font: 'Miriam Libre', sans-serif;
+  --page-font: 'Miriam Libre', sans-serif;
 }
 
 .light-mode {

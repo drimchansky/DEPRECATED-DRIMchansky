@@ -46,27 +46,9 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    &:hover,
     &:focus {
-      outline: none !important;
-    }
-
-    &::before {
-      position: absolute;
-      content: attr(data-name);
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-
-    &:hover::before,
-    &:focus::before {
-      position: absolute;
-      top: 13px;
-      left: 14px;
-
-      /* border-bottom: 3px dashed var(--theme-accent); */
-      z-index: -1;
-      color: var(--theme-accent);
-      opacity: 0.7;
+      opacity: 0.8;
     }
   }
 }

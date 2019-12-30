@@ -1,4 +1,4 @@
-nav( class="menu" id="menu" aria-hidden="true")
+nav( class="menu" id="menu" aria-hidden="true" tabindex="-1")
   .menu__container
     ul.menu__list
       li.menu__item
@@ -8,9 +8,13 @@ nav( class="menu" id="menu" aria-hidden="true")
     ul( class="social menu_social")
       li.social__item
         a( href="https://vk.com/drimchansky" class="social__link" tabindex="-1")
-          include ../img/vk.svg
+          svg(xmlns:xlink="http://www.w3.org/1999/xlink")
+            use(xlink:href="../img/vk.svg#vk")
       li(class="social__item" data-title="persoanl number? huh." tabindex="-1")
-        include ../img/phone.svg
+          a(class="social__link")
+            svg(xmlns:xlink="http://www.w3.org/1999/xlink")
+              use(xlink:href="../img/call.svg#call")
       li.social__item
         a( href="https://www.instagram.com/drimchansky/" class="social__link" tabindex="-1")
-          include ../img/instagram.svg
+          svg(xmlns:xlink="http://www.w3.org/1999/xlink")
+            use(xlink:href="../img/instagram.svg#instagram")
