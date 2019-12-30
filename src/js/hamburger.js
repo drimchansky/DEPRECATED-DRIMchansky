@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('#hamburger');
 const menu = document.querySelector('#menu');
 const html = document.querySelector('html');
+let isPreloaded = false;
 
 const enableOutline = () => {
   hamburger.classList.remove('disable-outline');
@@ -14,6 +15,22 @@ const hamburgerToggle = () => {
   menu.classList.toggle('visible');
   html.classList.toggle('menu-on');
   disableOutline();
+
+  // preloading subpages
+  if (!isPreloaded) {
+    const Uri = [
+      'https://drimchansky.space/works',
+      'https://drimchansky.space/about',
+    ];
+    Uri.map(uri => {
+      const preloadLink = document.createElement('link');
+      preloadLink.href = uri;
+      preloadLink.rel = 'preload';
+      document.head.appendChild(preloadLink);
+      return true;
+    });
+    isPreloaded = true;
+  }
 };
 
 hamburger.addEventListener('click', hamburgerToggle);
