@@ -7,18 +7,14 @@
   overflow: hidden;
   text-align: center;
 
+  @media (min-width: 576px) {
+    font-size: 1em;
+  }
+
   &__text {
     display: inline;
     margin: 0;
     font-size: 20px;
     color: var(--theme-primary);
-  }
-}
-
-/* FOOTER MEDIA */
-
-@media screen and (min-width: 576px) {
-  .footer {
-    font-size: 1em;
   }
 }

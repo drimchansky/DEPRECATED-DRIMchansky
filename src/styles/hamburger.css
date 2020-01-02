@@ -20,7 +20,8 @@
   cursor: pointer;
   background-color: transparent;
   border: 0;
-  transition: transform ease 0.3s opacity 0.2s;
+  transition: transform ease 0.3s,
+    opacity 0.2s;
 }
 
 .hamburger:hover {

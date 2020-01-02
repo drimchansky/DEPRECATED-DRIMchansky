@@ -24,8 +24,8 @@ const hamburgerToggle = () => {
     ];
     Uri.map(uri => {
       const preloadLink = document.createElement('link');
-      preloadLink.href = uri;
       preloadLink.rel = 'preload';
+      preloadLink.href = uri;
       document.head.appendChild(preloadLink);
       return true;
     });

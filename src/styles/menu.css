@@ -6,51 +6,61 @@
   right: 0;
   z-index: 10;
   display: none;
-  visibility: hidden;
   width: 100%;
   height: 100%;
   overflow: hidden;
   font-size: 16px;
+  visibility: hidden;
   background: var(--theme-bg);
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
+  @media (min-width: 1200px) {
+    position: absolute;
+    display: block;
+    width: 417px;
+    border-left: 2px solid var(--theme-primary);
+    transition: transform 0.3s ease;
+    transform: translateX(120%);
   }
+}
 
-  &__list {
-    padding: 0;
-    margin-top: 5em;
-    list-style-type: none;
-  }
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
 
-  &__item {
-    text-align: center;
-  }
+.menu__list {
+  padding: 0;
+  margin-top: 5em;
+  list-style-type: none;
+}
 
-  &__item:not(:first-child) {
+.menu__item {
+  text-align: center;
+
+  &:not(:first-child) {
     margin-top: 15px;
   }
+}
 
-  &__link {
-    position: relative;
-    display: block;
-    padding: 10px 10px 0 10px;
-    font-size: 3em;
-    font-weight: bold;
-    color: var(--theme-primary);
-    text-decoration: none;
-    text-transform: uppercase;
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 10px 10px 0 10px;
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--theme-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
 
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 }
 
@@ -59,6 +69,7 @@
   display: block;
   height: auto;
   margin: 0 auto;
+  visibility: visible;
   border: none;
   transition: none;
   transform: translateX(50%);
@@ -84,19 +95,19 @@
 .visible {
   display: block;
   visibility: visible;
+
+  @media (min-width: 1200px) {
+    visibility: visible;
+    transform: translate(0);
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu {
-    position: absolute;
-    display: block;
-    width: 417px;
-    border-left: 2px solid var(--theme-primary);
-    transition: transform 0.3s ease;
-    transform: translateX(120%);
-  }
+.no-js .visible {
+  display: block;
+  visibility: visible;
 
-  .visible {
+  @media (min-width: 1200px) {
+    visibility: visible;
     transform: translate(0);
   }
 }

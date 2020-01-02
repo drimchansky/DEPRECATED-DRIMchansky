@@ -44,15 +44,14 @@
 
 *:focus:not([tabindex='-1']) {
   outline: none;
+
+  @media (min-width: 576px) {
+    outline: 4px solid rgba(5, 185, 212, 0.8);
+    outline-offset: 2px;
+    opacity: 1 !important;
+  }
 }
 
 .disable-outline {
   outline: none !important;
-}
-
-@media screen and (min-width: 576px) {
-  *:focus:not([tabindex='-1']) {
-    outline: 4px solid rgba(5, 185, 212, 0.8);
-    outline-offset: 2px;
-  }
 }
