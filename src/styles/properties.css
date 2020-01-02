@@ -4,8 +4,10 @@
   --theme-bg: #16141a;
   --theme-primary: #ecdede;
   --theme-accent: #05b9d4;
-  --logo-font: 'Miriam Libre', sans-serif;
-  --page-font: 'Miriam Libre', sans-serif;
+  --logo-font: 'Miriam Libre',
+    sans-serif;
+  --page-font: 'Miriam Libre',
+    sans-serif;
 }
 
 .light-mode {

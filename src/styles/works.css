@@ -60,6 +60,7 @@
 .works__title {
   margin: 0;
   font-size: 2em;
+  font-weight: 400;
 }
 
 .works__description {
@@ -110,12 +111,12 @@
 }
 
 .works__tag {
-  padding: 1px;
+  padding: 2px;
   margin-top: 2px;
   color: var(--theme-bg);
   text-transform: lowercase;
   background: var(--theme-primary);
-  border-radius: 5px;
+  border-radius: 3px;
 
   &:not(:first-child) {
     margin-left: 6px;

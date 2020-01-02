@@ -7,8 +7,10 @@
     "watch": "parcel src/pages/index.pug ./ --no-cache",
     "build": "parcel build src/pages/index.pug --public-url ./ --out-dir ./docs --no-cache",
     "clear": "rimraf dist/ prod/",
-    "lint": "stylelint src/styles/**/*.css",
-    "lint-fix": "stylelint src/styles/**/*.css --fix"
+    "lint-styles": "stylelint src/**/*.css",
+    "lint-styles-fix": "stylelint src/**/*.css --fix",
+    "lint-scripts": "eslint src/**/*.js",
+    "lint-scripts-fix": "eslint src/**/*.js --fix"
   },
   "author": "DRIMchansky",
   "license": "ISC",

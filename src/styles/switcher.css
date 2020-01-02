@@ -62,7 +62,8 @@
 
 @media screen and (min-width: 1200px) {
   .switcher {
-    transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s,
+      opacity 0.2s;
   }
 
   .switcher {
