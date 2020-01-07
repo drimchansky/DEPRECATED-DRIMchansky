@@ -1,0 +1,1 @@
+Here will be new site, based on Gatsby.js!
