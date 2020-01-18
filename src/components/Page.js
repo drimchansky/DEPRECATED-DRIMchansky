@@ -1,6 +1,8 @@
 import React from "react"
 
 import pageStyles from "./Page.module.css"
+import "../util/custom-normalize.css"
+import "../util/properties.css"
 
 const Page = props => {
   return (
