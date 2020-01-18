@@ -3,9 +3,11 @@
 
   & h2 {
     color: var(--c-main);
+    font-family: Rubik, sans-serif;
   }
 
   & p {
     color: var(--c-medium);
+    font-family: Miriam Libre, sans-serif;
   }
 }

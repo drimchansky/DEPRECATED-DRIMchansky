@@ -4,7 +4,8 @@ import SiteMetadata from '../SiteMetadata'
 
 import pageStyles from './Page.module.css'
 import '../../util/custom-normalize.css'
-import '../..//util/properties.css'
+import '../../util/properties.css'
+import '../../util/fonts.css'
 
 const Page = props => {
   return (
