@@ -17,3 +17,8 @@
     background: var(--c-blue);
   }
 }
+
+*::selection {
+  color: var(--c-accent);
+  background: var(--c-blue);
+}
