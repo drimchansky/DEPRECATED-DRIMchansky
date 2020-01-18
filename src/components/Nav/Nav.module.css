@@ -1,2 +1,32 @@
 .nav {
 }
+
+.list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  & li {
+  }
+
+  & a {
+    color: var(--c-medium);
+    font-family: var(--f-main);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.8em;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--с-accent);
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.2em;
+      text-align: left;
+    }
+  }
+}
