@@ -4,11 +4,10 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/rubik-v9-latin-regular.eot'); 
-  src: local('Rubik'), local('Rubik-Regular'),
-       url('../fonts/rubik-v9-latin-regular.woff2') format('woff2'),
-       url('../fonts/rubik-v9-latin-regular.woff') format('woff'), 
-       url('../fonts/rubik-v9-latin-regular.ttf') format('truetype')
+  src: url('../fonts/rubik-v9-latin-regular.eot');
+  src: local('Rubik'), local('Rubik-Regular'), url('../fonts/rubik-v9-latin-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v9-latin-regular.woff') format('woff'),
+    url('../fonts/rubik-v9-latin-regular.ttf') format('truetype');
 }
 
 /* miriam-libre-700 - latin */
@@ -17,9 +16,9 @@
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/miriam-libre-v6-latin-700.eot'); 
+  src: url('../fonts/miriam-libre-v6-latin-700.eot');
   src: local('Miriam Libre Bold'), local('MiriamLibre-Bold'),
-       url('../fonts/miriam-libre-v6-latin-700.woff2') format('woff2'),
-       url('../fonts/miriam-libre-v6-latin-700.woff') format('woff'), 
-       url('../fonts/miriam-libre-v6-latin-700.ttf') format('truetype')
+    url('../fonts/miriam-libre-v6-latin-700.woff2') format('woff2'),
+    url('../fonts/miriam-libre-v6-latin-700.woff') format('woff'),
+    url('../fonts/miriam-libre-v6-latin-700.ttf') format('truetype');
 }

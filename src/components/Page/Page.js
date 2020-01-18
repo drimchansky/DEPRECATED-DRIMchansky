@@ -7,6 +7,7 @@ import styles from './Page.module.css'
 import '../../util/custom-normalize.css'
 import '../../util/properties.css'
 import '../../util/fonts.css'
+import '../../util/utility.css'
 
 const Page = props => {
   const [open, setOpen] = useState(false)
