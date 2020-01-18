@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import SiteMetadata from '../SiteMetadata'
+import Sidebar from '../Sidebar/Sidebar'
 
-import pageStyles from './Page.module.css'
+import styles from './Page.module.css'
 import '../../util/custom-normalize.css'
 import '../../util/properties.css'
 import '../../util/fonts.css'
 
 const Page = props => {
+  const [open, setOpen] = useState(false)
+
   return (
     <>
       <SiteMetadata />
-      <div className={pageStyles.page}>
+      <div className={styles.page}>
+        <Sidebar />
         <>{props.children}</>
       </div>
     </>
