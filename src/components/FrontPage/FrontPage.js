@@ -11,11 +11,11 @@ const FrontPage = () => {
         <h1>I make random things in the Web</h1>
         <p>
           You can see{' '}
-          <Link to="/" className="link-effect">
+          <Link to="/works" className="link-effect">
             my works
           </Link>{' '}
           and{' '}
-          <Link to="/" className="link-effect">
+          <Link to="/services" className="link-effect">
             services
           </Link>
         </p>
