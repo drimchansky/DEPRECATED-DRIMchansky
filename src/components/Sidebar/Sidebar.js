@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Nav from '../Nav/Nav'
+import Social from '../Social/Social'
 
 import styles from './Sidebar.module.css'
 
@@ -15,10 +16,8 @@ const Sidebar = () => {
         <Nav />
       </div>
       <footer className={styles.footer}>
+        <Social />
         footer
-        <ul className={styles.social}>
-          <li></li>
-        </ul>
       </footer>
     </aside>
   )

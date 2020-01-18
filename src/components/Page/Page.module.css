@@ -1,6 +1,6 @@
 .page {
   background: var(--c-main);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   position: relative;
   font-size: 16px;
