@@ -51,8 +51,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variable files
-.env*
+# dotenv environment variable files (disable while private fields not exists)
+# .env*
+
 
 # gatsby files
 .cache/
