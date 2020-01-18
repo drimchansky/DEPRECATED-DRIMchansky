@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react'
 
-import SiteMetadata from "../SiteMetadata"
+import SiteMetadata from '../SiteMetadata'
 
-import pageStyles from "./Page.module.css"
-import "../../util/custom-normalize.css"
-import "../..//util/properties.css"
+import pageStyles from './Page.module.css'
+import '../../util/custom-normalize.css'
+import '../..//util/properties.css'
 
 const Page = props => {
   return (
