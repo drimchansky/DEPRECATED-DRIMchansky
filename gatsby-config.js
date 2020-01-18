@@ -5,4 +5,6 @@ module.exports = {
     description: "I make random things in the Web",
     siteUrl: "https://drimchansky.ru",
   },
+  pathPrefix: "/",
+  plugins: [`gatsby-plugin-react-helmet`],
 }
