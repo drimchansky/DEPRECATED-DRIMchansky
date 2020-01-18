@@ -20,7 +20,8 @@
     font-size: 1.8em;
     transition: color 0.2s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--c-accent);
     }
 

@@ -11,7 +11,7 @@ const Sidebar = () => {
       <div className={styles.wrapper}>
         <p className={styles.title}>
           <span>DRIMchansky</span>
-          <small>web-addict</small>
+          <small>web addict</small>
         </p>
         <Nav />
       </div>

@@ -30,11 +30,6 @@
 
     & a {
       color: var(--c-accent);
-
-      &:hover:before {
-        transform-origin: none;
-        transform: scaleY(1);
-      }
     }
   }
 }

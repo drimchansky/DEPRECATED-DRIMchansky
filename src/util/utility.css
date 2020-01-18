@@ -2,6 +2,11 @@
   text-decoration: none;
   position: relative;
 
+  &:focus,
+  &:hover {
+    outline: none !important;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -16,9 +21,25 @@
     opacity: 0.5;
     background: var(--c-blue);
   }
+
+  &:hover:before,
+  &:focus:before {
+    transform-origin: none;
+    transform: none;
+  }
 }
 
 *::selection {
   color: var(--c-accent);
   background: var(--c-blue);
+}
+
+*:focus:not([tabindex='-1']) {
+  outline: none;
+
+  @media (min-width: 576px) {
+    outline: 4px solid rgba(5, 185, 212, 0.5);
+    outline-offset: 1px;
+    opacity: 1 !important;
+  }
 }

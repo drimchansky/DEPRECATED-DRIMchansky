@@ -37,10 +37,9 @@
   }
 
   & small {
-    text-transform: uppercase;
     font-family: Rubik, sans-serif;
     color: var(--c-medium);
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
