@@ -21,7 +21,7 @@
     transition: color 0.2s;
 
     &:hover {
-      color: var(--с-accent);
+      color: var(--c-accent);
     }
 
     @media (min-width: 768px) {

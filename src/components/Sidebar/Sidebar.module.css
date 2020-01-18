@@ -30,7 +30,7 @@
     letter-spacing: -2px;
     font-size: 1.8em;
     display: block;
-    color: var(--с-accent);
+    color: var(--c-accent);
     line-height: 0.8;
   }
 
@@ -43,10 +43,26 @@
 }
 
 .footer {
-}
+  padding: 0 1.6em 0.5em 1.6em;
+  font-family: var(--f-main);
+  text-align: center;
 
-.social {
-}
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 
-.info {
+  & small {
+    display: block;
+    color: var(--c-medium);
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+
+  & a {
+    font-size: 0.9em;
+    display: block;
+    color: var(--c-accent);
+    font-family: var(--f-title);
+    text-decoration: none;
+  }
 }

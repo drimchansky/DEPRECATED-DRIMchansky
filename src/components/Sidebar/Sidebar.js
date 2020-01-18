@@ -17,7 +17,8 @@ const Sidebar = () => {
       </div>
       <footer className={styles.footer}>
         <Social />
-        footer
+        <small>For business enquierues:</small>
+        <a href="mailto:drimchansky@gmail.com">drimchansky@gmail.com</a>
       </footer>
     </aside>
   )
