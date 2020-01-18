@@ -1,3 +1,11 @@
 import React from "react"
 
-export default () => <div>DRIMchansky</div>
+import Page from "../components/Page"
+
+export default () => {
+  return (
+    <Page>
+      <h2>DRIMchansky</h2>
+    </Page>
+  )
+}
