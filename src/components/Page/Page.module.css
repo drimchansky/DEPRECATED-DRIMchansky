@@ -1,3 +1,11 @@
 .page {
-  color: var(--c-medium);
+  display: grid;
+
+  & h2 {
+    color: var(--c-main);
+  }
+
+  & p {
+    color: var(--c-medium);
+  }
 }

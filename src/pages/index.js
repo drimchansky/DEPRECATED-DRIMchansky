@@ -6,6 +6,7 @@ export default () => {
   return (
     <Page>
       <h2>DRIMchansky</h2>
+      <p>Text</p>
     </Page>
   )
 }
