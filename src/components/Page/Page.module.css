@@ -1,6 +1,6 @@
 .page {
   background: var(--c-main);
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   display: flex;
   position: relative;
@@ -13,6 +13,7 @@
   }
 
   @media (min-width: 992px) {
+    min-height: 100vh;
     font-size: 20px;
   }
 }
