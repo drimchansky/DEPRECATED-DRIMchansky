@@ -1,15 +1,15 @@
 :root {
-  --c-main: #16141a;
-  --c-regular: #343434;
-  --c-medium: #9e9e9e;
-  --c-accent: #ededed;
-  --c-blue: #05b9d4;
-  --f-title: Miriam Libre, Arial, sans-serif;
-  --f-main: Rubik, sans-serif;
-}
-.light {
   --c-main: #ededed;
   --c-regular: #9e9e9e;
   --c-medium: #343434;
   --c-accent: #191919;
+  --c-blue: #05b9d4;
+  --f-title: Miriam Libre, Arial, sans-serif;
+  --f-main: Rubik, sans-serif;
+}
+.dark {
+  --c-main: #16141a;
+  --c-regular: #343434;
+  --c-medium: #9e9e9e;
+  --c-accent: #ededed;
 }
