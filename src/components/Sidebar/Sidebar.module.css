@@ -18,7 +18,7 @@
     width: 300px;
     visibility: visible;
     transform: translate(0);
-    transition: none;
+    transition: background 0.2s;
   }
 }
 
@@ -67,6 +67,7 @@
 
   & small {
     display: block;
+    transition: color 0.2s;
     color: var(--c-medium);
     font-size: 0.8em;
     margin-top: 0.5em;
@@ -75,6 +76,7 @@
   & a {
     font-size: 0.9em;
     display: block;
+    transition: color 0.2s;
     color: var(--c-accent);
     font-family: var(--f-title);
     text-decoration: none;

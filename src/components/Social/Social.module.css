@@ -25,6 +25,7 @@
     }
 
     & svg {
+      transition: fill 0.2s;
       fill: var(--c-accent);
       height: 100%;
       width: 100%;

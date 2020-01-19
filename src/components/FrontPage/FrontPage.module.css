@@ -1,6 +1,7 @@
 .front {
   display: flex;
   align-items: center;
+  transition: color 0.2s;
 
   & header {
     transform: translateY(-30%);
@@ -13,6 +14,7 @@
 
   & small {
     font-family: var(--f-main);
+
     color: var(--c-medium);
     text-transform: uppercase;
     font-size: 0.9em;
@@ -22,11 +24,13 @@
   & h1 {
     font-family: var(--f-title);
     color: var(--c-accent);
+
     font-size: 1.9em;
   }
 
   & p {
     font-family: var(--f-main);
+
     color: var(--c-medium);
 
     & a {
