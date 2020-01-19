@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 
 import SiteMetadata from '../SiteMetadata'
 import Sidebar from '../Sidebar/Sidebar'
@@ -13,7 +13,7 @@ import '../../util/utility.css'
 
 const Page = props => {
   //check theme
-  useEffect(() => {
+  useLayoutEffect(() => {
     const darkMode = localStorage.getItem('darkMode')
     const body = document.body
     if (darkMode === 'enabled') {
