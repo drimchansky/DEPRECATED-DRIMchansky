@@ -6,9 +6,14 @@ import Social from '../Social/Social'
 
 import styles from './Sidebar.module.css'
 
-const Sidebar = () => {
+const Sidebar = ({ active }) => {
   return (
-    <aside className={styles.sidebar}>
+    <aside
+      className={`
+    ${styles.sidebar}
+    ${active ? styles.isActive : ''}
+    `}
+    >
       <div className={styles.wrapper}>
         <Link to="/" className={styles.title}>
           <span>DRIMchansky</span>

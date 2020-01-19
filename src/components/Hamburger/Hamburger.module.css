@@ -1,0 +1,99 @@
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  right: 0.6em;
+  top: 0.6em;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.isActive:hover {
+  opacity: 0.7;
+}
+.hamburger.isActive .hamburgerInner,
+.hamburger.isActive .hamburgerInner::before,
+.hamburger.isActive .hamburgerInner::after {
+  background-color: var(--c-accent);
+}
+
+.hamburgerBox {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburgerInner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburgerInner,
+.hamburgerInner::before,
+.hamburgerInner::after {
+  width: 40px;
+  height: 4px;
+  background-color: var(--c-accent);
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburgerInner::before,
+.hamburgerInner::after {
+  content: '';
+  display: block;
+}
+.hamburgerInner::before {
+  top: -10px;
+}
+.hamburgerInner::after {
+  bottom: -10px;
+}
+
+.hamburgerSpring .hamburgerInner {
+  top: 2px;
+  transition: background-color 0s 0.13s linear;
+}
+.hamburgerSpring .hamburgerInner::before {
+  top: 10px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburgerSpring .hamburgerInner::after {
+  top: 20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerSpring.isActive .hamburgerInner {
+  transition-delay: 0.22s;
+  background-color: transparent !important;
+}
+.hamburgerSpring.isActive .hamburgerInner::before {
+  top: 0;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburgerSpring.isActive .hamburgerInner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+}

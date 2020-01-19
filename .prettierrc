@@ -4,7 +4,7 @@
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
-  "printWidth": 130,
+  "printWidth": 200,
   "trailingComma": "es5",
   "jsxBracketSameLine": false
 }
