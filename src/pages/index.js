@@ -7,7 +7,7 @@ import Head from '../components/Head'
 export default () => {
   return (
     <Page>
-      <Head title="Home" />>
+      <Head title="Home" />
       <FrontPage />
     </Page>
   )
