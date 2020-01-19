@@ -2,7 +2,6 @@
   "name": "drimchansky",
   "description": "DRIMchansky",
   "version": "5.0.1",
-  "license": "MIT",
   "author": "Nikita Chernov <drimchansky@gmail.com>",
   "scripts": {
     "build": "gatsby build",

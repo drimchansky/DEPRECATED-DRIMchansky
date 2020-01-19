@@ -26,6 +26,11 @@
 
 .title {
   margin: 0;
+  text-decoration: none;
+
+  &:focus {
+    outline: none !important;
+  }
 
   & span {
     font-family: Miriam Libre, Arial, sans-serif;
