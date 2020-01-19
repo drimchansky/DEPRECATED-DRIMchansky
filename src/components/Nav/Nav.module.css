@@ -1,6 +1,3 @@
-.nav {
-}
-
 .list {
   margin-top: 40px;
   display: flex;
@@ -19,6 +16,10 @@
     padding: 0.5em 0;
     font-size: 1.8em;
     transition: color 0.2s;
+
+    &.active {
+      color: var(--c-accent);
+    }
 
     &:hover,
     &:focus {
