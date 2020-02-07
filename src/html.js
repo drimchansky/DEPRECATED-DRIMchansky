@@ -18,11 +18,10 @@ export default function HTML(props) {
                 const darkMode = localStorage.getItem('darkMode')
                 const body = document.body
                 if (darkMode === 'enabled') {
-                  body.classList.add('dark')
+                  body.dataset.dark = 'enabled';
                 } else {
-                  body.classList.remove('dark')
+                  body.dataset.dark = null;
                 }
-                
               })();
             `,
           }}
