@@ -1,24 +1,39 @@
-import React from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 
 import styles from './Toggl.module.css'
 
-const clickHandler = e => {
-  let darkMode = localStorage.getItem('darkMode')
-  const body = document.body
-
-  if (darkMode === 'enabled') {
-    body.classList.remove('dark')
-    localStorage.setItem('darkMode', null)
-  } else {
-    body.classList.add('dark')
-    localStorage.setItem('darkMode', 'enabled')
-  }
-}
-
 const Toggl = () => {
+  let [check, setCheck] = useState(false)
+
+  const clickHandler = e => {
+    let darkMode = localStorage.getItem('darkMode')
+    const body = document.body
+    if (darkMode === 'enabled') {
+      body.dataset.dark = 'disabled'
+      localStorage.setItem('darkMode', null)
+      setCheck(true)
+    } else {
+      body.dataset.dark = 'enabled'
+      localStorage.setItem('darkMode', 'enabled')
+      setCheck(false)
+    }
+  }
+
+  useLayoutEffect(() => {
+    let darkMode = localStorage.getItem('darkMode')
+    darkMode === 'enabled' ? setCheck(false) : setCheck(true)
+  })
+
   return (
     <div className={styles.toggleWrapper}>
-      <input type="checkbox" className={styles.input} id="dn" onClick={clickHandler} />
+      <input
+        type="checkbox"
+        className={styles.input}
+        id="dn"
+        onClick={clickHandler}
+        checked={check}
+      />
+
       <label for="dn" className={styles.toggle}>
         <span className={styles.toggle__handler}>
           <span className={[styles.crater, styles.crater1].join(' ')}></span>
