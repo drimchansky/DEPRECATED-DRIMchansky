@@ -32,6 +32,7 @@ const Toggl = () => {
         id="dn"
         onClick={clickHandler}
         checked={check}
+        tabIndex="0"
       />
 
       <label for="dn" className={styles.toggle}>

@@ -7,8 +7,9 @@
   transform: scale(0.8);
 
   input {
-    display: none;
+    position: absolute;
     opacity: 0;
+    right: 200vw;
   }
 }
 
