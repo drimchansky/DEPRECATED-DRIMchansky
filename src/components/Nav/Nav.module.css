@@ -31,5 +31,24 @@
       font-size: 1.2em;
       text-align: left;
     }
+
+    & span {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: -2px;
+        left: -2px;
+        bottom: -2px;
+        transition: border-color 0.2s;
+        border-bottom: 2px solid transparent;
+      }
+    }
+
+    &:hover span:before,
+    &:focus span::before {
+      border-bottom: 2px solid var(--c-accent);
+    }
   }
 }

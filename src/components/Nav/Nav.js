@@ -9,22 +9,22 @@ const Nav = () => {
       <ul className={styles.list}>
         <li>
           <Link to="/" activeClassName={styles.active}>
-            Home
+            <span>Home</span>
           </Link>
         </li>
         <li>
           <Link to="/works" activeClassName={styles.active}>
-            Works
+            <span>Works</span>
           </Link>
         </li>
         <li>
           <Link to="/services" activeClassName={styles.active}>
-            Services
+            <span>Services</span>
           </Link>
         </li>
         <li>
           <Link to="/notes" activeClassName={styles.active}>
-            Notes
+            <span>Notes</span>
           </Link>
         </li>
       </ul>
