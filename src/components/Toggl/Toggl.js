@@ -52,7 +52,7 @@ const Toggl = () => {
       </div>
     )
   } else {
-    return <div>load</div>
+    return <></>
   }
 }
 
