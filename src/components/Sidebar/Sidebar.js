@@ -15,7 +15,7 @@ const Sidebar = ({ active }) => {
     `}
     >
       <div className={styles.wrapper}>
-        <Link to="/" className={styles.title}>
+        <Link to="/" className={styles.title} tabIndex="-1">
           <span>DRIMchansky</span>
           <small>web addict</small>
         </Link>

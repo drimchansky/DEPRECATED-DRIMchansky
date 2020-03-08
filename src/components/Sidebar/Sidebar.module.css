@@ -48,12 +48,20 @@
     display: block;
     color: var(--c-accent);
     line-height: 0.8;
+
+    &:focus {
+      outline: none !important;
+    }
   }
 
   & small {
     font-family: Rubik, sans-serif;
     color: var(--c-medium);
     font-size: 0.8em;
+
+    &:focus {
+      outline: none !important;
+    }
   }
 }
 

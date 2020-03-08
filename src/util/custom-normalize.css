@@ -3,12 +3,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-*:focus {
-  @media (max-width: 768px) {
-    outline: none;
-  }
-}
-
 body {
   margin: 0;
   overflow-x: hidden;

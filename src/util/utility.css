@@ -34,12 +34,18 @@
   background: var(--c-blue);
 }
 
+*:focus {
+  @media (max-width: 768px) {
+    outline: none;
+  }
+}
+
 *:focus:not([tabindex='-1']) {
   outline: none;
 
   @media (min-width: 576px) {
     outline: 4px solid rgba(5, 185, 212, 0.5);
-    outline-offset: 1px;
+    outline-offset: -2px;
     opacity: 1 !important;
   }
 }
