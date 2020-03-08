@@ -9,14 +9,9 @@
   flex-direction: column;
   margin: 0;
   transform: translate(100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0;
   visibility: hidden;
   z-index: 5;
-
-  @supports (clip-path: circle(0px)) {
-    transition: clip-path 0.7s ease-in-out;
-    clip-path: circle(0px at top right);
-  }
 
   @media (min-width: 768px) {
     min-height: 100vh;
@@ -25,17 +20,12 @@
     visibility: visible;
     transform: translate(0);
     transition: none;
-    clip-path: circle(250% at top right);
   }
 }
 
 .isActive {
   transform: translate(0);
   visibility: visible;
-
-  @supports (clip-path: circle(0px)) {
-    clip-path: circle(250% at top right);
-  }
 }
 
 .wrapper {
