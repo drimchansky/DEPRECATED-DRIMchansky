@@ -8,6 +8,8 @@ const Toggl = () => {
   const clickHandler = e => {
     let darkMode = localStorage.getItem('darkMode')
     const body = document.body
+    e.target.style.outline = 'none !important'
+    console.log(e.target)
     if (darkMode === 'enabled') {
       body.dataset.dark = 'disabled'
       localStorage.setItem('darkMode', null)

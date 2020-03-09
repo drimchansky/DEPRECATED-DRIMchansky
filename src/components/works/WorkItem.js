@@ -7,10 +7,10 @@ import CalendarIcon from '../icons/CalendarIcon'
 import LinkIcon from '../icons/LinkIcon'
 import GitHubIcon from '../icons/GitHubIcon'
 
-const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date }) => {
+const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
   return (
     <>
-      <li className={styles.workItem}>
+      <li className={styles.workItem} data-tech={tech}>
         <h2 className={styles.header} dangerouslySetInnerHTML={{ __html: title }}></h2>
         <div className={styles.info}>
           <div className={styles.date}>

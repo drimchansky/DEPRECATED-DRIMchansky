@@ -21,6 +21,7 @@ const WorksList = () => {
               tags
               title
               url
+              tech
               githubUrl
               image {
                 childImageSharp {
@@ -36,7 +37,7 @@ const WorksList = () => {
     }
   `)
   const works = data.allMarkdownRemark.edges
-
+  console.log(works)
   return (
     <>
       <ul className={styles.workList}>
@@ -51,6 +52,7 @@ const WorksList = () => {
               date={showData.frontmatter.date}
               url={showData.frontmatter.url}
               githubUrl={showData.frontmatter.githubUrl}
+              tech={showData.frontmatter.tech}
               tags={showData.frontmatter.tags}
               imageUrl={showData.frontmatter.image.childImageSharp.fluid}
               html={showData.html}
