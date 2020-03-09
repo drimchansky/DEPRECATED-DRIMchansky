@@ -62,13 +62,25 @@
     margin: 0;
     padding: 1rem 0 1rem 0;
     line-height: 1.4;
-    max-width: 700px;
+    max-width: 400px;
+
+    @media (min-width: 576px) {
+      max-width: 550px;
+    }
   }
 }
 
 .image {
   grid-column: 1 / 1;
   grid-row: 5 / 5;
+  margin: 0 0.5rem;
+
+  @media (min-width: 576px) {
+    margin: 0 10%;
+  }
+  @media (min-width: 768px) {
+    margin: 0 0.5rem;
+  }
 }
 
 .date {
