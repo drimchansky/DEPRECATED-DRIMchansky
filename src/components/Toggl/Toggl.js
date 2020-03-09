@@ -8,6 +8,8 @@ const Toggl = () => {
   const clickHandler = e => {
     let darkMode = localStorage.getItem('darkMode')
     const body = document.body
+    e.target.style.outline = 'none !important'
+    console.log(e.target)
     if (darkMode === 'enabled') {
       body.dataset.dark = 'disabled'
       localStorage.setItem('darkMode', null)
@@ -32,11 +34,12 @@ const Toggl = () => {
           className={styles.input}
           id="dn"
           onClick={clickHandler}
+          onChange={() => {}}
           checked={check}
           tabIndex="0"
         />
 
-        <label for="dn" className={styles.toggle}>
+        <label htmlFor="dn" className={styles.toggle}>
           <span className={styles.toggle__handler}>
             <span className={[styles.crater, styles.crater1].join(' ')}></span>
             <span className={[styles.crater, styles.crater2].join(' ')}></span>

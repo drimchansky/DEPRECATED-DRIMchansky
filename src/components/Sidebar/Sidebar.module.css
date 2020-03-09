@@ -1,7 +1,7 @@
 .sidebar {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: var(--c-regular);
+  background: var(--c-main);
   position: absolute;
   left: 0;
   top: 0;
@@ -11,15 +11,17 @@
   transform: translate(100%);
   transition: all 0;
   visibility: hidden;
-  z-index: 5;
+  z-index: 12;
 
   @media (min-width: 768px) {
     min-height: 100vh;
     position: relative;
-    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
     visibility: visible;
     transform: translate(0);
     transition: none;
+    background: var(--c-regular);
   }
 }
 
