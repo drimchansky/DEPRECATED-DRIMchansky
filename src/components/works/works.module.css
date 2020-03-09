@@ -12,7 +12,24 @@
 
 .date {
   display: flex;
+
+  & span {
+    margin-left: 5px;
+  }
+
+  & svg {
+    width: 25px;
+  }
 }
 
 .url {
+  display: flex;
+
+  a {
+    margin-left: 5px;
+  }
+
+  & svg {
+    width: 20px;
+  }
 }
