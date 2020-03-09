@@ -1,7 +1,7 @@
 .sidebar {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: var(--c-regular);
+  background: var(--c-main);
   position: absolute;
   left: 0;
   top: 0;
@@ -20,6 +20,7 @@
     visibility: visible;
     transform: translate(0);
     transition: none;
+    background: var(--c-regular);
   }
 }
 
