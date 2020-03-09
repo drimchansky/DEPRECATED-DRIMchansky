@@ -1,0 +1,18 @@
+.workList {
+  font-family: var(--f-main);
+  display: grid;
+}
+
+.workItem {
+  width: 100%;
+}
+
+.image {
+}
+
+.date {
+  display: flex;
+}
+
+.url {
+}

@@ -3,7 +3,7 @@ import React from 'react'
 import WorkItem from './WorkItem'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import styles from './WorkList.module.css'
+import styles from './works.module.css'
 
 const WorksList = () => {
   const data = useStaticQuery(graphql`
@@ -21,6 +21,7 @@ const WorksList = () => {
               tags
               title
               url
+              githubUrl
               image {
                 childImageSharp {
                   fluid {
@@ -45,9 +46,14 @@ const WorksList = () => {
 
           return (
             <WorkItem
+              key={showData.id}
               title={showData.frontmatter.title}
-              id={showData.id}
+              date={showData.frontmatter.date}
+              url={showData.frontmatter.url}
+              githubUrl={showData.frontmatter.githubUrl}
+              tags={showData.frontmatter.tags}
               imageUrl={showData.frontmatter.image.childImageSharp.fluid}
+              html={showData.html}
             />
           )
         })}
