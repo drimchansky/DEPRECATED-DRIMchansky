@@ -32,11 +32,12 @@ const Toggl = () => {
           className={styles.input}
           id="dn"
           onClick={clickHandler}
+          onChange={clickHandler}
           checked={check}
           tabIndex="0"
         />
 
-        <label for="dn" className={styles.toggle}>
+        <label html="dn" className={styles.toggle}>
           <span className={styles.toggle__handler}>
             <span className={[styles.crater, styles.crater1].join(' ')}></span>
             <span className={[styles.crater, styles.crater2].join(' ')}></span>

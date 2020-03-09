@@ -1,15 +1,15 @@
-var autoprefixer = require("autoprefixer")
-var nested = require("postcss-nested")
-var properties = require("postcss-custom-properties")
+var autoprefixer = require('autoprefixer')
+var nested = require('postcss-nested')
+var properties = require('postcss-custom-properties')
 
 module.exports = {
   siteMetadata: {
-    title: "DRIMchansky",
-    author: "Nikita Chernov",
-    description: "I make random things in the Web",
-    siteUrl: "https://drimchansky.ru",
+    title: 'DRIMchansky',
+    author: 'Nikita Chernov',
+    description: 'I make random things in the Web',
+    siteUrl: 'https://drimchansky.ru',
   },
-  pathPrefix: "/",
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -22,9 +22,17 @@ module.exports = {
           nested(),
           properties({
             preserve: true,
-            importFrom: "./src/util/properties.css",
+            importFrom: './src/util/properties.css',
           }),
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/.*`], // ignore files starting with a dot
       },
     },
   ],
