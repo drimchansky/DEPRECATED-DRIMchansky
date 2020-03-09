@@ -137,6 +137,10 @@
     margin: 0 0.5rem;
   }
   @media (min-width: 998px) {
+    grid-row: span 4;
+    grid-column: 2 / 3;
+  }
+  @media (min-width: 1200px) {
     grid-row: span 5;
     grid-column: 2 / 3;
   }

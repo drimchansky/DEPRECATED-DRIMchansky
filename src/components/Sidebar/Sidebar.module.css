@@ -16,7 +16,8 @@
   @media (min-width: 768px) {
     min-height: 100vh;
     position: relative;
-    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
     visibility: visible;
     transform: translate(0);
     transition: none;
