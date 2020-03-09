@@ -1,20 +1,32 @@
+/* eslint-disable array-callback-return */
 import React from 'react'
 import WorkItem from './WorkItem'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import styles from './WorkList.module.css'
+
 const WorksList = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "work" } } }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { type: { eq: "work" } } }
+      ) {
         edges {
           node {
             id
             html
             frontmatter {
               date
+              tags
               title
+              url
               image {
-                relativePath
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
               }
             }
           }
@@ -23,11 +35,23 @@ const WorksList = () => {
     }
   `)
   const works = data.allMarkdownRemark.edges
-  console.log(works[0].node.html)
 
   return (
     <>
-      <WorkItem />
+      <ul className={styles.workList}>
+        {works.map(item => {
+          const showData = item.node
+          console.log(showData)
+
+          return (
+            <WorkItem
+              title={showData.frontmatter.title}
+              id={showData.id}
+              imageUrl={showData.frontmatter.image.childImageSharp.fluid}
+            />
+          )
+        })}
+      </ul>
     </>
   )
 }
