@@ -27,10 +27,34 @@
   grid-row: 2 / span 2;
 }
 
+.tags {
+  grid-column: 1 / span 1;
+  grid-row: 3 / 3;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+
+  & li {
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: var(--c-accent);
+    color: var(--c-main);
+
+    &:not(:first-child) {
+      margin-left: 3px;
+    }
+  }
+}
+
 .text {
   grid-column: 1 / span 1;
   grid-row: 4 / span 4;
   align-self: start;
+
+  & p {
+    margin: 0;
+  }
 }
 
 .image {
@@ -53,6 +77,7 @@
 
 .url {
   display: flex;
+  margin-left: 20px;
 
   a {
     margin-left: 5px;

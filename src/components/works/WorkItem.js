@@ -7,7 +7,7 @@ import CalendarIcon from '../icons/CalendarIcon'
 import LinkIcon from '../icons/LinkIcon'
 import GitHubIcon from '../icons/GitHubIcon'
 
-const WorkItem = ({ title, url, githubUrl, imageUrl, html, date }) => {
+const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date }) => {
   return (
     <>
       <li className={styles.workItem}>
@@ -22,7 +22,12 @@ const WorkItem = ({ title, url, githubUrl, imageUrl, html, date }) => {
             <a href={url}>Website</a>
           </div>
         </div>
-        <p className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></p>
+        <ul className={styles.tags}>
+          {tags.map(tag => {
+            return <li>{tag}</li>
+          })}
+        </ul>
+        <span className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></span>
         <a className={styles.link} href={githubUrl}>
           <GitHubIcon />
           GitHub
