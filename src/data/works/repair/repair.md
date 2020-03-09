@@ -1,7 +1,7 @@
 ---
 title: 'Repair-design'
 type: work
-date: '2018'
+date: 'First Half of 2019'
 image: repair.png
 url: 'https://repair-design.drimchansky1.now.sh/'
 githubUrl: 'https://github.com/DRIMchansky/Repair-design'
@@ -10,4 +10,4 @@ tags:
   - PostCSS
 ---
 
-My old project
+My old projectMy old projectMy old projectMy old projectMy old projectMy old projectMy old projectMy old projectMy old projectMy old projectMy old project
