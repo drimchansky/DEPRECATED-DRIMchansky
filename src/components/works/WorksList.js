@@ -1,4 +1,5 @@
 import React from 'react'
+import WorkItem from './WorkItem'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const WorksList = () => {
@@ -25,9 +26,9 @@ const WorksList = () => {
   console.log(works[0].node.html)
 
   return (
-    <div>
-      <></>
-    </div>
+    <>
+      <WorkItem />
+    </>
   )
 }
 
