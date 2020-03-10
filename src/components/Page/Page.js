@@ -1,6 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react'
 
-import SiteMetadata from '../SiteMetadata'
 import Sidebar from '../Sidebar/Sidebar'
 import Hamburger from '../../components/Hamburger/Hamburger'
 import Toggl from '../../components/Toggl/Toggl'
@@ -26,7 +25,6 @@ const Page = props => {
 
   return (
     <>
-      <SiteMetadata />
       <div className={styles.page}>
         <Hamburger active={active} setActive={setActive} />
         <Sidebar active={active} setActive={setActive} />

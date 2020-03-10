@@ -30,6 +30,7 @@ const Toggl = () => {
     return (
       <div className={styles.toggleWrapper}>
         <input
+          aria-label="Mode switcher"
           type="checkbox"
           className={styles.input}
           id="dn"
@@ -40,17 +41,7 @@ const Toggl = () => {
         />
 
         <label htmlFor="dn" className={styles.toggle}>
-          <span className={styles.toggle__handler}>
-            <span className={[styles.crater, styles.crater1].join(' ')}></span>
-            <span className={[styles.crater, styles.crater2].join(' ')}></span>
-            <span className={[styles.crater, styles.crater3].join(' ')}></span>
-          </span>
-          <span className={[styles.star, styles.star1].join(' ')}></span>
-          <span className={[styles.star, styles.star2].join(' ')}></span>
-          <span className={[styles.star, styles.star3].join(' ')}></span>
-          <span className={[styles.star, styles.star4].join(' ')}></span>
-          <span className={[styles.star, styles.star5].join(' ')}></span>
-          <span className={[styles.star, styles.star6].join(' ')}></span>
+          <span className={styles.toggle__handler}></span>
         </label>
       </div>
     )

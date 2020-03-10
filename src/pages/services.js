@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Page from '../components/Page/Page'
-import Head from '../components/Head'
+import SEO from '../components/SEO'
 
 const services = () => {
   return (
     <Page>
-      <Head title="Services" />
+      <SEO title="Services" />
       <></>
     </Page>
   )

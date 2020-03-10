@@ -5,6 +5,7 @@ import styles from './Hamburger.module.css'
 const Hamburger = ({ active, setActive }) => {
   return (
     <button
+      aria-label="Hamburger menu"
       className={`
     ${styles.hamburger} 
     ${styles.hamburgerSpring} 
