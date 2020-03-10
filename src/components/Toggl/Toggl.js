@@ -30,6 +30,7 @@ const Toggl = () => {
     return (
       <div className={styles.toggleWrapper}>
         <input
+          aria-label="Mode switcher"
           type="checkbox"
           className={styles.input}
           id="dn"

@@ -9,6 +9,8 @@ module.exports = {
     author: 'Nikita Chernov',
     description: 'I make random things in the Web',
     siteUrl: 'https://drimchansky.ru',
+    twitter: 'https://twitter.com/DRIMchansky',
+    github: 'https://github.com/DRIMchansky',
   },
   pathPrefix: '/',
   plugins: [

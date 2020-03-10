@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Page from '../components/Page/Page'
-import Head from '../components/Head'
+import SEO from '../components/SEO'
 import WorksList from '../components/works/WorksList'
 
 const works = () => {
   return (
     <Page>
-      <Head title="Works" />
+      <SEO title="Works" />
       <></>
       <WorksList />
     </Page>
