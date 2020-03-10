@@ -38,7 +38,7 @@
       background-image: url('../../assets/logo/gatsby.png');
     }
     &[data-tech='parcel']:before {
-      background-image: url('../../assets/logo/parcel.png');
+      background-image: url('../../assets/logo/parcel.webp');
     }
   }
 }
