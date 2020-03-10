@@ -37,13 +37,11 @@ const WorksList = () => {
     }
   `)
   const works = data.allMarkdownRemark.edges
-  console.log(works)
   return (
     <>
       <ul className={styles.workList}>
         {works.map(item => {
           const showData = item.node
-          console.log(showData)
 
           return (
             <WorkItem
