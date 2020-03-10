@@ -105,8 +105,34 @@
 
   & a {
     color: var(--c-accent);
-    border-bottom: 2px solid rgba(5, 185, 212, 0.8);
     text-decoration: none;
+    position: relative;
+
+    &:focus,
+    &:hover {
+      outline: none !important;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -0.1em;
+      left: -0.1em;
+      right: -0.1em;
+      transform-origin: 0 100%;
+      transform: scaleY(0.1);
+      transition: transform 0.2s;
+      top: 0;
+      border-radius: 4px;
+      opacity: 0.5;
+      background: var(--c-blue);
+    }
+
+    &:hover:before,
+    &:focus:before {
+      transform-origin: none;
+      transform: none;
+    }
   }
 
   @media (min-width: 998px) {
