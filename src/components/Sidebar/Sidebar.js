@@ -6,7 +6,7 @@ import Social from '../Social/Social'
 
 import styles from './Sidebar.module.css'
 
-const Sidebar = ({ active }) => {
+const Sidebar = ({ active, setActive }) => {
   return (
     <aside
       className={`
@@ -19,7 +19,7 @@ const Sidebar = ({ active }) => {
           <span>DRIMchansky</span>
           <small>web addict</small>
         </Link>
-        <Nav />
+        <Nav active={active} setActive={setActive} />
       </div>
       <footer className={styles.footer}>
         <Social />
