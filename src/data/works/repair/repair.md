@@ -1,5 +1,5 @@
 ---
-title: 'Repair-design'
+title: 'Repair design'
 type: work
 date: 'First Half of 2019'
 image: empty.png

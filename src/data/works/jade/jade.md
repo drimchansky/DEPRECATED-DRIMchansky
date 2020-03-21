@@ -1,5 +1,5 @@
 ---
-title: 'Repair-design'
+title: 'Jade'
 type: work
 date: 'Spring 2020'
 image: jamstack.png

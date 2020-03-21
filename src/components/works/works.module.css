@@ -76,6 +76,7 @@
   grid-row: 3 / 3;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 7px;
   padding: 0 0 0 0.5rem;
   z-index: 2;
@@ -90,6 +91,7 @@
     font-size: 0.9rem;
     background: var(--c-accent);
     color: var(--c-main);
+    margin-top: 2px;
 
     &:not(:first-child) {
       margin-left: 3px;
