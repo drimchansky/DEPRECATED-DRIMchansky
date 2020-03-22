@@ -2,7 +2,7 @@
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   background: var(--c-main);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   display: flex;

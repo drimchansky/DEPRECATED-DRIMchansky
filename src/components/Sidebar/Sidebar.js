@@ -23,7 +23,6 @@ const Sidebar = ({ active, setActive }) => {
       </div>
       <footer className={styles.footer}>
         <Social />
-        <small>For business enquierues:</small>
         <a href="mailto:drimchansky@gmail.com">drimchansky@gmail.com</a>
       </footer>
     </aside>

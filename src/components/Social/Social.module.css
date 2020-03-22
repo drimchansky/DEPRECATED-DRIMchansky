@@ -3,6 +3,7 @@
   justify-content: space-around;
   max-width: 300px;
   margin: 0 auto;
+  padding: 1rem 0;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
