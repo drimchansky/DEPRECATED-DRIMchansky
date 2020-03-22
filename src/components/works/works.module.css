@@ -17,10 +17,10 @@
 
 .workItem {
   display: grid;
-  justify-content: flex-start;
   margin-top: 50px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
+  max-width: 1500px;
 
   @media (min-width: 768px) {
     margin-top: 80px;
@@ -69,7 +69,7 @@
 
 .info {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   grid-column: 1 / 3;
   grid-row: 2 / 2;
   margin-top: 5px;
