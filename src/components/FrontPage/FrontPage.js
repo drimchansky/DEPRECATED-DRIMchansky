@@ -14,7 +14,7 @@ const FrontPage = () => {
           <Link to="/works" className="link-effect">
             my works
           </Link>{' '}
-          and{' '}
+          and
           <Link to="/services" className="link-effect">
             services
           </Link>
