@@ -40,7 +40,7 @@ const WorksList = () => {
   return (
     <>
       <ul className={styles.workList}>
-        {works.map(item => {
+        {works.map((item) => {
           const showData = item.node
 
           return (

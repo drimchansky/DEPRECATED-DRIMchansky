@@ -10,7 +10,7 @@ import '../../util/properties.css'
 import '../../util/fonts.css'
 import '../../util/utility.css'
 
-const Page = props => {
+const Page = (props) => {
   // hamburger state
   const [active, setActive] = useState(false)
 

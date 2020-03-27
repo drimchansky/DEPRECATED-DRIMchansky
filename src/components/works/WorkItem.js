@@ -23,7 +23,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
           </div>
         </div>
         <ul className={styles.tags}>
-          {tags.map(tag => {
+          {tags.map((tag) => {
             return <li>{tag}</li>
           })}
         </ul>
