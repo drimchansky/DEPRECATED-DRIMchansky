@@ -9,7 +9,7 @@ const WorksList = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___hiddenDate], order: DESC }
         filter: { frontmatter: { type: { eq: "work" } } }
       ) {
         edges {
