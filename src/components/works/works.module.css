@@ -54,6 +54,9 @@
     &[data-tech='parcel']:before {
       background-image: url('../../assets/logo/parcel.webp');
     }
+    &[data-tech='contentful']:before {
+      background-image: url('../../assets/logo/contentful.png');
+    }
   }
 }
 

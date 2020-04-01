@@ -13,11 +13,14 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
     <>
       <li className={styles.workItem} data-tech={tech}>
         <div className={styles.wrapper}>
-          <h2 className={styles.header} dangerouslySetInnerHTML={{ __html: title }}></h2>
+          <h2
+            className={styles.header}
+            dangerouslySetInnerHTML={{ __html: title || '[Add title]' }}
+          ></h2>
           <div className={styles.info}>
             <div className={styles.date}>
               <CalendarIcon />
-              <span>{date}</span>
+              <span>{date || '[Add date]'}</span>
             </div>
             <div className={styles.url}>
               <LinkIcon />

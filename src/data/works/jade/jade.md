@@ -2,6 +2,7 @@
 title: 'Jade'
 type: work
 date: 'Spring 2020'
+hiddenDate: 01.01.2020
 image: jamstack.png
 tech: gatsby
 url: 'https://looper.drimchansky1.now.sh/'
