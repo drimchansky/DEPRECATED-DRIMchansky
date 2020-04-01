@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import PropTypes from 'prop-types'
 
 import styles from './works.module.css'
 
@@ -25,7 +26,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
           </div>
           <ul className={styles.tags}>
             {tags.map((tag) => {
-              return <li>{tag}</li>
+              return <li key={tag}>{tag}</li>
             })}
           </ul>
           <span className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></span>
@@ -38,6 +39,17 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
       </li>
     </>
   )
+}
+
+WorkItem.propTypes = {
+  title: PropTypes.string,
+  tags: PropTypes.array,
+  url: PropTypes.string,
+  githubUrl: PropTypes.string,
+  imageUrl: PropTypes.object,
+  html: PropTypes.string,
+  date: PropTypes.string,
+  tech: PropTypes.string,
 }
 
 export default WorkItem
