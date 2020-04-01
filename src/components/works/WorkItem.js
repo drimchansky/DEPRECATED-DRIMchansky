@@ -32,7 +32,6 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
           <GitHubIcon />
           GitHub
         </a>
-
         <Img className={styles.image} fluid={imageUrl} />
       </li>
     </>
