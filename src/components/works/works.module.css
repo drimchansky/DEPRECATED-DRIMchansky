@@ -107,6 +107,7 @@
   z-index: 2;
 
   & a {
+    display: inline-block;
     color: var(--c-accent);
     text-decoration: none;
     position: relative;

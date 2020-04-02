@@ -5,7 +5,7 @@ date: 'Spring 2020'
 hiddenDate: 01.01.2020
 image: jamstack.png
 tech: gatsby
-url: 'https://looper.drimchansky1.now.sh/'
+url: 'https://dazzling-carson-3863ce.netlify.com/'
 githubUrl: 'https://github.com/DRIMchansky/Jade'
 tags:
   - gatsby
