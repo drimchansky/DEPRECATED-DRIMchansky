@@ -9,7 +9,7 @@ url: 'https://mystifying-almeida-cfb006.netlify.com/'
 githubUrl: 'https://github.com/DRIMchansky/Diopside'
 tags:
   - jekyll
-  - contentful
+  - cloudcannon
 ---
 
-First statis [Jekyll](https://jekyllrb.com/) website with pulling data from [Contentful](https://www.contentful.com/).
+First statis [Jekyll](https://jekyllrb.com/) website with [CloudCannon CMS](https://cloudcannon.com/).
