@@ -24,6 +24,7 @@ const SEO = ({ title }) => {
           name="google-site-verification"
           content="s0KBDOaiFwczjIjfpI7nOgEx273026DfhIyK8WeN5AQ"
         />
+        <meta name="yandex-verification" content="48c9e460796ceb06" />
       </Helmet>
     </>
   )
