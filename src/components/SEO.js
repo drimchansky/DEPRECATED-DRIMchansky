@@ -20,6 +20,10 @@ const SEO = ({ title }) => {
         <html lang="en" />
         <meta name="description" content={data.site.siteMetadata.description} />
         <meta name="theme-color" content="#191919" />
+        <meta
+          name="google-site-verification"
+          content="s0KBDOaiFwczjIjfpI7nOgEx273026DfhIyK8WeN5AQ"
+        />
       </Helmet>
     </>
   )
