@@ -1,4 +1,12 @@
 .toggleWrapper {
+  display: none;
+  visibility: hidden;
+
+  @supports (color: var(--c-blue)) {
+    display: block;
+    visibility: visible;
+  }
+
   position: absolute;
   top: 0.5em;
   left: 0.5em;
