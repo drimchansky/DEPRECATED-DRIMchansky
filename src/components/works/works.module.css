@@ -19,16 +19,9 @@
   max-width: 1500px;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-light);
   transition: background 120ms ease-in 0s;
-  background: var(--dark-bg);
   border-radius: 5px;
   padding-bottom: 1rem;
-
-  &:hover,
-  &:focus-within {
-    background: var(--c-light);
-  }
 
   @media (min-width: 768px) {
     margin-top: 80px;
@@ -229,7 +222,7 @@
   font-size: 1rem;
   z-index: 2;
   padding: 0.5rem 1.1rem;
-  transition: background 120ms ease-in 0s;
+  transition: background 0.2s;
 
   &:hover {
     background: var(--с-contrast);

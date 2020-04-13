@@ -12,4 +12,4 @@ tags:
   - cloudcannon
 ---
 
-First statis [Jekyll](https://jekyllrb.com/) website with [CloudCannon CMS](https://cloudcannon.com/).
+First statis [Jekyll](https://jekyllrb.com/) website with [CloudCannon](https://cloudcannon.com/) CMS.
