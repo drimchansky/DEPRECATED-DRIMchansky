@@ -143,6 +143,7 @@
       border-radius: 4px;
       opacity: 0.5;
       background: var(--c-blue);
+      z-index: -1;
     }
 
     &:hover:before,
