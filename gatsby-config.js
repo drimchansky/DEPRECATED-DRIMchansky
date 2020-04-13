@@ -59,7 +59,14 @@ module.exports = {
         plugins: [],
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://drimchansky.ru',
+        sitemap: 'https://drimchansky.ru/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    }`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
   ],
