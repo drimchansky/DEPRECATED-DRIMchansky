@@ -38,7 +38,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
             GitHub
           </a>
         </div>
-        <Img className={styles.image} fluid={imageUrl} />
+        <Img className={styles.image} fluid={imageUrl} style={{ maxHeight: '100%' }} />
       </li>
     </>
   )
