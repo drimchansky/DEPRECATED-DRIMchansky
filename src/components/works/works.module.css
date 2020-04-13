@@ -218,13 +218,19 @@
   align-items: center;
   align-self: center;
   background: var(--c-accent);
+  border-radius: 3px;
   color: var(--c-main);
   text-decoration: none;
   margin: 1rem;
   margin-left: auto;
   font-size: 1rem;
   z-index: 2;
-  padding: 0.8rem 1.3rem;
+  padding: 0.5rem 1.1rem;
+  transition: background 120ms ease-in 0s;
+
+  &:hover {
+    background: var(--с-contrast);
+  }
 
   & svg {
     width: 25px;

@@ -3,6 +3,7 @@
   --c-regular: #9e9e9e;
   --c-medium: #343434;
   --c-accent: #191919;
+  --с-contrast: black;
   --c-light: rgba(55, 53, 47, 0.03);
   --c-blue: #05b9d4;
   --f-title: Miriam Libre, Arial, sans-serif;
@@ -15,6 +16,7 @@
   --c-regular: #343434;
   --c-medium: #9e9e9e;
   --c-accent: #ededed;
+  --с-contrast: white;
   --c-light: rgb(63, 68, 71);
   --shadow-light: rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px;
   --dark-bg: rgb(63, 68, 71, 0.8);
