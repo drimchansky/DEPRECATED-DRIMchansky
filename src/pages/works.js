@@ -7,7 +7,7 @@ import WorksList from '../components/works/WorksList'
 const works = () => {
   return (
     <Page>
-      <SEO title="Works" />
+      <SEO title="Works" description="My works" />
       <></>
       <WorksList />
     </Page>

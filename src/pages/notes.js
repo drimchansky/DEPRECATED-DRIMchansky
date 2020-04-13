@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 const notes = () => {
   return (
     <Page>
-      <SEO title="Notes" />
+      <SEO title="Notes" description="My notes" />
       <></>
     </Page>
   )
