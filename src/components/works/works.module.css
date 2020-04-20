@@ -33,7 +33,7 @@
   }
 
   @media (min-width: 1300px) {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
     position: relative;
 
     &:before {
@@ -75,7 +75,6 @@
 }
 
 .header {
-  flex: 1;
   font-family: var(--f-title);
   font-size: 2rem;
   padding: 0 0 0 0.5rem;
@@ -83,7 +82,6 @@
 }
 
 .info {
-  flex: 1;
   display: flex;
   align-items: flex-start;
   margin-top: 5px;
@@ -92,7 +90,6 @@
 }
 
 .tags {
-  flex: 1;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -115,7 +112,6 @@
 }
 
 .text {
-  flex: 1;
   padding: 0 0 0 0.5rem;
   z-index: 2;
 

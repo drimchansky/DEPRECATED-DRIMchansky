@@ -2,7 +2,11 @@ import React from 'react'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 import { Button } from '@material-ui/core'
+
 import GitHubIcon from '@material-ui/icons/GitHub'
+import EventIcon from '@material-ui/icons/Event'
+import ExitToAppIcon from '@material-ui/icons/ExitToApp'
+
 import { makeStyles } from '@material-ui/core/styles'
 
 import styles from './works.module.css'
@@ -19,16 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const WorkItem = ({
-  title,
-  tags,
-  url,
-  githubUrl,
-  imageUrl,
-  html,
-  date,
-  tech,
-}) => {
+const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
   const classes = useStyles()
 
   return (
@@ -43,11 +38,11 @@ const WorkItem = ({
           ></h2>
           <div className={styles.info}>
             <div className={styles.date}>
-              <CalendarIcon />
+              <EventIcon />
               <span>{date || '[Add date]'}</span>
             </div>
             <div className={styles.url}>
-              <LinkIcon />
+              <ExitToAppIcon />
               <a href={url}>Website</a>
             </div>
           </div>
@@ -56,10 +51,7 @@ const WorkItem = ({
               return <li key={tag}>{tag}</li>
             })}
           </ul>
-          <span
-            className={styles.text}
-            dangerouslySetInnerHTML={{ __html: html }}
-          ></span>
+          <span className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></span>
           <Button
             className={classes.link}
             href={githubUrl}
@@ -70,11 +62,7 @@ const WorkItem = ({
             GitHub
           </Button>
         </div>
-        <Img
-          className={styles.image}
-          fluid={imageUrl}
-          style={{ maxHeight: '100%' }}
-        />
+        <Img className={styles.image} fluid={imageUrl} style={{ maxHeight: '100%' }} />
       </li>
     </>
   )
