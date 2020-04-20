@@ -11,6 +11,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
     "autoprefixer": "^9.7.6",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",

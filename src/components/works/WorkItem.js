@@ -1,21 +1,46 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
+import { Button } from '@material-ui/core'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import { makeStyles } from '@material-ui/core/styles'
 
 import styles from './works.module.css'
 
 import CalendarIcon from '../icons/CalendarIcon'
 import LinkIcon from '../icons/LinkIcon'
-import GitHubIcon from '../icons/GitHubIcon'
 
-const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
+const useStyles = makeStyles((theme) => ({
+  link: {
+    color: 'var(--c-main)',
+    backgroundColor: 'var(--c-accent)',
+    borderColor: 'var(--c-accent)',
+    alignSelf: 'flex-end',
+    marginTop: '10px',
+  },
+}))
+
+const WorkItem = ({
+  title,
+  tags,
+  url,
+  githubUrl,
+  imageUrl,
+  html,
+  date,
+  tech,
+}) => {
+  const classes = useStyles()
+
   return (
     <>
       <li className={styles.workItem} data-tech={tech}>
         <div className={styles.wrapper}>
           <h2
             className={styles.header}
-            dangerouslySetInnerHTML={{ __html: title || '[Add title]' }}
+            dangerouslySetInnerHTML={{
+              __html: title || '[Add title]',
+            }}
           ></h2>
           <div className={styles.info}>
             <div className={styles.date}>
@@ -32,13 +57,25 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
               return <li key={tag}>{tag}</li>
             })}
           </ul>
-          <span className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></span>
-          <a className={styles.link} href={githubUrl}>
-            <GitHubIcon />
+          <span
+            className={styles.text}
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></span>
+          <Button
+            className={classes.link}
+            href={githubUrl}
+            startIcon={<GitHubIcon />}
+            size="large"
+            variant="contained"
+          >
             GitHub
-          </a>
+          </Button>
         </div>
-        <Img className={styles.image} fluid={imageUrl} style={{ maxHeight: '100%' }} />
+        <Img
+          className={styles.image}
+          fluid={imageUrl}
+          style={{ maxHeight: '100%' }}
+        />
       </li>
     </>
   )
