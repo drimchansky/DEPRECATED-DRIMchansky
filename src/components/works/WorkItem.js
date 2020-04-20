@@ -12,8 +12,7 @@ import LinkIcon from '../icons/LinkIcon'
 
 const useStyles = makeStyles((theme) => ({
   link: {
-    color: 'var(--c-main)',
-    backgroundColor: 'var(--c-accent)',
+    color: 'var(--c-accent)',
     borderColor: 'var(--c-accent)',
     alignSelf: 'flex-end',
     marginTop: '10px',
@@ -66,7 +65,7 @@ const WorkItem = ({
             href={githubUrl}
             startIcon={<GitHubIcon />}
             size="large"
-            variant="contained"
+            variant="outlined"
           >
             GitHub
           </Button>
