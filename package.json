@@ -13,9 +13,11 @@
   "dependencies": {
     "@material-ui/core": "^4.9.11",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.10",
     "autoprefixer": "^9.7.6",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-robots-txt": "^1.5.0",

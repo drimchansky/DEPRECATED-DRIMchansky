@@ -14,6 +14,13 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        disableAutoprefixing: false,
+        disableMinification: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-postcss`,
