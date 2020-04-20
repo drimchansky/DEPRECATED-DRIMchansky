@@ -30,18 +30,22 @@ const Toggl = () => {
     darkMode === 'enabled' ? setCheck(false) : setCheck(true)
   })
 
-  if (check) {
-    return (
-      <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
-        <Brightness6Icon />
-      </IconButton>
-    )
+  if (check !== null) {
+    if (check) {
+      return (
+        <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+          <NightsStayIcon />
+        </IconButton>
+      )
+    } else {
+      return (
+        <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+          <Brightness6Icon />
+        </IconButton>
+      )
+    }
   } else {
-    return (
-      <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
-        <NightsStayIcon />
-      </IconButton>
-    )
+    return <></>
   }
 }
 
