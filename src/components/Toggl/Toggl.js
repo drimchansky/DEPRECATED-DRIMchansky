@@ -1,15 +1,19 @@
 import React, { useState, useLayoutEffect } from 'react'
+import { IconButton } from '@material-ui/core'
+import WbSunnyIcon from '@material-ui/icons/WbSunny'
+import Brightness6Icon from '@material-ui/icons/Brightness6'
+
+import NightsStayIcon from '@material-ui/icons/NightsStay'
 
 import styles from './Toggl.module.css'
 
 const Toggl = () => {
   let [check, setCheck] = useState(null)
 
-  const clickHandler = e => {
+  const clickHandler = (e) => {
     let darkMode = localStorage.getItem('darkMode')
     const body = document.body
     e.target.style.outline = 'none !important'
-    console.log(e.target)
     if (darkMode === 'enabled') {
       body.dataset.dark = 'disabled'
       localStorage.setItem('darkMode', null)
@@ -26,27 +30,18 @@ const Toggl = () => {
     darkMode === 'enabled' ? setCheck(false) : setCheck(true)
   })
 
-  if (check !== null) {
+  if (check) {
     return (
-      <div className={styles.toggleWrapper}>
-        <input
-          aria-label="Mode switcher"
-          type="checkbox"
-          className={styles.input}
-          id="dn"
-          onClick={clickHandler}
-          onChange={() => {}}
-          checked={check}
-          tabIndex="0"
-        />
-
-        <label htmlFor="dn" className={styles.toggle}>
-          <span className={styles.toggle__handler}></span>
-        </label>
-      </div>
+      <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+        <Brightness6Icon />
+      </IconButton>
     )
   } else {
-    return <></>
+    return (
+      <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+        <NightsStayIcon />
+      </IconButton>
+    )
   }
 }
 
