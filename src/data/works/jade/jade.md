@@ -8,8 +8,8 @@ tech: gatsby
 url: 'https://dazzling-carson-3863ce.netlify.com/'
 githubUrl: 'https://github.com/DRIMchansky/Jade'
 tags:
-  - gatsby
+  - Gatsby
   - styled-components
 ---
 
-Second website based on [Gatsby](https://www.gatsbyjs.org/) and first experience with CSS-in-JS library [styled-components](https://styled-components.com/). It's not finished yet. In plans getting data from some [headlessCMS](https://www.wikiwand.com/en/Headless_content_management_system).
+Second website based on [Gatsby](https://www.gatsbyjs.org/) and first experience with CSS-in-JS library [styled-components](https://styled-components.com/). It's not finished yet. Getting data from [Contentful](https://www.contentful.com/) CMS and little bit of [MaterialUI](https://material-ui.com) styles.

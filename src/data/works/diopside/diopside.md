@@ -8,8 +8,8 @@ tech: contentful
 url: 'https://mystifying-almeida-cfb006.netlify.com/'
 githubUrl: 'https://github.com/DRIMchansky/Diopside'
 tags:
-  - jekyll
-  - cloudcannon
+  - Jekyll
+  - NetlifyCMS
 ---
 
-First statis [Jekyll](https://jekyllrb.com/) website with [CloudCannon](https://cloudcannon.com/) CMS.
+First statis [Jekyll](https://jekyllrb.com/) website with [Netlify](https://www.netlifycms.org/) CMS.
