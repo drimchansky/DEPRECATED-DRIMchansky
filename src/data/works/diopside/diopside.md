@@ -5,7 +5,7 @@ date: 'Spring 2020'
 hiddenDate: 01.03.2020
 image: jekyll.png
 tech: contentful
-url: 'https://mystifying-almeida-cfb006.netlify.com/'
+url: 'https://zealous-bassi-bb4105.netlify.app/'
 githubUrl: 'https://github.com/DRIMchansky/Diopside'
 tags:
   - Jekyll
