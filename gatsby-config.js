@@ -14,6 +14,8 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -74,8 +76,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
