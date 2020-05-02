@@ -16,6 +16,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -68,6 +69,7 @@ module.exports = {
         plugins: [],
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -76,7 +78,5 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-netlify-cms`,
   ],
 }

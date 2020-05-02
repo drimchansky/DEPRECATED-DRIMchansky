@@ -12,4 +12,19 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - { name: title, label: Название, widget: string }
+      - { label: 'Тип', name: 'type', widget: 'hidden', default: 'work' }
+      - { name: date, label: Дата, widget: string }
+      - { name: hiddenDate, label: Скрытая дата, widget: datetime }
+      - { name: image, label: Картинка, widget: image }
+      - label: 'Технология'
+        name: 'tech'
+        widget: 'select'
+        options:
+          - { label: 'Contentful', value: 'contentful' }
+          - { label: 'Gatsby', value: 'gatsby' }
+          - { label: 'Parcel', value: 'parcel' }
+          - { label: 'PostCSS', value: 'postcss' }
+      - { name: url, label: Ссылка на проект, widget: string }
+      - { name: githubUrl, label: Ссылка на GitHub, widget: string }
+      - { name: tags, label: Тэги, widget: list }
