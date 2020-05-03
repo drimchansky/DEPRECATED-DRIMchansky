@@ -2,14 +2,13 @@ backend:
   name: github
   repo: DRIMchansky/drimchansky.ru
 
-media_folder: static/assets
-public_folder: /assets
+media_folder: src/assets/
 
 collections:
   - name: works
     label: Works
     folder: src/data/works
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     create: true
     fields:
       - { name: title, label: Название, widget: string }

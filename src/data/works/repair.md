@@ -3,7 +3,7 @@ title: 'Repair design'
 type: work
 date: 'First Half of 2019'
 hiddenDate: 01.01.2019
-image: empty.png
+image: ../../assets/empty.png
 tech: parcel
 url: 'https://repair-design.drimchansky1.now.sh/'
 githubUrl: 'https://github.com/DRIMchansky/Repair-design'

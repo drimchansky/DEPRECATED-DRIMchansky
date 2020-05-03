@@ -3,7 +3,7 @@ title: 'Jade'
 type: work
 date: 'Spring 2020'
 hiddenDate: 01.01.2020
-image: jamstack.png
+image: ../../assets/jamstack.png
 tech: gatsby
 url: 'https://dazzling-carson-3863ce.netlify.com/'
 githubUrl: 'https://github.com/DRIMchansky/Jade'
