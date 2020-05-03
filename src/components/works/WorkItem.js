@@ -11,9 +11,6 @@ import { makeStyles } from '@material-ui/core/styles'
 
 import styles from './works.module.css'
 
-import CalendarIcon from '../icons/CalendarIcon'
-import LinkIcon from '../icons/LinkIcon'
-
 const useStyles = makeStyles((theme) => ({
   link: {
     color: 'var(--c-accent)',
@@ -62,7 +59,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
             GitHub
           </Button>
         </div>
-        <Img className={styles.image} fluid={imageUrl} style={{ maxHeight: '100%' }} />
+        <Img className={styles.image} fluid={imageUrl} />
       </li>
     </>
   )
