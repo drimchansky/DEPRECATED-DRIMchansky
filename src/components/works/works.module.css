@@ -60,6 +60,9 @@
     &[data-tech='contentful']:before {
       background-image: url('../../assets/logo/contentful.png');
     }
+    &[data-tech='wordpress']:before {
+      background-image: url('../../assets/logo/wordpress.png');
+    }
   }
 }
 

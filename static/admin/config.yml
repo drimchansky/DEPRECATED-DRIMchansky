@@ -24,6 +24,8 @@ collections:
           - { label: 'Gatsby', value: 'gatsby' }
           - { label: 'Parcel', value: 'parcel' }
           - { label: 'PostCSS', value: 'postcss' }
+          - { label: 'WordPress', value: 'wordpress' }
       - { name: url, label: Ссылка на проект, widget: string }
       - { name: githubUrl, label: Ссылка на GitHub, widget: string }
       - { name: tags, label: Тэги, widget: list }
+      - { label: 'Текст', name: 'body', widget: 'markdown' }
