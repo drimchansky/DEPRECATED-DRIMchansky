@@ -14,9 +14,40 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            maxWidth: 1000,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -40,31 +71,14 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets/`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
-        ],
-      },
-    },
+
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-remark-copy-linked-files',
+      options: {
+        destinationDir: 'static',
+      },
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -73,5 +87,6 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
 }
