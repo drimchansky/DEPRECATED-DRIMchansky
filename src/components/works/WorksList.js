@@ -42,7 +42,9 @@ const WorksList = () => {
       <ul className={styles.workList}>
         {works.map((item) => {
           const showData = item.node
-
+          const image = showData.frontmatter.image
+            ? showData.frontmatter.image.childImageSharp.fluid
+            : null
           return (
             <WorkItem
               key={showData.id}
@@ -52,7 +54,7 @@ const WorksList = () => {
               githubUrl={showData.frontmatter.githubUrl}
               tech={showData.frontmatter.tech}
               tags={showData.frontmatter.tags}
-              imageUrl={showData.frontmatter.image.childImageSharp.fluid}
+              imageUrl={image}
               html={showData.html}
             />
           )

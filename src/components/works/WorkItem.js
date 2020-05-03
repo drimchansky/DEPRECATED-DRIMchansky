@@ -22,10 +22,18 @@ const useStyles = makeStyles((theme) => ({
 
 const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
   const classes = useStyles()
+  const image = imageUrl ? <Img className={styles.image} fluid={imageUrl} /> : ''
 
   return (
     <>
-      <li className={styles.workItem} data-tech={tech}>
+      <li
+        className={styles.workItem}
+        data-tech={tech}
+        // If image is absent set max-width
+        style={{
+          maxWidth: imageUrl ? '' : '700px',
+        }}
+      >
         <div className={styles.wrapper}>
           <h2
             className={styles.header}
@@ -59,7 +67,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
             GitHub
           </Button>
         </div>
-        <Img className={styles.image} fluid={imageUrl} />
+        {image}
       </li>
     </>
   )
