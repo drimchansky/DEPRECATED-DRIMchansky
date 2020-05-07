@@ -197,6 +197,10 @@
   }
 }
 
+.buttonWrapper {
+  text-align: right;
+}
+
 .url {
   display: flex;
   align-items: center;

@@ -6,6 +6,7 @@ import { Button } from '@material-ui/core'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import EventIcon from '@material-ui/icons/Event'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
+import MeetingRoomIcon from '@material-ui/icons/MeetingRoom'
 
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -23,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
 const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
   const classes = useStyles()
   const image = imageUrl ? <Img className={styles.image} fluid={imageUrl} /> : ''
+
+  console.log(githubUrl)
 
   return (
     <>
@@ -46,10 +49,6 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
               <EventIcon />
               <span>{date || '[Add date]'}</span>
             </div>
-            <div className={styles.url}>
-              <ExitToAppIcon />
-              <a href={url}>Website</a>
-            </div>
           </div>
           <ul className={styles.tags}>
             {tags.map((tag) => {
@@ -57,15 +56,29 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
             })}
           </ul>
           <span className={styles.text} dangerouslySetInnerHTML={{ __html: html }}></span>
-          <Button
-            className={classes.link}
-            href={githubUrl}
-            startIcon={<GitHubIcon />}
-            size="large"
-            variant="outlined"
-          >
-            GitHub
-          </Button>
+          <div className={styles.buttonWrapper}>
+            <Button
+              disabled={githubUrl ? false : true}
+              className={classes.link}
+              href={githubUrl}
+              startIcon={<GitHubIcon />}
+              size="large"
+              variant="outlined"
+              style={{ marginRight: '10px' }}
+            >
+              GitHub
+            </Button>
+            <Button
+              disabled={url ? false : true}
+              className={classes.link}
+              href={url}
+              startIcon={<MeetingRoomIcon />}
+              size="large"
+              variant="outlined"
+            >
+              Website
+            </Button>
+          </div>
         </div>
         {image}
       </li>
