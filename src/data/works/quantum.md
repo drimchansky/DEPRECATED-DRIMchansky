@@ -12,4 +12,5 @@ tags:
   - PostCSS
 ---
 
-First experience of building [WordPress](https://wordpress.org/) website.
+A fictional junior hockey team website. Based on my own design and [WordPress](https://wordpress.org/) engine.
+I'm not a big fan of wordpress therefore it may be will not finished ever 🙄
