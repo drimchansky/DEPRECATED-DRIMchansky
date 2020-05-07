@@ -25,8 +25,6 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
   const classes = useStyles()
   const image = imageUrl ? <Img className={styles.image} fluid={imageUrl} /> : ''
 
-  console.log(githubUrl)
-
   return (
     <>
       <li

@@ -9,7 +9,7 @@ const WorksList = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        sort: { fields: [frontmatter___hiddenDate], order: DESC }
+        sort: { fields: [frontmatter___date], order: DESC }
         filter: { frontmatter: { type: { eq: "work" } } }
       ) {
         edges {
@@ -17,7 +17,7 @@ const WorksList = () => {
             id
             html
             frontmatter {
-              date
+              date(formatString: "MMMM, YYYY")
               tags
               title
               url
@@ -45,6 +45,7 @@ const WorksList = () => {
           const image = showData.frontmatter.image
             ? showData.frontmatter.image.childImageSharp.fluid
             : null
+          console.log(showData.frontmatter.hiddenDate)
           return (
             <WorkItem
               key={showData.id}

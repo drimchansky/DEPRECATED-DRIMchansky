@@ -1,8 +1,7 @@
 ---
 title: 'Jade'
 type: work
-date: 'Spring 2020'
-hiddenDate: 01.01.2020
+date: 2020-04-03T10:57:11.004Z
 image: /img/wall.jpg
 tech: gatsby
 url: 'https://dazzling-carson-3863ce.netlify.com/'
