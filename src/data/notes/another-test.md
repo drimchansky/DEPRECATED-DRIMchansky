@@ -4,8 +4,7 @@ type: note
 date: 2020-05-08T10:57:11.004Z
 featured: false
 tags:
-  - Test
-  - Experiment
+  - Demo
 desc: Awesome desecription
 ---
 
