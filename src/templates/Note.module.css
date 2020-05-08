@@ -1,0 +1,37 @@
+.container {
+  font-family: var(--f-main);
+  margin-top: 8rem;
+  padding: 0 10px;
+
+  & h3 {
+    color: var(--c-accent);
+    font-size: 1.7rem;
+  }
+
+  & > span {
+    color: var(--c-medium);
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 10px 0 50px;
+  }
+}
+
+.rich {
+  color: var(--c-accent);
+  max-width: 1200px;
+
+  & p {
+    max-width: 700px;
+
+    & > img {
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        width: auto;
+        max-width: 1000px;
+      }
+    }
+  }
+}

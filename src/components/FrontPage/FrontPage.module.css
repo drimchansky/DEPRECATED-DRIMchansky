@@ -7,11 +7,8 @@
     transform: translateY(-30%);
     padding: 0 1em;
 
-    @media (min-width: 768px) {
-      margin-left: 310px;
-    }
     @media (min-width: 982px) {
-      margin-left: calc(300px + 2em);
+      padding-left: 4rem;
     }
   }
 

@@ -37,6 +37,7 @@ const WorksList = () => {
     }
   `)
   const works = data.allMarkdownRemark.edges
+
   return (
     <>
       <ul className={styles.workList}>
