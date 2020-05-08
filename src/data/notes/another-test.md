@@ -8,6 +8,4 @@ tags:
 desc: Awesome desecription
 ---
 
-Another test content
-
-![Image of Yaktocat](/img/blogging.jpg)
+Test note content

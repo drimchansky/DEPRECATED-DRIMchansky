@@ -14,21 +14,6 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
-    {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/img`,
-        name: 'uploads',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -36,16 +21,37 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
+            resolve: 'gatsby-remark-copy-linked-files',
             options: {
-              name: 'uploads',
+              destinationDir: 'static',
             },
           },
           {
             resolve: `gatsby-remark-images`,
-            maxWidth: 1000,
+            options: {
+              maxWidth: 800,
+            },
           },
         ],
+      },
+    },
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/works`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/notes`,
       },
     },
     {
@@ -73,12 +79,6 @@ module.exports = {
     },
 
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-remark-copy-linked-files',
-      options: {
-        destinationDir: 'static',
-      },
-    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

@@ -12,7 +12,7 @@ const Note = ({ data }) => {
   console.log(post)
   return (
     <Page>
-      <SEO title="Notes" description="My notes" />
+      <SEO title={post.frontmatter.title} description={post.frontmatter.title} />
       <Layout className={styles.layout}>
         <div className={styles.container}>
           <h3>{post.frontmatter.title}</h3>
