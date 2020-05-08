@@ -9,3 +9,5 @@ desc: Awesome desecription
 ---
 
 Test note content
+
+![empty](./blogging.jpg)
