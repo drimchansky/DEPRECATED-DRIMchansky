@@ -1,7 +1,7 @@
 ---
 title: 'Diopside'
 type: work
-date: 2020-04-03T10:57:11.004Z
+date: 2020-05-03T10:57:11.004Z
 image: /img/company.jpg
 tech: contentful
 url: 'https://zealous-bassi-bb4105.netlify.app/'

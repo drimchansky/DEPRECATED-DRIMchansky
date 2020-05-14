@@ -5,9 +5,7 @@ import { Button } from '@material-ui/core'
 
 import GitHubIcon from '@material-ui/icons/GitHub'
 import EventIcon from '@material-ui/icons/Event'
-
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom'
-
 import { makeStyles } from '@material-ui/core/styles'
 
 import styles from './works.module.css'
@@ -45,7 +43,10 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
           <div className={styles.info}>
             <div className={styles.date}>
               <EventIcon />
-              <span>{date || '[Add date]'}</span>
+              <span>
+                <i>Last modified: </i>
+                {date || '[Add date]'}
+              </span>
             </div>
           </div>
           <ul className={styles.tags}>
