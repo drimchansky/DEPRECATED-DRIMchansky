@@ -1,8 +1,8 @@
 import React, { useState, useLayoutEffect } from 'react'
 
-import Sidebar from '../Sidebar/Sidebar'
+import Header from '../Header/Header'
 import Hamburger from '../../components/Hamburger/Hamburger'
-import Toggl from '../../components/Toggl/Toggl'
+import ThemeSwither from '../ThemeSwitcher/ThemeSwitcher'
 
 import styles from './Page.module.css'
 import '../../util/custom-normalize.css'
@@ -27,9 +27,9 @@ const Page = (props) => {
     <>
       <div className={styles.page}>
         <Hamburger active={active} setActive={setActive} />
-        <Sidebar active={active} setActive={setActive} />
+        <Header active={active} setActive={setActive} />
         <>{props.children}</>
-        <Toggl />
+        <ThemeSwither />
       </div>
     </>
   )

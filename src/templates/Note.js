@@ -15,7 +15,7 @@ const Note = ({ data }) => {
       <SEO title={post.frontmatter.title} description={post.frontmatter.title} />
       <Layout className={styles.layout}>
         <div className={styles.container}>
-          <h3>{post.frontmatter.title}</h3>
+          <h1>{post.frontmatter.title}</h1>
           <span>{post.frontmatter.date}</span>
           <div className={styles.rich} dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>

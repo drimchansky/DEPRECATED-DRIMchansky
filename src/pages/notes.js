@@ -10,6 +10,18 @@ const notes = () => {
     <Page>
       <SEO title="Notes" description="My notes" />
       <Layout>
+        {/* visually hidden header */}
+        <h1
+          style={{
+            visibility: 'hidden',
+            height: 0,
+            width: 0,
+            position: 'absolute',
+            overflow: 'hidden',
+          }}
+        >
+          Notes
+        </h1>
         <NotesList />
       </Layout>
     </Page>

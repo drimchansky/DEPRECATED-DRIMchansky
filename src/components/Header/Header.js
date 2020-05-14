@@ -4,13 +4,13 @@ import { Link } from 'gatsby'
 import Nav from '../Nav/Nav'
 import Social from '../Social/Social'
 
-import styles from './Sidebar.module.css'
+import styles from './Header.module.css'
 
-const Sidebar = ({ active, setActive }) => {
+const Header = ({ active, setActive }) => {
   return (
-    <aside
+    <header
       className={`
-    ${styles.sidebar}
+    ${styles.header}
     ${active ? styles.isActive : ''}
     `}
     >
@@ -21,12 +21,12 @@ const Sidebar = ({ active, setActive }) => {
         </Link>
         <Nav active={active} setActive={setActive} />
       </div>
-      <footer className={styles.footer}>
+      <div className={styles.footer}>
         <Social />
         <a href="mailto:drimchansky@gmail.com">drimchansky@gmail.com</a>
-      </footer>
-    </aside>
+      </div>
+    </header>
   )
 }
 
-export default Sidebar
+export default Header

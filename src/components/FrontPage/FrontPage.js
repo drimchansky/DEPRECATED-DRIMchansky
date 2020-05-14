@@ -6,7 +6,7 @@ import styles from './FrontPage.module.css'
 const FrontPage = () => {
   return (
     <main className={styles.front}>
-      <header>
+      <div>
         <small>Hi. I'm Nikita.</small>
         <h1>I make random things in the Web</h1>
         <p>
@@ -19,7 +19,7 @@ const FrontPage = () => {
             services
           </Link>
         </p>
-      </header>
+      </div>
     </main>
   )
 }

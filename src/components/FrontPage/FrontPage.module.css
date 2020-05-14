@@ -3,7 +3,7 @@
   align-items: center;
   min-height: 100vh;
 
-  & header {
+  & div {
     transform: translateY(-30%);
     padding: 0 1em;
 

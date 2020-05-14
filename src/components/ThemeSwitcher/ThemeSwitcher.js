@@ -1,13 +1,12 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IconButton } from '@material-ui/core'
-import WbSunnyIcon from '@material-ui/icons/WbSunny'
 import Brightness6Icon from '@material-ui/icons/Brightness6'
 
 import NightsStayIcon from '@material-ui/icons/NightsStay'
 
-import styles from './Toggl.module.css'
+import styles from './ThemeSwitcher.module.css'
 
-const Toggl = () => {
+const ThemeSwither = () => {
   let [check, setCheck] = useState(null)
 
   const clickHandler = (e) => {
@@ -25,7 +24,7 @@ const Toggl = () => {
     }
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     let darkMode = localStorage.getItem('darkMode')
     darkMode === 'enabled' ? setCheck(false) : setCheck(true)
   })
@@ -33,13 +32,21 @@ const Toggl = () => {
   if (check !== null) {
     if (check) {
       return (
-        <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+        <IconButton
+          onClick={clickHandler}
+          aria-label="Theme switcher"
+          className={styles.themeSwitcher}
+        >
           <NightsStayIcon />
         </IconButton>
       )
     } else {
       return (
-        <IconButton onClick={clickHandler} aria-label="theme" className={styles.toggle}>
+        <IconButton
+          onClick={clickHandler}
+          aria-label="Theme switcher"
+          className={styles.themeSwitcher}
+        >
           <Brightness6Icon />
         </IconButton>
       )
@@ -49,4 +56,4 @@ const Toggl = () => {
   }
 }
 
-export default Toggl
+export default ThemeSwither

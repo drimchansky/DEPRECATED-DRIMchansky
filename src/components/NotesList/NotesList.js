@@ -35,7 +35,7 @@ const NotesList = () => {
         return (
           <li key={item.node.id} className={styles.item}>
             <Link to={item.node.fields.slug}>
-              <h3>{item.node.frontmatter.title}</h3>
+              <h2>{item.node.frontmatter.title}</h2>
 
               <ul className={styles.tagList}>
                 {item.node.frontmatter.tags.map((tag) => {

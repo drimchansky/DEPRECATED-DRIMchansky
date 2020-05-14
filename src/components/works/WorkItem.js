@@ -21,7 +21,11 @@ const useStyles = makeStyles((theme) => ({
 
 const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) => {
   const classes = useStyles()
-  const image = imageUrl ? <Img className={styles.image} fluid={imageUrl} /> : ''
+  const image = imageUrl ? (
+    <Img className={styles.image} fluid={imageUrl} alt={`${title} image`} />
+  ) : (
+    ''
+  )
 
   return (
     <>
