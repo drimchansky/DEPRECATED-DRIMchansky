@@ -1,7 +1,21 @@
-var autoprefixer = require('autoprefixer')
-var nested = require('postcss-nested')
-var properties = require('postcss-custom-properties')
-const path = require(`path`)
+const autoprefixer = require('autoprefixer')
+const nested = require('postcss-nested')
+const properties = require('postcss-custom-properties')
+
+// Plugins order
+// - gatsby-plugin-sharp
+// - gatsby-transformer-sharp
+// - gatsby-transformer-remark
+// -- gatsby-remark-copy-linked-files
+// -- gatsby-remark-images
+// - gatsby-source-filesystem static/img
+// - gatsby-source-filesystem src/data
+// - gatsby-plugin-material-ui
+// - gatsby-plugin-react-helmet
+// - gatsby-plugin-postcss
+// - gatsby-plugin-sitemap
+// - gatsby-plugin-robots-txt
+// - gatsby-plugin-netlify-cms
 
 module.exports = {
   siteMetadata: {
@@ -71,8 +85,12 @@ module.exports = {
         ],
       },
     },
-
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      option: {
+        exclude: [`/notes/*`, `/admin/*`],
+      },
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
