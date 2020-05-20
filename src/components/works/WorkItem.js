@@ -78,6 +78,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
               startIcon={<MeetingRoomIcon />}
               size="large"
               variant="outlined"
+              target="_blank"
             >
               Website
             </Button>
