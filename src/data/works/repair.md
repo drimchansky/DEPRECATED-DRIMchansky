@@ -2,7 +2,7 @@
 title: 'Repair design'
 type: work
 date: 2019-02-03T10:57:11.004Z
-image: /img/repair.jpg
+image: null
 tech: parcel
 url: 'https://repair-design.drimchansky1.now.sh/'
 githubUrl: 'https://github.com/DRIMchansky/Repair-design'

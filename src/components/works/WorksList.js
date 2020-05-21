@@ -23,13 +23,6 @@ const WorksList = () => {
               url
               tech
               githubUrl
-              image {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-              }
             }
           }
         }
@@ -46,7 +39,6 @@ const WorksList = () => {
           const image = showData.frontmatter.image
             ? showData.frontmatter.image.childImageSharp.fluid
             : null
-          console.log(showData.frontmatter.hiddenDate)
           return (
             <WorkItem
               key={showData.id}

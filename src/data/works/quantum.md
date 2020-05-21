@@ -2,10 +2,9 @@
 title: Quantum
 type: work
 date: 2020-05-03T10:57:11.004Z
-image: /img/small-banner-1.jpg
+image: null
 tech: wordpress
 url: http://u1036627.isp.regruhosting.ru/
-githubUrl: https://github.com/DRIMchansky/Quantum
 tags:
   - WordPress
   - PostCSS
