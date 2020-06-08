@@ -16,6 +16,7 @@ const properties = require('postcss-custom-properties')
 // - gatsby-plugin-sitemap
 // - gatsby-plugin-robots-txt
 // - gatsby-plugin-netlify-cms
+// - gatsby-plugin-nprogress
 
 module.exports = {
   siteMetadata: {
@@ -100,5 +101,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
+        minimum: 0.4,
+      },
+    },
   ],
 }
