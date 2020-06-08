@@ -13,7 +13,6 @@ const properties = require('postcss-custom-properties')
 // - gatsby-plugin-material-ui
 // - gatsby-plugin-react-helmet
 // - gatsby-plugin-postcss
-// - gatsby-plugin-sitemap
 // - gatsby-plugin-robots-txt
 // - gatsby-plugin-netlify-cms
 // - gatsby-plugin-nprogress
@@ -84,12 +83,6 @@ module.exports = {
             importFrom: './src/util/properties.css',
           }),
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      option: {
-        exclude: [`/notes/*`, `/admin/*`],
       },
     },
     {
