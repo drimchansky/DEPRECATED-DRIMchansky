@@ -3,7 +3,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 // components
-import WorkItem from '../WorksItem/WorkItem'
+import WorkItem from '../WorkItem/WorkItem'
 // styles
 import styles from './WorksList.module.css'
 
