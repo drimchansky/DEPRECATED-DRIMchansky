@@ -185,6 +185,12 @@
 
 .buttonWrapper {
   text-align: right;
+
+  & > button:disabled {
+    color: var(--c-accent) !important;
+    border-color: var(--c-accent) !important;
+    opacity: 0.5;
+  }
 }
 
 .url {
