@@ -1,6 +1,6 @@
 .container {
   font-family: var(--f-main);
-  margin-top: 8rem;
+  margin: 8rem auto 0 auto;
   padding: 0 10px;
 
   & > h1,
@@ -24,6 +24,21 @@
 .rich {
   color: var(--c-accent);
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+
+  & ul {
+    margin-left: 1rem;
+
+    & li {
+      list-style-type: initial;
+      padding: 5px;
+    }
+  }
+
+  & a {
+    color: var(--c-primary);
+  }
 
   & p {
     max-width: 1000px;

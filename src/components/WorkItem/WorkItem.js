@@ -36,7 +36,7 @@ const WorkItem = ({ title, tags, url, githubUrl, imageUrl, html, date, tech }) =
         data-tech={tech}
         // If image is absent set max-width
         style={{
-          maxWidth: imageUrl ? '' : '700px',
+          maxWidth: imageUrl ? '' : '1000px',
         }}
       >
         <div className={styles.wrapper}>
