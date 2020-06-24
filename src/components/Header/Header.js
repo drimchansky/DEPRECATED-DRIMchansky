@@ -1,9 +1,10 @@
+// packages
 import React from 'react'
 import { Link } from 'gatsby'
-
+// components
 import Nav from '../Nav/Nav'
 import Social from '../Social/Social'
-
+// styles
 import styles from './Header.module.css'
 
 const Header = ({ active, setActive }) => {
@@ -17,7 +18,7 @@ const Header = ({ active, setActive }) => {
       <div className={styles.wrapper}>
         <Link to="/" className={styles.title} tabIndex="-1">
           <span>DRIMchansky</span>
-          <small>dev for fun</small>
+          <small>web enthusiast</small>
         </Link>
         <Nav active={active} setActive={setActive} />
       </div>

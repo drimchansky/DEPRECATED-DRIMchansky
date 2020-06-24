@@ -1,5 +1,6 @@
+// packages
 import React from 'react'
-
+// styles
 import styles from './Layout.module.css'
 
 const Layout = ({ children }) => {

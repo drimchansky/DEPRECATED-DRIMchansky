@@ -1,6 +1,7 @@
+// packages
 import React from 'react'
 import { Link } from 'gatsby'
-
+// styles
 import styles from './Nav.module.css'
 
 const Nav = ({ active, setActive }) => {
@@ -13,23 +14,43 @@ const Nav = ({ active, setActive }) => {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li>
-          <Link to="/" activeClassName={styles.active} onClick={clickHandler}>
-            <span>Home</span>
+          <Link
+            className={styles.link}
+            to="/"
+            activeClassName={styles.active}
+            onClick={clickHandler}
+          >
+            Home
           </Link>
         </li>
         <li>
-          <Link to="/works" activeClassName={styles.active} onClick={clickHandler}>
-            <span>Works</span>
+          <Link
+            className={styles.link}
+            to="/works"
+            activeClassName={styles.active}
+            onClick={clickHandler}
+          >
+            Works
           </Link>
         </li>
         <li>
-          <Link to="/services" activeClassName={styles.active} onClick={clickHandler}>
-            <span>Services</span>
+          <Link
+            className={styles.link}
+            to="/services"
+            activeClassName={styles.active}
+            onClick={clickHandler}
+          >
+            Services
           </Link>
         </li>
         <li>
-          <Link to="/notes" activeClassName={styles.active} onClick={clickHandler}>
-            <span>Notes</span>
+          <Link
+            className={styles.link}
+            to="/notes"
+            activeClassName={styles.active}
+            onClick={clickHandler}
+          >
+            Notes
           </Link>
         </li>
       </ul>

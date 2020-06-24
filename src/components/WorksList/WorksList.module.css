@@ -1,0 +1,14 @@
+.workList {
+  font-family: var(--f-main);
+  color: var(--c-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 0.5rem 2rem 0;
+
+  @media (min-width: 768px) {
+    margin-top: 100px;
+  }
+}

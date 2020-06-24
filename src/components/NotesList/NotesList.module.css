@@ -33,12 +33,13 @@
       align-items: center;
     }
   }
-  & span {
+  & time {
     color: var(--c-medium);
     text-decoration: none;
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
+    font-weight: 300;
 
     @media (min-width: 768px) {
       margin-top: 0;

@@ -1,9 +1,11 @@
+// packages
 import React, { useState, useEffect } from 'react'
+// components
 import { IconButton } from '@material-ui/core'
+// icons
 import Brightness6Icon from '@material-ui/icons/Brightness6'
-
 import NightsStayIcon from '@material-ui/icons/NightsStay'
-
+// styles
 import styles from './ThemeSwitcher.module.css'
 
 const ThemeSwither = () => {
@@ -13,6 +15,7 @@ const ThemeSwither = () => {
     let darkMode = localStorage.getItem('darkMode')
     const body = document.body
     e.target.style.outline = 'none !important'
+
     if (darkMode === 'enabled') {
       body.dataset.dark = 'disabled'
       localStorage.setItem('darkMode', null)

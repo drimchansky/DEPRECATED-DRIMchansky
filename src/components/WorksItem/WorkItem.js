@@ -1,15 +1,17 @@
+// packages
 import React from 'react'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 import { Button } from '@material-ui/core'
-
+// icons
 import GitHubIcon from '@material-ui/icons/GitHub'
 import EventIcon from '@material-ui/icons/Event'
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom'
 import { makeStyles } from '@material-ui/core/styles'
+// styles
+import styles from './WorkItem.module.css'
 
-import styles from './works.module.css'
-
+// overwrite MaterialUI
 const useStyles = makeStyles((theme) => ({
   link: {
     color: 'var(--c-accent)',

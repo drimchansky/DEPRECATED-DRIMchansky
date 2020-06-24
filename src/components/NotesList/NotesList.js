@@ -1,6 +1,7 @@
+// packages
 import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
-
+// styles
 import styles from './NotesList.module.css'
 
 const NotesList = () => {
@@ -43,7 +44,7 @@ const NotesList = () => {
                 })}
               </ul>
 
-              <span>{item.node.frontmatter.date}</span>
+              <time>{item.node.frontmatter.date}</time>
             </Link>
           </li>
         )

@@ -1,9 +1,11 @@
 /* eslint-disable array-callback-return */
+// packages
 import React from 'react'
-import WorkItem from './WorkItem'
 import { useStaticQuery, graphql } from 'gatsby'
-
-import styles from './works.module.css'
+// components
+import WorkItem from '../WorksItem/WorkItem'
+// styles
+import styles from './WorksList.module.css'
 
 const WorksList = () => {
   const data = useStaticQuery(graphql`

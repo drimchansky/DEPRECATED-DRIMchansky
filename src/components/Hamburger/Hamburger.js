@@ -1,17 +1,17 @@
+// packages
 import React from 'react'
-
+// styles
 import styles from './Hamburger.module.css'
 
 const Hamburger = ({ active, setActive }) => {
   return (
     <button
-      aria-label="Hamburger menu"
+      aria-label="Hamburger"
       className={`
     ${styles.hamburger} 
     ${styles.hamburgerSpring} 
     ${active ? styles.isActive : ''}
     `}
-      type="button"
       onClick={() => setActive(!active)}
     >
       <span className={styles.hamburgerBox}>

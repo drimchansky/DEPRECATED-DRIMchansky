@@ -1,9 +1,10 @@
+// packages
 import React from 'react'
-
+// components
 import Page from '../components/Page/Page'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO'
-import WorksList from '../components/works/WorksList'
+import WorksList from '../components/WorksList/WorksList'
 
 const works = () => {
   return (

@@ -1,5 +1,6 @@
+// packages
 import React from 'react'
-
+// cpmponenst
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout/Layout'

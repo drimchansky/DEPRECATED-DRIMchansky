@@ -1,11 +1,12 @@
+// packages
 import React from 'react'
 import IconButton from '@material-ui/core/IconButton'
-
+// icons
 import TelegramIcon from '@material-ui/icons/Telegram'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import InstagramIcon from '@material-ui/icons/Instagram'
-
+// styles
 import styles from './Social.module.css'
 
 const Social = () => {
