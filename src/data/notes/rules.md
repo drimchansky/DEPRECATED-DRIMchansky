@@ -9,7 +9,9 @@ tags:
 
 Forked from [wiki.nikitavoloboev.xyz/focusing/rules](https://wiki.nikitavoloboev.xyz/focusing/rules)
 
-- Set weekly tasks. Focus.
+## Life
+
+- Set weekly tasks. Focus on each of them.
 - One task at a time. No distractions. Always mindful of my actions & thoughts. Be calm. Value time.
 - Ask questions. Be honest, clear & concise.
 - Simplify & minimize everything. Don't repeat myself. Remove friction. Focus on essentials. Use what I need.
@@ -19,13 +21,18 @@ Forked from [wiki.nikitavoloboev.xyz/focusing/rules](https://wiki.nikitavoloboev
 - Don't judge anyone. Attempt to see another person's point of view. Be kind.
 - Don't lie to myself nor anyone else. Be confident in my thoughts & actions. Be decisive. Give feedback.
 - Don't stay in bed. Wake up fast and start the day. Keep straight posture & spine.
-  Health
+
+## Health
+
 - Exercise. 30+ min cardio/weights daily.
 - Drink lots of water & tea. Limit coffee. No sugar.
 - Start every morning with workout & shower.
-- Brush/floss teeth & clean face every morning/evening.
+- Brush teeth & clean face every morning/evening.
 - Sleep ~8 hours each day.
 - Everything in moderation. (i.e. alcohol)
+
+## Focus
+
 - Break problems down. Solve each step one at a time. Know the end goal.
 - When focusing, do the active task. No news/distractions. No context switching.
 - Spend mindful time on all devices.
