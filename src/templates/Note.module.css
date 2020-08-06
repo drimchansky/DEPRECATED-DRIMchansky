@@ -50,8 +50,17 @@
     color: var(--c-primary);
   }
 
+  & img {
+    cursor: default;
+    margin: 1rem 0;
+  }
+
+  & code {
+  }
+
   & p {
     max-width: 1000px;
+    margin-bottom: 0.3rem;
 
     & > img {
       width: 100%;

@@ -10,16 +10,24 @@ import styles from './Note.module.css'
 
 const Note = ({ data }) => {
   const post = data.markdownRemark
-  console.log(post)
+
+  const handler = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <Page>
       <SEO title={post.frontmatter.title} description={post.frontmatter.title} />
       <Layout className={styles.layout}>
-        <main className={styles.container}>
+        <article className={styles.container}>
           <h1>{post.frontmatter.title}</h1>
           <span>{post.frontmatter.date}</span>
-          <div className={styles.rich} dangerouslySetInnerHTML={{ __html: post.html }} />
-        </main>
+          <div
+            onClick={handler}
+            className={styles.rich}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </article>
       </Layout>
     </Page>
   )
