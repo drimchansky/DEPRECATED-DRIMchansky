@@ -4,7 +4,6 @@ type: work
 date: 2020-05-03T10:57:11.004Z
 image: null
 tech: wordpress
-url: https://drimchansky.space
 tags:
   - WordPress
   - PostCSS

@@ -3,7 +3,7 @@ title: 'Diopside'
 type: work
 date: 2020-05-03T10:57:11.004Z
 image: null
-tech: contentful
+tech: jekyll
 url: 'https://zealous-bassi-bb4105.netlify.app/'
 githubUrl: 'https://github.com/DRIMchansky/Diopside'
 tags:

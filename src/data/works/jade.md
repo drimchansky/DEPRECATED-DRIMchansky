@@ -1,10 +1,11 @@
 ---
 title: 'Jade'
 type: work
-date: 2020-05-03T10:57:11.004Z
+date: 2020-05-02T10:57:11.004Z
 image: null
 tech: gatsby
 url: 'https://dazzling-carson-3863ce.netlify.com/'
+githubUrl: https://github.com/DRIMchansky/jade
 tags:
   - Gatsby
   - styled-components

@@ -46,6 +46,9 @@
     &[data-tech='wordpress']:before {
       background-image: url('../../assets/logo/wordpress.png');
     }
+    &[data-tech='jekyll']:before {
+      background-image: url('../../assets/logo/jekyll.png');
+    }
   }
 
   @media (min-width: 1600px) {
