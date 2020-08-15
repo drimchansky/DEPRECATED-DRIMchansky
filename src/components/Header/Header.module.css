@@ -1,7 +1,7 @@
 .header {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: var(--c-main);
+  background: var(--color-bg-secondary);
   position: fixed;
   left: 0;
   top: 0;
@@ -22,7 +22,7 @@
     visibility: visible;
     transform: translate(0);
     transition: none;
-    background: var(--c-regular);
+    background: var(--color-bg-secondary);
   }
 }
 
@@ -48,7 +48,7 @@
     letter-spacing: -2px;
     font-size: 1.8em;
     display: block;
-    color: var(--c-accent);
+    color: var(--color-text-normal);
     line-height: 0.8;
 
     &:focus {
@@ -58,7 +58,7 @@
 
   & small {
     font-family: Rubik, sans-serif;
-    color: var(--c-medium);
+    color: var(--color-text-normal);
     font-size: 0.8em;
 
     &:focus {
@@ -79,7 +79,7 @@
   & small {
     display: block;
     transition: color 0.2s;
-    color: var(--c-medium);
+    color: var(--color-text-normal);
     font-size: 0.8em;
     margin-top: 0.5em;
   }
@@ -88,7 +88,7 @@
     font-size: 0.9em;
     display: block;
     transition: color 0.2s;
-    color: var(--c-accent);
+    color: var(--color-text-normal);
     font-family: var(--f-title);
     text-decoration: none;
   }

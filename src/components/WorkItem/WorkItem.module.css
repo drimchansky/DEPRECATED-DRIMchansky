@@ -26,7 +26,7 @@
       width: 250px;
       background-repeat: no-repeat;
       background-size: contain;
-      opacity: 0.3;
+      opacity: 0.5;
       left: -3rem;
       top: -3rem;
       z-index: 1;
@@ -72,6 +72,7 @@
   font-size: 2rem;
   padding: 0 0 0 0.5rem;
   z-index: 2;
+  color: var(--color-text-title);
 }
 
 .info {
@@ -94,8 +95,8 @@
     padding: 2px 5px;
     border-radius: 6px;
     font-size: 0.9rem;
-    background: var(--c-accent);
-    color: var(--c-main);
+    background: var(--color-text-title);
+    color: var(--color-bg);
     margin-top: 2px;
 
     &:not(:first-child) {
@@ -110,7 +111,7 @@
 
   & a {
     display: inline-block;
-    color: var(--c-accent);
+    color: var(--color-text-normal);
     text-decoration: none;
     position: relative;
 
@@ -131,7 +132,7 @@
       top: 0;
       border-radius: 4px;
       opacity: 0.5;
-      background: var(--c-blue);
+      background: var(--color-primary);
       z-index: -1;
     }
 
@@ -185,7 +186,7 @@
 
   & svg {
     width: 25px;
-    fill: var(--c-accent);
+    fill: var(--color-text-normal);
   }
 }
 
@@ -193,8 +194,8 @@
   text-align: right;
 
   & > button:disabled {
-    color: var(--c-accent) !important;
-    border-color: var(--c-accent) !important;
+    color: var(--color-text-normal) !important;
+    border-color: var(--color-text-normal) !important;
     opacity: 0.5;
   }
 }
@@ -208,13 +209,13 @@
 
   a {
     text-decoration: none;
-    color: var(--c-accent);
+    color: var(--color-text-normal);
     padding: 5px;
   }
 
   & svg {
     width: 20px;
-    fill: var(--c-accent);
+    fill: var(--color-text-normal);
   }
 }
 
