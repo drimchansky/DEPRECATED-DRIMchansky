@@ -14,8 +14,8 @@ import styles from './WorkItem.module.css'
 // overwrite MaterialUI
 const useStyles = makeStyles((theme) => ({
   link: {
-    color: 'var(--c-accent)',
-    borderColor: 'var(--c-accent)',
+    color: 'var(--color-text-normal)',
+    borderColor: 'var(--color-text-normal)',
     alignSelf: 'flex-end',
     marginTop: '10px',
   },

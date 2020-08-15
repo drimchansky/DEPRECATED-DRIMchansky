@@ -1,19 +1,21 @@
 .container {
   font-family: var(--f-main);
-  margin: 8rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   padding: 0 10px;
+  max-width: 1000px;
 
   & > h1,
   & > h3,
   & > h4,
   & > h5,
   & > h6 {
-    color: var(--c-accent);
+    color: var(--color-text-title);
   }
 
   & > span {
-    color: var(--c-medium);
+    color: var(--color-text-normal);
     font-size: 0.8rem;
+    opacity: 0.8;
   }
 
   @media (min-width: 768px) {
@@ -22,10 +24,9 @@
 }
 
 .rich {
-  color: var(--c-accent);
+  color: var(--color-text-normal);
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 0 4rem;
+  margin-top: 3rem;
 
   & > h1,
   & > h2,
@@ -33,7 +34,7 @@
   & > h4,
   & > h5,
   & > h6 {
-    color: var(--c-accent);
+    color: var(--color-text-title);
     margin: 0.5rem 0;
   }
 
@@ -47,15 +48,12 @@
   }
 
   & a {
-    color: var(--c-primary);
+    color: var(--color-text-normal);
   }
 
   & img {
     cursor: default;
     margin: 1rem 0;
-  }
-
-  & code {
   }
 
   & p {

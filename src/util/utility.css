@@ -19,7 +19,7 @@
     top: 0;
     border-radius: 4px;
     opacity: 0.5;
-    background: var(--c-blue);
+    background: var(--color-text-link);
     z-index: -1;
   }
 
@@ -31,8 +31,8 @@
 }
 
 *::selection {
-  color: var(--c-accent);
-  background: var(--c-blue);
+  color: #fff;
+  background: var(--color-primary);
 }
 
 *:focus {

@@ -1,6 +1,6 @@
 .workList {
   font-family: var(--f-main);
-  color: var(--c-accent);
+  color: var(--color-text-normal);
   display: flex;
   flex-direction: column;
   justify-content: center;

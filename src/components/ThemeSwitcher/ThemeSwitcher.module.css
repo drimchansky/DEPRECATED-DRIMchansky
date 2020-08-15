@@ -11,6 +11,6 @@
 
   & svg {
     font-size: 1.8em;
-    fill: var(--c-accent);
+    fill: var(--color-text-normal);
   }
 }
