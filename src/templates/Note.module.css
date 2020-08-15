@@ -59,6 +59,7 @@
   & p {
     max-width: 1000px;
     margin-bottom: 0.3rem;
+    line-height: 1.4;
 
     & > img {
       width: 100%;
