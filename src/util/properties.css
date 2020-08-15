@@ -1,14 +1,12 @@
 :root {
-  --color-primary: #09848b;
+  --color-primary: #50e3c2;
   --color-bg: #f9fafb;
   --color-bg-secondary: lightgray;
   --color-text-normal: #222;
   --color-text-title: #222;
-  --color-text-link: #09848b;
-
+  --color-text-link: #50e3c2;
   --f-title: Miriam Libre, Arial, sans-serif;
   --f-main: Rubik, sans-serif;
-
   --shadow-light: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
   --card-bg: transparent;
 }
@@ -17,7 +15,6 @@
   --color-bg-secondary: #363c48;
   --color-text-normal: hsla(0, 0%, 100%, 0.88);
   --color-text-title: #fff;
-
   --shadow-light: rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px;
   --dark-bg: rgb(63, 68, 71, 0.8);
 }
