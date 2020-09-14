@@ -17,3 +17,9 @@ You can prevent this behavior by update local git configuration:
 ```shell{1}
 git config core.ignorecase false
 ```
+
+<br/>
+
+---
+
+update: Doesn't work anyway. Solution - use `kebab-case` instead.
