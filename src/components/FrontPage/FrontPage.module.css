@@ -50,3 +50,9 @@
     font-size: 1.1rem;
   }
 }
+
+.warning {
+  color: #dc3545;
+  font-family: var(--f-main);
+  text-transform: uppercase;
+}

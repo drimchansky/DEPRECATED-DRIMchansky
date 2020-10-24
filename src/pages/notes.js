@@ -4,7 +4,7 @@ import React from 'react'
 import Page from '../components/Page/Page'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout/Layout'
-import NotesList from '../components/NotesList/NotesList'
+// import NotesList from '../components/NotesList/NotesList'
 
 const notes = () => {
   return (
@@ -23,7 +23,7 @@ const notes = () => {
         >
           Notes
         </h1>
-        <NotesList />
+        {/* <NotesList /> */}
       </Layout>
     </Page>
   )

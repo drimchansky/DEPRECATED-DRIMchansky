@@ -12,7 +12,7 @@ const FrontPage = () => {
           Hi. I'm <h1>Nikita Chernov</h1>.
         </span>
         <h2 className={styles.description}>I make random things in the Web</h2>
-        <span className={styles.info}>
+        {/* <span className={styles.info}>
           You can see{' '}
           <Link to="/works" className="link-effect">
             my works
@@ -21,7 +21,8 @@ const FrontPage = () => {
           <Link to="/services" className="link-effect">
             services
           </Link>
-        </span>
+        </span> */}
+        <span className={styles.warning}>website is no longer supported</span>
       </div>
     </main>
   )

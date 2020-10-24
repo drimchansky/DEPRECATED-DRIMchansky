@@ -18,7 +18,6 @@ const Header = ({ active, setActive }) => {
       <div className={styles.wrapper}>
         <Link to="/" className={styles.title} tabIndex="-1">
           <span>DRIMchansky</span>
-          <small>web enthusiast</small>
         </Link>
         <Nav active={active} setActive={setActive} />
       </div>

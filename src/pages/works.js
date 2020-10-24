@@ -4,7 +4,7 @@ import React from 'react'
 import Page from '../components/Page/Page'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO'
-import WorksList from '../components/WorksList/WorksList'
+// import WorksList from '../components/WorksList/WorksList'
 
 const works = () => {
   return (
@@ -23,7 +23,7 @@ const works = () => {
         >
           Works
         </h1>
-        <WorksList />
+        {/* <WorksList /> */}
       </Layout>
     </Page>
   )
